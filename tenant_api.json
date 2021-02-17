@@ -8,7 +8,7 @@
   "categories": [],
   "product": {
     "featured": true,
-    "logoURL": "https://raw.githubusercontent.com/fiserv-digital-tech/dev-portal/main/assets/images/Fiserv_Logo.jpg",
+    "logoURL": "https://raw.githubusercontent.com/fiserv-digital-tech/dev-portal/main/assets/images/PORTAL-Logo.png",
     "description": "To onboard properly into the Fiserv Developer Portal as a tenant each product must support these APIs so that we can retrieve product specific API specifications and documentation.",
     "apiSpecification": "/v1/apis",
     "layout": "/v1/layout",
