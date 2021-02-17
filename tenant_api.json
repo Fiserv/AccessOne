@@ -1,80 +1,17 @@
 {
-  "title": "Commerce Hub",
-  "name": "CommerceHub",
-  "brand": "Carat",
-  "brandLogoURL": "https://raw.githubusercontent.com/tomeck/transactionenrichmentstoplight/main/docs/carat_logo.png",
-  "solution": "Payments",
-  "brandDescription": "Our powerful omnichannel commerce solutions help companies reach untapped markets and expand globally without being limited by borders, currencies or old ways of thinking.\n      Carat's single-source commerce engine makes the process seamless, effortless, and secure. We've unified our suite of solutions into a powerful tech ecosystem so you can create commerce.\n      Carat's single-source commerce engine makes the process seamless, effortless, and secure. We've unified our suite of solutions into a powerful tech ecosystem so you can create commerce. Carat's single-source commerce engine makes the process seamless, effortless, and secure. We've unified our suite of solutions into a powerful tech ecosystem so you can create commerce.",
-  "categories": [
-    {
-      "name": "businessTypes",
-      "value": "Business Types",
-      "subcategories": [
-        {
-          "name": "enterprise",
-          "value": "Enterprise"
-        }
-      ]
-    },
-    {
-      "name": "integrationType",
-      "value": "Integration Type",
-      "subcategories": [
-        {
-          "name": "cardPresent",
-          "value": "Card Present"
-        },
-        {
-          "name": "cardNotPresent",
-          "value": "Card Not Present"
-        }
-      ]
-    },
-    {
-      "name": "industryType",
-      "value": "Industry Type",
-      "subcategories": [
-        {
-          "name": "retailQSR",
-          "value": "Retail/QSR"
-        },
-        {
-          "name": "restuarant",
-          "value": "Restuarant"
-        },
-        {
-          "name":  "petroleum",
-          "value":  "Petroleum"
-        },
-        {
-          "name":  "supermarket",
-          "value":  "Supermarket"
-        },
-        {
-          "name":  "lodging",
-          "value":  "Lodging"
-        },
-        {
-          "name":  "airline",
-          "value":  "Airline"
-        },
-        {
-          "name":  "eCommerce",
-          "value":  "eCommerce"
-        },
-        {
-          "name":  "motoDirectMarketing",
-          "value":  "MOTO/Direct Marketing"
-        }
-      ]
-    }
-  ],
+  "title": "Developer Portal",
+  "name": "DeveloperPortal",
+  "brand": "Fiserv",
+  "brandLogoURL": "https://raw.githubusercontent.com/fiserv-digital-tech/dev-portal/main/assets/images/Fiserv_Logo.jpg",
+  "solution": "Value Added Services",
+  "brandDescription": "Fiserv, Inc. is a global provider of payments and financial services technology solutions. The Company provides account processing and digital banking solutions, card issuer processing and network services, payments, e-commerce, merchant acquiring and processing, and the Clover cloud-based point-of-sale solution. The Company operates through three segments: Merchant Acceptance (Acceptance), Financial Technology (Fintech) and Payments and Network (Payments).",
+  "categories": [],
   "product": {
     "featured": true,
-    "logoURL": "https://raw.githubusercontent.com/tomeck/transactionenrichmentstoplight/main/docs/carat_logo.png",
-    "description": "Commerce hub makes it easier for merchants to access omnichannel services from a single point of connection. That includes access to solutions for global acquiring, payment methods, commerce channels, payouts, prepaid payments, B2B payments, payments optimization, security and fraud, and data insights.",
-    "apiSpecification": "/v1/products/commercehub/swagger",
-    "layout": "/v1/products/commercehub/layouts/productPage",
-    "documentation": "/v1/products/commercehub/docs"
+    "logoURL": "https://raw.githubusercontent.com/fiserv-digital-tech/dev-portal/main/assets/images/Fiserv_Logo.jpg",
+    "description": "To onboard properly into the Fiserv Developer Portal as a tenant each product must support these APIs so that we can retrieve product specific API specifications and documentation.",
+    "apiSpecification": "/v1/apis",
+    "layout": "/v1/layout",
+    "documentation": "/v1/docs"
   }
 }
