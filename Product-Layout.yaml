@@ -4,7 +4,7 @@ productPage:
     - descrption: Hero description
   - journey Cards:
       - journeyCard:
-        - title: Learn # => learn | Learning With Pavan => learning-with-pavan
+        - title: Learn # => learn 
         - description: 'Use our AI-powered portal to quickly discover the right integration for your next app project.
         
         Experiment with our API’s in our intelligent API Explorer. 
@@ -16,13 +16,13 @@ productPage:
         - contextualNavigationCards: #cnav card
           - contextualNavigationCard:
             - title: Getting Started
-            - description: Get Started with Commerce Hub.
+            - description: Get Started with Developer Portal.
             - link: 
               - type: markdown
               - uri: /docs/getting-started.md
           - contextualNavigationCard:
             - title: Tutorials
-            - description: Learn how to integrate with Commerce Hub.
+            - description: Learn how to integrate with Developer Portal.
             - link: 
               - type: markdown
               - uri: /docs/tutorials.md
