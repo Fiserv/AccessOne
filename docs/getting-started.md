@@ -25,7 +25,6 @@ Below is a quick reference of all the Markdown syntax that is supported by Stopl
 * [Tables](#tables)  
 * [Blockquotes](#blockquotes)   
 * [Horizontal Rule](#hr)
-* [Credits](#credits)
 
 ## <a name="headers"/>  Headers
 
@@ -91,34 +90,37 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 ## <a name="lnks"/> Links
 
-There are two ways to create links.
+There are four ways to create links.
 
 ```no-highlight
 [I'm an inline-style link](https://www.google.com)
 
 [I'm a reference-style link][https://www.google.com "Google's Homepage"]
 
-[I'm a relative link to the ./03a-stoplight-flavored-markdown.md file][./03a-stoplight-flavored-markdown.md]
+Please refer our [API page](../api?type=post&path=/v1/apis) to know about how to use Fiserv Developer portal APIs.
+
+[Charge](?path=docs/Transactions/Charges.md)
 ```
 
 [I'm an inline-style link](https://www.google.com)
 
 [I'm a reference-style link][https://www.google.com "Google's Homepage"]
 
-[I'm a relative link to the ./03a-stoplight-flavored-markdown.md file][./03a-stoplight-flavored-markdown.md]
+Please refer our [API page](../api?type=post&path=/v1/apis) to know about how to use Fiserv Developer portal APIs.
 
+[Charge](?path=docs/Transactions/Charges.md)
 
 ## <a name="imgs"/> Images
 
 ```no-highlight
 Here's our logo (hover to see the title text):
 
-![Stoplight Logo](https://pbs.twimg.com/profile_images/641056907474538498/qIbg0pZP_bigger.png "Stoplight Logo")
+![Fiserv Logo](http://dev-dev-portal-ui-dev-developer-portal.roks-eck-cluster-8a571839bba611238ae425f409ae5396-0000.us-south.containers.appdomain.cloud/assets/img/fiserv_logo_orange_rgb.png "Fiserv Logo")
 ```
 
 Here's our logo (hover to see the title text):
 
-![Stoplight Logo](https://pbs.twimg.com/profile_images/641056907474538498/qIbg0pZP_bigger.png "Stoplight Logo")
+![Fiserv Logo](http://dev-dev-portal-ui-dev-developer-portal.roks-eck-cluster-8a571839bba611238ae425f409ae5396-0000.us-south.containers.appdomain.cloud/assets/img/fiserv_logo_orange_rgb.png "Fiserv Logo")
 
 ## <a name="code"/> Code and Syntax Highlighting
 
@@ -126,7 +128,7 @@ Inline `code` has `back-ticks around` it.
 
 >In the examples below, remove the three back-ticks <code>```</code> at the start and end of the javascript code fence before using.
 
-<pre lang="no-highlight"><code>```javascript
+<pre><code>```javascript
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
@@ -138,7 +140,7 @@ alert(s);
 ```
 >Use language tags to change the syntax highlighting:
 
-<pre lang="no-highlight"><code>```json
+<pre><code>```json
 {
   "JSON": "Syntax Highlighting"
 }
@@ -182,10 +184,10 @@ Colons can be used to align columns.
 
 The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
 
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
+| Markdown | Less | Pretty |
+| --- | --- | --- |
+| *Still* | `renders` | **nicely** |
+| 1 | 2 | 3 |
 
 ## <a name="blockquotes"/> Blockquotes
 
@@ -236,6 +238,3 @@ Asterisks
 ___
 
 Underscores
-
-### <a name="credits"/> Credits
-Most of this information was pulled from [Adam Pritchard's Mardkown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Thank you Adam for putting together this cheatsheet!
