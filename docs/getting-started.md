@@ -105,16 +105,16 @@ There are four ways to create links.
 4. To link/reference to another document/markdown
 [Charge](?path=docs/Transactions/Charges.md)
 ```
-1. To link Inline-style\
+1. To link Inline-style<br />
 [I'm an inline-style link](https://www.google.com)
 
-2. To link Reference-style\
+2. To link Reference-style<br />
 [I'm a reference-style link][https://www.google.com "Google's Homepage"]
 
-3. To link to API explorer from documentation pages\
+3. To link to API explorer from documentation pages<br />
 [API page](../api?type=post&path=/v1/apis)
 
-4. To link/reference to another document/markdown\
+4. To link/reference to another document/markdown<br />
 [Charge](?path=docs/Transactions/Charges.md)
 
 ## <a name="imgs"/> Images
