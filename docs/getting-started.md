@@ -1,6 +1,6 @@
 # Getting Started
 
-## Welcome to Developer Portal!
+## Welcome to the Developer Portal!
 
 To onboard properly into the Fiserv Developer Portal as a tenant each product must support these APIs so that we can retrieve product specific API specifications and documentation.
 
@@ -93,21 +93,28 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 There are four ways to create links.
 
 ```no-highlight
+1. To link Inline-style
 [I'm an inline-style link](https://www.google.com)
 
+2. To link Reference-style
 [I'm a reference-style link][https://www.google.com "Google's Homepage"]
 
-Please refer our [API page](../api?type=post&path=/v1/apis) to know about how to use Fiserv Developer portal APIs.
+3. To link to API explorer from documentation pages
+[API page](../api?type=post&path=/v1/apis)
 
+4. To link/reference to another document/markdown
 [Charge](?path=docs/Transactions/Charges.md)
 ```
-
+1. To link Inline-style\
 [I'm an inline-style link](https://www.google.com)
 
+2. To link Reference-style\
 [I'm a reference-style link][https://www.google.com "Google's Homepage"]
 
-Please refer our [API page](../api?type=post&path=/v1/apis) to know about how to use Fiserv Developer portal APIs.
+3. To link to API explorer from documentation pages\
+[API page](../api?type=post&path=/v1/apis)
 
+4. To link/reference to another document/markdown\
 [Charge](?path=docs/Transactions/Charges.md)
 
 ## <a name="imgs"/> Images
@@ -164,6 +171,7 @@ Colons can be used to align columns.
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
 
@@ -179,6 +187,7 @@ Colons can be used to align columns.
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
 
