@@ -1,4 +1,4 @@
-# Preview and Publish using stoplight
+# Preview and Publish using Stoplight
 
 ## Documentation Quickstart Guide
 
@@ -6,6 +6,6 @@ Want to publish documentation? This quick start guide will provide you with the 
 
 ## 1. Open Fiserv Portal Stoplight
 
-The opening page of [Fiserv Portal Stoplight](https://fiserv-portal.stoplight.io) contains the project which you currently have access.
+The opening page of [Fiserv Portal Stoplight](https://fiserv-portal.stoplight.io) contains the list of project(s) which you currently have access.
 
 ![Stoplight Home Page](https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Stoplight_Home_Page.png "Stoplight Home Page")
