@@ -21,3 +21,9 @@ Select the Project by clicking on it. For example: If you want to edit Tenant Pr
 Click on the Edit button to edit the content for the selected project.
 
 ![Stoplight Edit Page](https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Stoplight_Edit_Project.png "Stoplight Edit Page")
+
+## 4. Switch the Git Branches
+
+Switch the Git Branches to preview/publish the project content.
+
+![Stoplight Switch Git Branch](https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Stoplight_Switch_Git_Branches.png "Stoplight Switch Git Branch")
