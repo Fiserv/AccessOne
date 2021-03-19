@@ -8,4 +8,4 @@ Want to publish documentation? This quick start guide will provide you with the 
 
 The opening page of [Fiserv Portal Stoplight](https://fiserv-portal.stoplight.io) contains the project which you currently have access.
 
-![Stoplight Home Page](https://raw.githubusercontent.com/fiserv-digital-tech/dev-portal/main/assets/images/Stoplight_Home_Page.png "Stoplight Home Page")
+![Stoplight Home Page](https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Stoplight_Home_Page.png "Stoplight Home Page")
