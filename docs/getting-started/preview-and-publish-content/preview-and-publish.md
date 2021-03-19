@@ -35,3 +35,9 @@ Switch the Git Branches to preview/publish the project content.
 > Select 'main' branch for Publish
 
 ![Stoplight Preview Branch](https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Stoplight_Preview_Branch.png "Stoplight Preview Branch")
+
+## 5. Select the file to modify, edit the content & push the changes to Git.
+
+Select the file to edit, make changes, preview it & then push the changes to Git.
+
+![Stoplight Content Edit](https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Stoplight_Content_Edit.png "Stoplight Content Edit")
