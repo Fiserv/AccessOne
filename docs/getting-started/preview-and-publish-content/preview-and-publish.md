@@ -15,3 +15,9 @@ The opening page of [Fiserv Portal Stoplight](https://fiserv-portal.stoplight.io
 Select the Project by clicking on it. For example: If you want to edit Tenant Provider API, you need to click on **Tenant Provider API** project.
 
 ![Stoplight Select Project Page](https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Stoplight_Select_Project.png "Stoplight Select Project Page")
+
+## 3. Click the Edit Button
+
+Click on the Edit button to edit the content for the selected project.
+
+![Stoplight Edit Page](https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Stoplight_Edit_Project.png "Stoplight Edit Page")
