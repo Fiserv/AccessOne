@@ -27,3 +27,11 @@ Click on the Edit button to edit the content for the selected project.
 Switch the Git Branches to preview/publish the project content.
 
 ![Stoplight Switch Git Branch](https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Stoplight_Switch_Git_Branches.png "Stoplight Switch Git Branch")
+
+> Select 'stage' branch for Preview
+
+![Stoplight Preview Branch](https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Stoplight_Preview_Branch.png "Stoplight Preview Branch")
+
+> Select 'main' branch for Publish
+
+![Stoplight Preview Branch](https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Stoplight_Preview_Branch.png "Stoplight Preview Branch")
