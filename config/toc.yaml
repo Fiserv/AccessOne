@@ -1,63 +1,63 @@
 toc:
   - section:
-    - name: Getting Started
+    - title: Getting Started
     - link: getting-started/overview.md
     - open: true
     - section:
-      - name: Setup a tenant
+      - title: Setup a tenant
       - link: getting-started/setup-tenant.md
       - open: true
       - article:
-        - name: Setup tenant
+        - title: Setup tenant
         - link: getting-started/setup-tenant.md
       - article:
-        - name: Deploy tenant
+        - title: Deploy tenant
         - link: getting-started/deploy-tenant.md
       - artcile:
-        - name: Register tenant
+        - title: Register tenant
         - link: getting-started/register-tenant.md
     - section:
-      - name: Create a tenant
+      - title: Create a tenant
       - link: getting-started/create-tenant.md
       - article:
-        - name: Code tenant
+        - title: Code tenant
         - link: getting-started/code-tenant.md
       - article:
-        - name: Deploy tenant
+        - title: Deploy tenant
         - link: getting-started/deploy-tenant.md
       - artcile:
-        - name: Register tenant
+        - title: Register tenant
         - link: getting-started/register-tenant.md
     - section:
-      - name: Create a tenant
+      - title: Create a tenant
       - link: getting-started/create-tenant.md
   - section:
-    - name: Resources
+    - title: Resources
     - link:
     - section:
-      - name: Guides
+      - title: Guides
       - link: resources/guides/guides.md #we could leave this blank.
       - article:
-        - name: How it works
+        - title: How it works
         - link: resources/guides/how-it-works.md
       - article:
-        - name: How to use Stoplight
+        - title: How to use Stoplight
         - link: resources/guides/using-stoplight.md
       - artcile:
-        - name: How to use GitLab
+        - title: How to use GitLab
         - link: resources/guides/using-gitlab.md
       - artcile:
-        - name: Register tenant
+        - title: Register tenant
         - link: resources/guides/using-gitlab.md
     - section: 
-      - name: FAQ
+      - title: FAQ
       - link: resources/faq.md
     - section:
-      - name: References
+      - title: References
       - link:
       - article:
-        - name: Markdown Support
+        - title: Markdown Support
         - link: resources/references/markdown-support.md
   - section:
-    - name: Tutorials
+    - title: Tutorials
     - link:
