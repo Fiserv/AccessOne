@@ -1,0 +1,63 @@
+toc:
+  - section:
+    - name: Getting Started
+    - link: getting-started/overview.md
+    - open: true
+    - section:
+      - name: Setup a tenant
+      - link: getting-started/setup-tenant.md
+      - open: true
+      - article:
+        - name: Setup tenant
+        - link: getting-started/setup-tenant.md
+      - article:
+        - name: Deploy tenant
+        - link: getting-started/deploy-tenant.md
+      - artcile:
+        - name: Register tenant
+        - link: getting-started/register-tenant.md
+    - section:
+      - name: Create a tenant
+      - link: getting-started/create-tenant.md
+      - article:
+        - name: Code tenant
+        - link: getting-started/code-tenant.md
+      - article:
+        - name: Deploy tenant
+        - link: getting-started/deploy-tenant.md
+      - artcile:
+        - name: Register tenant
+        - link: getting-started/register-tenant.md
+    - section:
+      - name: Create a tenant
+      - link: getting-started/create-tenant.md
+  - section:
+    - name: Resources
+    - link:
+    - section:
+      - name: Guides
+      - link: resources/guides/guides.md #we could leave this blank.
+      - article:
+        - name: How it works
+        - link: resources/guides/how-it-works.md
+      - article:
+        - name: How to use Stoplight
+        - link: resources/guides/using-stoplight.md
+      - artcile:
+        - name: How to use GitLab
+        - link: resources/guides/using-gitlab.md
+      - artcile:
+        - name: Register tenant
+        - link: resources/guides/using-gitlab.md
+    - section: 
+      - name: FAQ
+      - link: resources/faq.md
+    - section:
+      - name: References
+      - link:
+      - article:
+        - name: Markdown Support
+        - link: resources/references/markdown-support.md
+  - section:
+    - name: Tutorials
+    - link:
