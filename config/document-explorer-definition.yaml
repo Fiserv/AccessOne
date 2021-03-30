@@ -1,26 +1,24 @@
----
-toc:
-- section:
+- sections:
   - title: Getting Started
-    link: getting-started/overview.md
+    link: docs/getting-started/overview.md
     open: true
-    section:
+    sections:
     - title: Setup a tenant
-      link: getting-started/setup-tenant.md
+      link: docs/getting-started/setup-tenant.md
       open: true
-      article:
+      articles:
       - title: Setup tenant
-        link: getting-started/setup-tenant.md
+        link: docs/getting-started/setup-tenant.md
       - title: Deploy tenant
-        link: getting-started/deploy-tenant.md
+        link: docs/getting-started/deploy-tenant.md
       - title: Register tenant
-        link: getting-started/register-tenant.md
+        link: docs/getting-started/register-tenant.md
     - title: Create a tenant
-      link: getting-started/create-tenant.md
-      article:
+      link: docs/getting-started/create-tenant.md
+      articles:
       - title: Code tenant
-        link: getting-started/code-tenant.md
+        link: docs/getting-started/code-tenant.md
       - title: Deploy tenant
-        link: getting-started/deploy-tenant.md
+        link: docs/getting-started/deploy-tenant.md
       - title: Register tenant
-        link: getting-started/register-tenant.md
+        link: docs/getting-started/register-tenant.md
