@@ -1,63 +1,26 @@
+---
 toc:
-  - section:
-    - title: Getting Started
-    - link: getting-started/overview.md
-    - open: true
-    - section:
-      - title: Setup a tenant
-      - link: getting-started/setup-tenant.md
-      - open: true
-      - article:
-        - title: Setup tenant
-        - link: getting-started/setup-tenant.md
-      - article:
-        - title: Deploy tenant
-        - link: getting-started/deploy-tenant.md
-      - artcile:
-        - title: Register tenant
-        - link: getting-started/register-tenant.md
-    - section:
-      - title: Create a tenant
-      - link: getting-started/create-tenant.md
-      - article:
-        - title: Code tenant
-        - link: getting-started/code-tenant.md
-      - article:
-        - title: Deploy tenant
-        - link: getting-started/deploy-tenant.md
-      - artcile:
-        - title: Register tenant
-        - link: getting-started/register-tenant.md
-    - section:
-      - title: Create a tenant
-      - link: getting-started/create-tenant.md
-  - section:
-    - title: Resources
-    - link:
-    - section:
-      - title: Guides
-      - link: resources/guides/guides.md #we could leave this blank.
-      - article:
-        - title: How it works
-        - link: resources/guides/how-it-works.md
-      - article:
-        - title: How to use Stoplight
-        - link: resources/guides/using-stoplight.md
-      - artcile:
-        - title: How to use GitLab
-        - link: resources/guides/using-gitlab.md
-      - artcile:
-        - title: Register tenant
-        - link: resources/guides/using-gitlab.md
-    - section: 
-      - title: FAQ
-      - link: resources/faq.md
-    - section:
-      - title: References
-      - link:
-      - article:
-        - title: Markdown Support
-        - link: resources/references/markdown-support.md
-  - section:
-    - title: Tutorials
-    - link:
+- section:
+  - title: Getting Started
+    link: getting-started/overview.md
+    open: true
+    section:
+    - title: Setup a tenant
+      link: getting-started/setup-tenant.md
+      open: true
+      article:
+      - title: Setup tenant
+        link: getting-started/setup-tenant.md
+      - title: Deploy tenant
+        link: getting-started/deploy-tenant.md
+      - title: Register tenant
+        link: getting-started/register-tenant.md
+    - title: Create a tenant
+      link: getting-started/create-tenant.md
+      article:
+      - title: Code tenant
+        link: getting-started/code-tenant.md
+      - title: Deploy tenant
+        link: getting-started/deploy-tenant.md
+      - title: Register tenant
+        link: getting-started/register-tenant.md
