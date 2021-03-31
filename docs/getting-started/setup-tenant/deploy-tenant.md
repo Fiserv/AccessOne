@@ -79,7 +79,7 @@ Select **+Add** option from menu to create new application. Developer have '4' d
 Here, we are creating an application using option **'From Docker'**
 
 
-### Step 8: Repository Setup
+## Step 8: Repository Setup
 
 Developer needs to provide repository URL to add into application. For example we are adding repository from BitBucket(Ex:git@bitbucket.org:fiserv-digital-tech/dev-portal-ui.git
 
@@ -91,7 +91,7 @@ Now add the Git URL in **Git Repo URL** option on Import from Dockerfile page. C
 
 ![Bitbucket Repo](/assets/images/Openshift_git_project.png)
 
-Step 9: Developer needs to fill following information for the setup:
+## Step 9: Developer needs to fill following information for the setup:
 
 *   **Git Reference** : 'develop'
 
@@ -104,7 +104,7 @@ Step 9: Developer needs to fill following information for the setup:
 ![Bitbucket Repo](/assets/images/Openshift_git_project_setup.png)
 
 
-### Step 10: Update General section
+## Step 10: Update General section
 
 *   **Application**: Select Create Application and enter \<application-name>. This is used for grouping your application created under your project. If developer want to create any Tenant Application state as 'Tenants'
 
@@ -115,13 +115,13 @@ Step 9: Developer needs to fill following information for the setup:
 ![Bitbucket Repo](/assets/images/Openshift_create_application_start.png)
 
 
-### Step 11: Click **Create**
+## Step 11: Select **Create**
 
-Click “Create” button to generate the application resource.
+Click **Create** button to generate the application resource.
 
 ![Bitbucket Repo](/assets/images/Openshift_create_application_completed.png)
 
-### Step 12: Generating Application
+## Step 12: Generating Application
 
 Now developer should able to see application icon in your Topology view.
 
