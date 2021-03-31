@@ -8,7 +8,7 @@
       open: true
       articles:
       - title: Setup tenant
-        link: docs/getting-started/setup-tenant.md
+        link: docs/getting-started/setup-tenant/setup-tenant.md
       - title: Deploy tenant
         link: docs/getting-started/deploy-tenant.md
       - title: Register tenant
