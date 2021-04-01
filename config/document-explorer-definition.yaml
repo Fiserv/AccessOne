@@ -17,7 +17,7 @@
       link: docs/getting-started/create-a-tenant/create-tenant.md
       articles:
       - title: Code tenant
-        link: docs/getting-started/code-tenant.md
+        link: docs/getting-started/code-a-tenant/code-tenant.md
       - title: Deploy tenant
         link: docs/getting-started/setup-tenant/deploy-tenant.md
       - title: Register tenant
