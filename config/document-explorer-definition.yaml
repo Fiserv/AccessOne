@@ -17,40 +17,33 @@
       link: docs/getting-started/create-a-tenant/create-tenant.md
       articles:
       - title: Code tenant
-        link: docs/getting-started/code-tenant.md
+        link: docs/getting-started/code-a-tenant/code-tenant.md
       - title: Deploy tenant
         link: docs/getting-started/setup-tenant/deploy-tenant.md
       - title: Register tenant
         link: docs/getting-started/setup-tenant/register-tenant.md
     - title: Preview & Publish
       link: docs/getting-started/preview-and-publish-content/preview-and-publish.md
-  - section:
-    - title: Resources
-    - link:
-    - section:
-      - title: Guides
-      - link: docs/resources/api-guide.md
-      - article:
-        - title: How it works
-        - link: docs/resources/guides/how-it-works.md
-      - article:
-        - title: How to use Stoplight
-        - link: docs/resources/guides/using-stoplight.md
-      - artcile:
-        - title: How to use GitLab
-        - link: docs/resources/guides/using-gitlab.md
-      - artcile:
-        - title: Register tenant
-        - link: docs/getting-started/setup-tenant/register-tenant.md
-    - section: 
-      - title: FAQ
-      - link: docs/faq/faq.md
-    - section:
-      - title: References
-      - link:
-      - article:
-        - title: Markdown Support
-        - link: docs/resources/markdown-support.md
-  - section:
-    - title: Tutorials
-    - link: docs/tutorials/tutorials.md
+- sections:
+  - title: Resources
+    link:
+    open: true
+    sections:
+    - title: Guides
+      link: docs/resources/api-guide.md
+      open: true
+      articles:
+      - title: How it works
+        link: docs/resources/guides/how-it-works.md
+      - title: How to use Stoplight
+        link: docs/resources/guides/using-stoplight.md
+      - title: How to use GitLab
+        link: docs/resources/guides/using-gitlab.md
+      - title: Register tenant
+        link: docs/getting-started/setup-tenant/register-tenant.md
+      - title: Markdown Support
+        link: docs/resources/markdown-support.md
+      - title: Tutorials
+        link: docs/tutorials/tutorials.md
+    - title: FAQ
+      link: docs/faq/faq.md
