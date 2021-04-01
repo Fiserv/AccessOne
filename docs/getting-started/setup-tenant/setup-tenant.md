@@ -1,5 +1,7 @@
 # Setup a tenant
 
+## Documentation Quickstart Guide
+
 Products within the Fiserv portfolio that are showcase through the portal are known as `tenants`.  Tenants standup a `tenant server` that will serve all the content through the portal to developers visiting the Fiserv Developer Portal.
 
 ## Cloning the Github tenant repoistory
@@ -60,7 +62,7 @@ This folder should hold multiple API version files.
 
 ### Markdown documentation
 
-All the documentation files follow the Markdown guides, which you can find here [Markdown Support](../../resources/markdown-support.md)
+All the documentation files follow the Markdown guides, which you can find here [Markdown Support](docs/getting-started/setup-tenant/setup-tenant.md)
 
 Details on the folder structure are [here](../../resources/folder-structure.md)
 
@@ -76,4 +78,4 @@ You've now got
 
 ## Next steps
 
-[Deploy tenant](./deploy-tenant.md)
+[Deploy tenant](docs/getting-started/setup-tenant/deploy-tenant.md)
