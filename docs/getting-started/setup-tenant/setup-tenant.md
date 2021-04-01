@@ -8,7 +8,7 @@ Products within the Fiserv portfolio that are showcase through the portal are kn
 
 An example Github repoistory has already been prepared for you to clone.
 
-Head to [Sample tenant repo](github.com/fiserv/sample-tenant) and create a new repoisotry based on this by using the 'New' button.
+Head to [Sample tenant repo](https://github.com/fiserv/sample-tenant) and create a new repoisotry based on this by using the 'New' button.
 
 Your repo name should match your product name.
 
@@ -42,7 +42,7 @@ The file has several sections for each card that shows on the product overview p
 
 To make creating or editing your content easier we're going to connet your Github repoistory to Stoplight.io.
 
-Head to the [Fiserv Stoplight](fiserv-portal.stoplight.io) and signup.
+Head to the [Fiserv Stoplight](https://fiserv-portal.stoplight.io) and signup.
 
 Once you're there create a project with the same name as your product.
 
@@ -62,7 +62,7 @@ This folder should hold multiple API version files.
 
 ### Markdown documentation
 
-All the documentation files follow the Markdown guides, which you can find here [Markdown Support](docs/getting-started/setup-tenant/setup-tenant.md)
+All the documentation files follow the Markdown guides, which you can find here [Markdown Support](docs/resources/markdown-support.md)
 
 Details on the folder structure are [here](../../resources/folder-structure.md)
 
@@ -79,3 +79,4 @@ You've now got
 ## Next steps
 
 [Deploy tenant](docs/getting-started/setup-tenant/deploy-tenant.md)
+

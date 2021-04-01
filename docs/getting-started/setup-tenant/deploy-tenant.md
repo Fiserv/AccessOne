@@ -8,25 +8,26 @@ This quick start guide will provide you the necessary steps to get your Applicat
 
 > Recommended : To complete following steps before proceeding to deployment process. 
 
-* Tenant Creation
-* Tenant Registeration
-* Tenant Repository Setup
+    * Tenant Setup
+    * Tenant Repository Setup
 
 Now, developer is ready to deploy your tenant application. Developer can delpoy application in any open cloud server. Here we are providing example for new application deployment within IBM cloud with OpenShift Cluster. 
 
 ## Deployment checklist
 
-    Installed and Running OpenShift cluster on cloud Server
+   * Installed and Running OpenShift cluster on cloud Server
+   * SSH Setup completed to access application code from repository
+   * SSH Private Key generated
     
 ## Recommended guidelines for deployment with Fiserv Dev Portal
 
-Here are the following steps to integrate your new tenant server within OpenShift cluster. 
+Here are the following steps to integrate your new tenant application within OpenShift cluster. 
 
 ## Step 1: Login to IBM OpenShift cluster 
 
-Once developer navigate to Home page of OpenShift. Please select your running cluster.
+Developer can access [IBM Cloud](https://cloud.ibm.com/login) to navigate to Home page of OpenShift. 
 
-Example: \<new-running-cluster>
+Select your active cluster. Example: `<new-running-cluster>`
 
 
 ## Step 2: Click 'OpenShift web console' link as shown below
@@ -49,7 +50,7 @@ Select **Create Project** from 'Project' dropdown menu.
 
 ## Step 5: Enter Project details
 
-Enter Project Name as **\<sample-name>-workshop** and click **Create**. developer can also set 'Display Name' and 'Description' same as your 'Project Name'. 
+Enter Project Name as **`<sample-name>-workshop`** and click **Create**. developer can also set 'Display Name' and 'Description' same as your 'Project Name'. 
 
 Now, developer is ready to create new project in this workspace. 
 
@@ -63,7 +64,7 @@ Select your project from the 'Project dropdown' and add your private SSH key und
 
 * Select **Create** dropdown present in Top Right Corner and select **Source Secret**. Developer have to set following details such as
 
-    * **Secret Name** :  \<your-name>-SSH-Private-Key
+    * **Secret Name** :  `<your-name>-SSH-Private-Key`
     * **Authentication type** : SSH
     * **SSH Private Key** : Develpor can browse the SSH private key from local machine or developer can paste it directly into Text Box.
 
@@ -97,7 +98,7 @@ Now add the Git URL in **Git Repo URL** option on Import from Dockerfile page. C
 
 *   **Context Directory** : If 'Dockerfile' is at root level you can leave this option blank, Otherwise developer needs provide path of the Docker Files.
 
-    Example: /\<sub-directory>
+Example: `/<sub-directory>`
 
 *   **Source Secret** : Select your SSH-Private-Key added from Step 6.
 
@@ -131,7 +132,7 @@ Please wait until Build and Deployment is completed. Once completed icon should 
 
 ![Bitbucket Repo](/assets/images/Openshift_app_ready.png)
 
-### Step 14: Launching your application
+## Step 14: Launching your application
 
 Final step is to launch your application by clicking on Open URL.
 
