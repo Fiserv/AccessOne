@@ -4,7 +4,7 @@ Products within the Fiserv portfolio that are showcase through the portal are kn
 
 ## Cloning the Github tenant repoistory
 
-An example Github repoistory has already been prepared for you to clone.
+An example Github repository has already been prepared for you to clone.
 
 Head to [Sample tenant repo](github.com/fiserv/sample-tenant) and create a new repoisotry based on this by using the 'New' button.
 
