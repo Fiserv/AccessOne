@@ -3,25 +3,18 @@
     link: docs/getting-started.md
     open: true
     sections:
-    - title: Setup a tenant
+    - title: Setup a Tenant
       link: docs/getting-started/setup-tenant/setup-tenant.md
       open: true
       articles:
-      - title: Setup tenant
+      - title: Setup Tenant
         link: docs/getting-started/setup-tenant/setup-tenant.md
-      - title: Deploy tenant
+      - title: Deploy Tenant
         link: docs/getting-started/setup-tenant/deploy-tenant.md
-      - title: Register tenant
+      - title: Register Tenant
         link: docs/getting-started/setup-tenant/register-tenant.md
-    - title: Create a tenant
-      link: docs/getting-started/create-a-tenant/create-tenant.md
-      articles:
-      - title: Code tenant
+      - title: Code a Tenant
         link: docs/getting-started/code-a-tenant/code-tenant.md
-      - title: Deploy tenant
-        link: docs/getting-started/setup-tenant/deploy-tenant.md
-      - title: Register tenant
-        link: docs/getting-started/setup-tenant/register-tenant.md
     - title: Preview & Publish
       link: docs/getting-started/preview-and-publish-content/preview-and-publish.md
 - sections:
