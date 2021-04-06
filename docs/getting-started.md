@@ -22,7 +22,7 @@ To get started with as a new Tenant, developer needs to setup new account by [Te
 
 
 ## Code Tenant
-New Tenant can start with [Sample tenant repo](https://github.com/fiserv/sample-tenant) to setup Tenant server. Along with sample repo, Tenant can build new codebase with choice of their own programming language. To learn more this, please refere to [Code Tenant](?path=docs/getting-started/code-a-tenant/code-tenant.md)
+New Tenant can start with [Sample tenant repo](https://github.com/fiserv/sample-tenant) to setup Tenant server. Tenant can also build new codebase with choice of their own programming language. To learn more this, please refere to [Code Tenant](?path=docs/getting-started/code-a-tenant/code-tenant.md)
 ___
 
 ##  Next steps [Setup Tenant](?path=docs/getting-started/setup-tenant/setup-tenant.md)
