@@ -17,7 +17,7 @@ Products within the Fiserv portfolio that are showcase through the portal are kn
 ## Deploying Tenant
 
 New registered Tenant must provide public tenant server.
-For more information please refer to [How to deploy tenant Server](docs/getting-started/setup-tenant/deploy-tenant.md)
+For more information please refer to [How to deploy tenant Server](?path=docs/getting-started/setup-tenant/deploy-tenant.md)
 
 
 
