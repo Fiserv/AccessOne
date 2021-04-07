@@ -2,23 +2,23 @@
 
 ## Documentation Quickstart Guide
 
-Products within the Fiserv portfolio that are showcase through the portal are known as `tenants`.  Tenants standup a `tenant server` that will serve all the content through the portal to developers visiting the Fiserv Developer Portal.
+Products within the Fiserv portfolio that are showcased through the portal are known as `tenants`.  Tenants standup a `tenant server` that will serve all the content through the portal for developers visiting the Fiserv Developer Portal.
 
 ## Cloning the Github tenant repoistory
 
 An example Github repository has already been prepared for you to clone.
 
-Head to [Sample tenant repo](https://github.com/fiserv/sample-tenant) and create a new repoisotry based along this by using the 'New' button.
+Head to [Sample tenant repo](https://github.com/fiserv/sample-tenant) and create a new repository based along this by using the 'New' button.
 
-Tenant can build their own tenant server code by following our guidelines. Please refer to this document before moving on the process  [Code Tenant](?path=docs/getting-started/code-a-tenant/code-tenant.md)
+Tenant can build their own tenant server code by following our guidelines. Please refer to this document before moving on to the next process [Code Tenant](?path=docs/getting-started/code-a-tenant/code-tenant.md)
 
-Your repo name should match your product name.
+Your repository name should match with your product name.
 
 You've not got a tenant repoistory.
 
 ## Configure your tenant
 
-Now that you've got your repoistory we need edit the configuration files.
+Now that you've got your repository we need edit the configuration files.
 
 Two main files will need to be edited for the Fiserv Developer Portal to load the tenant data properly.
 
@@ -30,7 +30,6 @@ The `tenant.json` contains metadata information about your product.
 
 The file is located, from the repoistiory root, `/config/tenant.json`.
 
-.....
 
 ### Edit the layout.yaml
 
@@ -38,11 +37,10 @@ The `layout.yaml` determines what you want to display on your `product overview 
 
 The file has several sections for each card that shows on the product overview page.
 
-.....
 
 ## Connect Stoplight
 
-To make creating or editing your content easier we're going to connet your Github repoistory to Stoplight.io.
+To make creating or editing your content easier we're going to connet your Github repository to Stoplight.io.
 
 Head to the [Fiserv Stoplight](https://fiserv-portal.stoplight.io) and signup.
 
