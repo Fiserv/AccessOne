@@ -111,6 +111,9 @@ There are four ways to create links.
 4. To link/reference to another document/markdown<br />
 [Charge](?path=docs/Transactions/Charges.md)
 
+5. To create anchor link within the page. You can place anchor by declaring `<a name = "portal"></a>`. Now you can reference this link anywhere within the page by declaring link such as `[Dev Portal](#portal)`
+
+
 ## <a name="imgs"/> Images
 
 ```no-highlight

@@ -12,7 +12,7 @@ A: Please refer to our documentation section for registering up new tenant. [Reg
 
 Q: How can I deploy new Tenant server ?
 
-A: Please refer to our documentation section for registering up new tenant. [Deploy Tenant ](?path=docs/getting-started/setup-tenant/register-tenant.md)(?path=docs/getting-started/setup-tenant/deploy-tenant.md)
+A: Please refer to our documentation section for registering up new tenant. [Deploy Tenant](?path=docs/getting-started/setup-tenant/deploy-tenant.md)
 
 Q: Do I need to have a Github account?
 

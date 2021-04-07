@@ -16,4 +16,8 @@ ___
 
 
 Need Help ?
-[FAQ](?path=docs/faq/faq.md)
+[FAQ]
+
+[//]: # (These are reference links used in markdown file)
+
+[FAQ]: <?path=docs/faq/faq.md>
