@@ -22,14 +22,14 @@
     link:
     open: true
     sections:
-    - title: Guides
-      link: docs/resources/api-guide.md
+    - title: API Guides
+      link: docs/resources/guides/api-guide.md
       open: true
       articles:
       - title: How it works
         link: docs/resources/guides/how-it-works.md
       - title: How to use Stoplight
-        link: docs/resources/guides/using-stoplight.md
+        link: docs/resources/guides/how-to-use-stoplight.md
       - title: How to use GitLab
         link: docs/resources/guides/using-gitlab.md
       - title: Register tenant
