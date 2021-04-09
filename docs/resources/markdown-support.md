@@ -50,14 +50,6 @@ Combined emphasis with **asterisks and _underscores_**.
 Strikethrough uses two tildes. ~~Scratch this.~~
 ```
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
-
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
-
-Combined emphasis with **asterisks and _underscores_**.
-
-Strikethrough uses two tildes. ~~Scratch this.~~
-
 ## <a name="lists"/> Lists
 
 >In this example, leading and trailing spaces are shown with with dots: ⋅⋅⋅
@@ -72,19 +64,9 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 ...You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
 ```
-
-1. First ordered list item
-2. Another item
-     - Unordered sub-list
-3. Actual numbers don't matter, just that it's a number
-     1. Ordered sub-list
-4. And another item
-
-   You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
-
 ## <a name="lnks"/> Links
 
-There are four ways to create links.
+Different ways to create links.
 
 ```no-highlight
 1. To link Inline-style
@@ -98,64 +80,38 @@ There are four ways to create links.
 
 4. To link/reference to another document/markdown
 [Charge](?path=docs/Transactions/Charges.md)
+
+5. To create anchor link within the page. You can place anchor by declaring <a name = "portal"></a>. Now you can reference this link anywhere within the page by declaring link such as [Dev Portal](#portal)
+
 ```
-1. To link Inline-style<br />
-[I'm an inline-style link](https://www.google.com)
-
-2. To link Reference-style<br />
-[I'm a reference-style link][https://www.google.com "Google's Homepage"]
-
-3. To link to API explorer from documentation pages<br />
-[API page](../api?type=post&path=/v1/apis)
-
-4. To link/reference to another document/markdown<br />
-[Charge](?path=docs/Transactions/Charges.md)
-
-5. To create anchor link within the page. You can place anchor by declaring `<a name = "portal"></a>`. Now you can reference this link anywhere within the page by declaring link such as `[Dev Portal](#portal)`
-
 
 ## <a name="imgs"/> Images
 
-```no-highlight
-Here's our logo (hover to see the title text):
+Here's our logo ( hover to see the title text ):
 
-![Fiserv Logo](http://dev-dev-portal-ui-dev-developer-portal.roks-eck-cluster-8a571839bba611238ae425f409ae5396-0000.us-south.containers.appdomain.cloud/assets/img/fiserv_logo_orange_rgb.png "Fiserv Logo")
-```
+![Fiserv Logo](/assets/images/Fiserv_Logo.jpg "Fiserv Logo") 
 
-Here's our logo (hover to see the title text):
-
-![Fiserv Logo](http://dev-dev-portal-ui-dev-developer-portal.roks-eck-cluster-8a571839bba611238ae425f409ae5396-0000.us-south.containers.appdomain.cloud/assets/img/fiserv_logo_orange_rgb.png "Fiserv Logo")
 
 ## <a name="code"/> Code and Syntax Highlighting
 
 Inline `code` has `back-ticks around` it.
 
->In the examples below, remove the three back-ticks <code>```</code> at the start and end of the javascript code fence before using.
+>Here is the example for javascript code.
 
-<pre><code>```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
- </code></pre>
 
 ```javascript
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
->Use language tags to change the syntax highlighting:
-
-<pre><code>```json
-{
-  "JSON": "Syntax Highlighting"
-}
-```
-</code></pre>
+>Use language tags to change the syntax highlighting.
 
 ```json
 {
   "JSON": "Syntax Highlighting"
 }
 ```
+
+
 
 ## <a name="tables"/> Tables
 
@@ -178,7 +134,7 @@ Markdown | Less | Pretty
 1 | 2 | 3
 ```
 
-Colons can be used to align columns.
+<!-- Colons can be used to align columns.
 
 | Tables        | Are           | Cool |
 | ------------- |:-------------:| -----:|
@@ -191,7 +147,7 @@ The outer pipes (|) are optional, and you don't need to make the raw Markdown li
 | Markdown | Less | Pretty |
 | --- | --- | --- |
 | *Still* | `renders` | **nicely** |
-| 1 | 2 | 3 |
+| 1 | 2 | 3 | -->
 
 ## <a name="blockquotes"/> Blockquotes
 
@@ -203,13 +159,6 @@ Quote break.
 
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
 ```
-
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
-
-Quote break.
-
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
 
 ## <a name="hr"/> Horizontal Rule
 
@@ -229,7 +178,7 @@ ___
 Underscores
 ```
 
-Three or more...
+<!-- Three or more...
 
 ---
 
@@ -241,7 +190,7 @@ Asterisks
 
 ___
 
-Underscores
+Underscores -->
 
 ### <a name="credits"/> Credits
 Most of this information was pulled from [Adam Pritchard's Mardkown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Thank you Adam for putting together this cheatsheet!
