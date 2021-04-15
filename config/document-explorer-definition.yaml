@@ -26,8 +26,6 @@
       link: docs/resources/guides/how-to-use-stoplight.md
     - title: How to use GitLab
       link: docs/resources/guides/using-gitlab.md
-    - title: Register tenant
-      link: docs/getting-started/setup-tenant/register-tenant.md
     - title: Markdown Support
       link: docs/resources/markdown-support.md
     - title: Tutorials
