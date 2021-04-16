@@ -107,7 +107,7 @@ Example: `/<sub-directory>`
 
 ## Step 10: Update General section
 
-*   **Application**: Select Create Application and enter \<application-name>. This is used for grouping your application created under your project. If developer want to create any Tenant Application state as 'Tenants'
+*   **Application**: Select Create Application and enter `<application-name>`. This is used for grouping your application created under your project. If developer want to create any Tenant Application state as 'Tenants'
 
 *   **Name** : Name of the application, developer want to configure.Ex: dev-portal-ui
 
@@ -137,3 +137,11 @@ Please wait until Build and Deployment is completed. Once completed icon should 
 Final step is to launch your application by clicking on Open URL.
 
 ![Bitbucket Repo](/assets/images/Openshift_app_launch.png)
+
+___
+
+##  Next steps [Register tenant](?path=docs/getting-started/setup-tenant/register-tenant.md)
+
+
+Need Help ?
+[FAQ](?path=docs/faq/faq.md)

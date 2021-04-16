@@ -49,3 +49,8 @@ Select the file to edit, make changes, preview it & then push the changes to Git
 ![Developer Portal Preview](https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Developer_Portal_Preview.png "Developer Portal Preview")
 
 **Note:** Developer portal Publish environment is still work in progress. So, Publish environment link will be updated later.
+
+___
+
+Need Help ?
+[FAQ](?path=docs/faq/faq.md)
