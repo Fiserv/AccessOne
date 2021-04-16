@@ -19,7 +19,7 @@
   ],
   "product": {
     "featured": true,
-    "logoURL": "https://github.com/Fiserv/Developer-Portal-Tenant-API/blob/develop/assets/images/PORTAL-Logo.png",
+    "logoURL": "/assets/images/PORTAL-Logo.png",
     "description": "To onboard properly into the Fiserv Developer Portal as a tenant each product must support these APIs so that we can retrieve product specific API specifications and documentation.",
     "longDescription":"To onboard properly into the Fiserv Developer Portal as a tenant each product must support these APIs so that we can retrieve product specific API specifications and documentation.",
     "apiSpecification": "/v1/apis",
