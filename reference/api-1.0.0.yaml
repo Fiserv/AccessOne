@@ -16,7 +16,7 @@ paths:
       operationId: TenantProviderID
       responses:
         200:
-          description: This text will appear as description of your response body.
+          description: Tenant provider response. <a href=\"www.google.com\">google link</a> <a href=\"../docs?path=docs/getting-started/setup-tenant/setup-tenant.md\">google link</a>",
           content:
             application/json:
               schema:
@@ -207,7 +207,7 @@ components:
       properties:
         brand:
           type: string
-          description: Brand 
+          description: Brand <a href="www.google.com">google link</a> <a href="../docs?path=docs/getting-started/setup-tenant/setup-tenant.md">doc link</a>
         brandDescription:
           type: string
           description: BrandDescription
@@ -246,7 +246,7 @@ components:
           properties:
             apiSpecification:
               type: string
-              description: APISpecification <a href="www.google.com">google link</a> <a href="../docs?path=docs/getting-started/setup-tenant/setup-tenant.md">doc link</a>
+              description: APISpecification 
             description:
               type: string
               description: Description
@@ -271,7 +271,7 @@ components:
           description: Title
   responses:
     apiSpecResponseWrapper:
-      description: OpenAPI Spec for the APIs. <a href=\"www.google.com\">google link</a> <a href=\"../docs?path=docs/getting-started/setup-tenant/setup-tenant.md\">google link</a>",
+      description: OpenAPI Spec for the APIs. 
       content: {}
     docsResponseWrapper:
       description: Markdown files.
