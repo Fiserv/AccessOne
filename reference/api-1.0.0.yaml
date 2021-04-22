@@ -301,7 +301,7 @@ components:
           schema:
             $ref: '#/components/schemas/PageLayoutResponse'
     tenant:
-      description: This text will appear as description of your response body.
+      description: This text will appear as description of your response body. <a href="www.google.com">google link</a> <a href="../docs?path=docs/getting-started/setup-tenant/setup-tenant.md">google link</a>
       content:
         application/json:
           schema:
