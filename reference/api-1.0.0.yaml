@@ -16,7 +16,7 @@ paths:
       operationId: TenantProviderID
       responses:
         200:
-          description: Tenant provider response. <a href=\"www.google.com\">google link</a> <a href=\"../docs?path=docs/getting-started/setup-tenant/setup-tenant.md\">google link</a>",
+          description: Tenant provider response. <a href="https://fiserv.com" rel="noopener noreferrer" target="_blank">external link</a> <a href=\"../docs?path=docs/getting-started/setup-tenant/setup-tenant.md\">Setup Tenant</a>
           content:
             application/json:
               schema:
@@ -207,7 +207,7 @@ components:
       properties:
         brand:
           type: string
-          description: Brand <a href="www.google.com">google link</a> <a href="../docs?path=docs/getting-started/setup-tenant/setup-tenant.md">doc link</a>
+          description: Brand
         brandDescription:
           type: string
           description: BrandDescription
