@@ -207,7 +207,7 @@ components:
       properties:
         brand:
           type: string
-          description: Brand
+          description: Brand 
         brandDescription:
           type: string
           description: BrandDescription
@@ -246,7 +246,7 @@ components:
           properties:
             apiSpecification:
               type: string
-              description: APISpecification
+              description: APISpecification <a href="www.google.com">google link</a> <a href="../docs?path=docs/getting-started/setup-tenant/setup-tenant.md">doc link</a>
             description:
               type: string
               description: Description
@@ -289,7 +289,7 @@ components:
           schema:
             $ref: '#/components/schemas/LiveProbeResponse'
     productPage:
-      description: This text will appear as description of your response body. <a href=\"www.google.com\">google link</a> <a href=\"../docs?path=docs/getting-started/setup-tenant/setup-tenant.md\">google link</a>"
+      description: This text will appear as description of your response body. 
       content:
         application/json:
           schema:
@@ -301,7 +301,7 @@ components:
           schema:
             $ref: '#/components/schemas/PageLayoutResponse'
     tenant:
-      description: This text will appear as description of your response body. <a href="www.google.com">google link</a> <a href="../docs?path=docs/getting-started/setup-tenant/setup-tenant.md">google link</a>
+      description: This text will appear as description of your response body. 
       content:
         application/json:
           schema:
