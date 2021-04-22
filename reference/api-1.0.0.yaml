@@ -16,7 +16,7 @@ paths:
       operationId: TenantProviderID
       responses:
         200:
-          description: Tenant provider response. <a href="https://fiserv.com" rel="noopener noreferrer" target="_blank">external link</a> <a href=\"../docs?path=docs/getting-started/setup-tenant/setup-tenant.md\">Setup Tenant</a>
+          description: Tenant provider response. <a href="https://fiserv.com" rel="noopener noreferrer" target="_blank">external link</a> <a href="../docs?path=docs/getting-started/setup-tenant/setup-tenant.md">Setup Tenant</a>
           content:
             application/json:
               schema:
