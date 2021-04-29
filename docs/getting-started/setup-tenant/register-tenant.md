@@ -19,4 +19,8 @@ To have your tenant show up in the `production` system finish editing your conte
 ___
 
 Need Help ?
-[FAQ](?path=docs/faq/faq.md)
+[FAQ]
+
+[//]: # (These are reference links used in markdown file)
+
+[FAQ]: <?path=docs/faq/faq.md>

@@ -53,4 +53,8 @@ Select the file to edit, make changes, preview it & then push the changes to Git
 ___
 
 Need Help ?
-[FAQ](?path=docs/faq/faq.md)
+[FAQ]
+
+[//]: # (These are reference links used in markdown file)
+
+[FAQ]: <?path=docs/faq/faq.md>

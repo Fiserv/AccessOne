@@ -79,11 +79,19 @@ You've now got
 
 ___
 
-## Next steps [Deploy Tenant](?path=docs/getting-started/setup-tenant/deploy-tenant.md)
+## Next steps 
+
+[Deploy Tenant]
 
 
 Need Help ?
-[FAQ](?path=docs/faq/faq.md)
+[FAQ]
+
+[//]: # (These are reference links used in markdown file)
+
+[FAQ]: <?path=docs/faq/faq.md>
+
+[Deploy Tenant]:<?path=docs/getting-started/setup-tenant/deploy-tenant.md>
 
 
 
