@@ -12,7 +12,9 @@ This section explains how you can code your own tenant in the language of your c
 
 ___
 
-##  Next steps [Setup Tenant](?path=docs/getting-started/setup-tenant/setup-tenant.md)
+## Next steps 
+
+[Setup Tenant]
 
 
 Need Help ?
@@ -21,3 +23,5 @@ Need Help ?
 [//]: # (These are reference links used in markdown file)
 
 [FAQ]: <?path=docs/faq/faq.md>
+
+[Setup Tenant]: <?path=docs/getting-started/setup-tenant/setup-tenant.md>
