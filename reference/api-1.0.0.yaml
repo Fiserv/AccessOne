@@ -16,7 +16,7 @@ paths:
       operationId: TenantProviderID
       responses:
         200:
-          description: This text will appear as description of your response body.
+          description: Tenant provider response. <a href="https://fiserv.com" rel="noopener noreferrer" target="_blank">external link</a> <a href="../docs?path=docs/getting-started/setup-tenant/setup-tenant.md">Setup Tenant</a>
           content:
             application/json:
               schema:
@@ -246,7 +246,7 @@ components:
           properties:
             apiSpecification:
               type: string
-              description: APISpecification
+              description: APISpecification 
             description:
               type: string
               description: Description
@@ -271,7 +271,7 @@ components:
           description: Title
   responses:
     apiSpecResponseWrapper:
-      description: OpenAPI Spec for the APIs.
+      description: OpenAPI Spec for the APIs. 
       content: {}
     docsResponseWrapper:
       description: Markdown files.
@@ -289,7 +289,7 @@ components:
           schema:
             $ref: '#/components/schemas/LiveProbeResponse'
     productPage:
-      description: This text will appear as description of your response body.
+      description: This text will appear as description of your response body. 
       content:
         application/json:
           schema:
@@ -301,7 +301,7 @@ components:
           schema:
             $ref: '#/components/schemas/PageLayoutResponse'
     tenant:
-      description: This text will appear as description of your response body.
+      description: This text will appear as description of your response body. 
       content:
         application/json:
           schema:

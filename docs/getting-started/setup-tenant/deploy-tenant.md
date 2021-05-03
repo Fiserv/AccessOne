@@ -68,7 +68,7 @@ Select your project from the 'Project dropdown' and add your private SSH key und
     * **Authentication type** : SSH
     * **SSH Private Key** : Develpor can browse the SSH private key from local machine or developer can paste it directly into Text Box.
 
-## Step 7: Select **+Add** option
+## Step 7: Select +Add option
 
 Select **+Add** option from menu to create new application. Developer have '4' different options to configure application from 
 
@@ -116,7 +116,7 @@ Example: `/<sub-directory>`
 ![Bitbucket Repo](/assets/images/Openshift_create_application_start.png)
 
 
-## Step 11: Select **Create**
+## Step 11: Select Create
 
 Click **Create** button to generate the application resource.
 
@@ -140,8 +140,15 @@ Final step is to launch your application by clicking on Open URL.
 
 ___
 
-##  Next steps [Register tenant](?path=docs/getting-started/setup-tenant/register-tenant.md)
+## Next steps 
+[Register Tenant]
 
 
 Need Help ?
-[FAQ](?path=docs/faq/faq.md)
+[FAQ]
+
+[//]: # (These are reference links used in markdown file)
+
+[FAQ]: <?path=docs/faq/faq.md>
+
+[Register Tenant]:<?path=docs/getting-started/setup-tenant/register-tenant.md>
