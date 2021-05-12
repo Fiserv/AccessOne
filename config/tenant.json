@@ -17,6 +17,13 @@
       ]
     }
   ],
+  "apiVersions": [
+      {
+        "version": "1.0.0",
+        "versionType": "major",
+        "releaseNotesPath": "/release-notes/release-notes-1.0.0.md"
+      }
+  ],
   "product": {
     "featured": true,
     "logoURL": "https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Portal_Logo.png",
