@@ -1,12 +1,12 @@
 # Getting Started
 
-## Welcome to the Developer Portal!
+## Welcome to the Developer Studio!
 
-To onboard into the `Fiserv Developer Portal` as a new Tenant each product must support following APIs standard. So that `Fiserv` will able to retrieve product API specifications and documentation.
+To onboard into the `Fiserv Developer Studio` as a new Tenant each product must support following APIs standard. So that `Fiserv` will able to retrieve product API specifications and documentation.
  
 ## Setting up Tenant
 
-Products within the Fiserv portfolio that are showcase through the portal are known as `tenants`.  Tenants standup a `tenant server` that will serve all the content through the portal to developers visiting the Fiserv Developer Portal.
+Products within the Fiserv portfolio that are showcase through the Studio are known as `tenants`.  Tenants standup a `tenant server` that will serve all the content through the studio to developers visiting the Fiserv Developer Studio.
 For more information please refere to [Setup tenant](?path=docs/getting-started/setup-tenant/setup-tenant.md)
 
 

@@ -42,13 +42,13 @@ Select the file to edit, make changes, preview it & then push the changes to Git
 
 ![Stoplight Content Edit](https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Stoplight_Content_Edit.png "Stoplight Content Edit")
 
-## 6. Finally, Navigate to the developer portal preview/publish environments to view the content updates.
+## 6. Finally, Navigate to the developer studio preview/publish environments to view the content updates.
 
 > For Preview [click here](http://dev-portal-ui-stage-developer-portal.roks-eck-cluster-8a571839bba611238ae425f409ae5396-0000.us-south.containers.appdomain.cloud/product/5/docs/?path=docs/getting-started.md)
 
-![Developer Portal Preview](https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Developer_Portal_Preview.png "Developer Portal Preview")
+![developer studio Preview](https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Developer_Portal_Preview.png "Developer Studio Preview")
 
-**Note:** Developer portal Publish environment is still work in progress. So, Publish environment link will be updated later.
+**Note:** Developer Studio Publish environment is still work in progress. So, Publish environment link will be updated later.
 
 ___
 
