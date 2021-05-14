@@ -1,5 +1,5 @@
 # Content Guide
 
-## Documentation Guide about Dev Portal Content
+## Documentation Guide about Dev Studio Content
 
     Comming Soon...

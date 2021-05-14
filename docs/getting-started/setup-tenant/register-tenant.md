@@ -2,13 +2,13 @@
 
 ## Documentation Quickstart Guide
 
-Now that the tenant is configured and deployed we now need to register the URL with the `Fiserv Developer Portal.`
+Now that the tenant is configured and deployed we now need to register the URL with the `Fiserv Developer Studio.`
 
 Head to [Tenant Registration](?path=docs/getting-started/setup-tenant/register-tenant.md)
 
-After you fill in the requested information your tenant will now show in the `Fiserv Developer Portal`.
+After you fill in the requested information your tenant will now show in the `Fiserv Developer Studio`.
 
-Head to [Fiserv Developer Portal](https://developer.fiserv.com)
+Head to [Fiserv Developer Studio](https://developer.fiserv.com)
 
 You will find your tenant under the `Solution` area you designated in the `tenant.json` configuration file.
 
