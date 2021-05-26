@@ -19,7 +19,7 @@ Now, developer is ready to deploy your tenant application. Developer can delpoy 
    * SSH Setup completed to access application code from repository
    * SSH Private Key generated
     
-## Recommended guidelines for deployment with Fiserv Dev Portal
+## Recommended guidelines for deployment with Fiserv Dev Studio
 
 Here are the following steps to integrate your new tenant application within OpenShift cluster. 
 
@@ -109,7 +109,7 @@ Example: `/<sub-directory>`
 
 *   **Application**: Select Create Application and enter `<application-name>`. This is used for grouping your application created under your project. If developer want to create any Tenant Application state as 'Tenants'
 
-*   **Name** : Name of the application, developer want to configure.Ex: dev-portal-ui
+*   **Name** : Name of the application, developer want to configure.Ex: dev-studio-ui
 
 *   **Resources** : Please Select **Deployment Config** option.
 

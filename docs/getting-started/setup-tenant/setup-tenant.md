@@ -2,7 +2,7 @@
 
 ## Documentation Quickstart Guide
 
-Products within the Fiserv portfolio that are showcased through the portal are known as `tenants`.  Tenants standup a `tenant server` that will serve all the content through the portal for developers visiting the Fiserv Developer Portal.
+Products within the Fiserv portfolio that are showcased through the studio are known as `tenants`.  Tenants standup a `tenant server` that will serve all the content through the studio for developers visiting the Fiserv Developer Studio.
 
 ## Cloning the Github tenant repoistory
 
@@ -20,7 +20,7 @@ You've not got a tenant repoistory.
 
 Now that you've got your repository we need edit the configuration files.
 
-Two main files will need to be edited for the Fiserv Developer Portal to load the tenant data properly.
+Two main files will need to be edited for the Fiserv Developer Studio to load the tenant data properly.
 
 Your edits will be made in the `develop` branch.
 
