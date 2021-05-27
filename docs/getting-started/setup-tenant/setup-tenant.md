@@ -8,9 +8,9 @@ Products within the Fiserv portfolio that are showcased through the studio are k
 
 An example Github repository has already been prepared for you to clone.
 
-Head to [Sample tenant repo](https://github.com/fiserv/sample-tenant) and create a new repository based along this by using the 'New' button.
+Head to [Sample tenant repo] and create a new repository based along this by using the 'New' button.
 
-Tenant can build their own tenant server code by following our guidelines. Please refer to this document before moving on to the next process [Code Tenant](?path=docs/getting-started/code-a-tenant/code-tenant.md)
+Tenant can build their own tenant server code by following our guidelines. Please refer to this document before moving on to the next process [Code Tenant]
 
 Your repository name should match with your product name.
 
@@ -42,7 +42,7 @@ The file has several sections for each card that shows on the product overview p
 
 To make creating or editing your content easier we're going to connet your Github repository to Stoplight.io.
 
-Head to the [Fiserv Stoplight](https://fiserv-portal.stoplight.io) and signup.
+Head to the [Fiserv Stoplight] and signup.
 
 Once you're there create a project with the same name as your product.
 
@@ -62,9 +62,9 @@ This folder should hold multiple API version files.
 
 ### Markdown documentation
 
-All the documentation files follow the Markdown guides, which you can find here [Markdown Support](?path=docs/resources/markdown-support.md)
+All the documentation files follow the Markdown guides, which you can find here [Markdown Support]
 
-Details on the folder structure are [here](?path=README.md)
+Details on the folder structure are [here]
 
 For now you can edit the existing sample `getting-started.md` file.
 
@@ -83,11 +83,20 @@ ___
 
 [Deploy Tenant]
 
-
 Need Help ?
 [FAQ]
 
 [//]: # (These are reference links used in markdown file)
+
+[Sample tenant repo]: <https://github.com/fiserv/sample-tenant>
+
+[Code Tenant]: <?path=docs/getting-started/code-a-tenant/code-tenant.md>
+
+[Fiserv Stoplight]: <https://fiserv-portal.stoplight.io>
+
+[Markdown Support]: <?path=docs/resources/markdown-support.md>
+
+[here]: <?path=README.md>
 
 [FAQ]: <?path=docs/faq/faq.md>
 

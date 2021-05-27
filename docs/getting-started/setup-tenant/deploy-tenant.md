@@ -81,7 +81,7 @@ Here, we are creating an application using option **'From Docker'**
 
 ## Step 8: Repository Setup
 
-Developer needs to provide repository URL to add into application. For example we are adding repository from BitBucket(Ex:git@bitbucket.org:fiserv-digital-tech/dev-portal-ui.git
+Developer needs to provide repository URL to add into application. For example we are adding repository from BitBucket(`Ex:git@bitbucket.org:fiserv-digital-tech/dev-portal-ui.git`
 
 ![Bitbucket Repo setup]
 
