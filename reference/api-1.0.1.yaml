@@ -4,11 +4,11 @@ info:
   description: To onboard properly into the Fiserv Developer Studio as a tenant each
     product must support these APIs so that we can retrieve product specific API specifications
     and documentation.
-  version: 1.0.0
+  version: 1.0.1
 servers:
   - url: https://tenants.fiserv.com/
 paths:
-  /v1/products:
+  /v2/products:
     get:
       tags:
         - Tenant
@@ -27,7 +27,7 @@ paths:
             text/plain:
               schema:
                 $ref: '#/components/schemas/TenantProviderResponse'
-  /v1/apis:
+  /v2/apis:
     post:
       tags:
         - Specs
@@ -45,7 +45,7 @@ paths:
           description: ""
           content: {}
       x-codegen-request-body-name: Body
-  /v1/docs:
+  /v2/docs:
     get:
       tags:
         - Documents
@@ -63,7 +63,7 @@ paths:
           description: ""
           content: {}
       x-codegen-request-body-name: Body
-  /v1/layouts:
+  /v2/layouts:
     get:
       tags:
         - Layout
