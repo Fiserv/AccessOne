@@ -89,7 +89,7 @@ Different ways to create links.
 
 Here's our logo ( hover to see the title text ):
 
-![Fiserv Logo](/assets/images/Fiserv_Logo.jpg "Fiserv Logo") 
+![Fiserv Logo]
 
 
 ## <a name="code"/> Code and Syntax Highlighting
@@ -162,3 +162,7 @@ ___
 
 Underscores
 ```
+
+[//]: # (These are reference links used in markdown file)
+
+[Fiserv Logo]: <https://gist.githubusercontent.com/f2zdirk/0d6e1e22180086f6169a2686a3ae1ec9/raw/22c36a3fbd595844296c2d25dc0e14b27d51e1ab/Fiserv_Logo.jpg> 
