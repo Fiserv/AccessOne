@@ -88,6 +88,9 @@ paths:
         - HealthCheck
       summary: Health check probes.
       operationId: healthCheckId
+      externalDocs:
+        description: Setup Tenant
+        url: <a href="../docs?path=docs/getting-started/setup-tenant/setup-tenant.md"></a>
       responses:
         200:
           description: Health check.
