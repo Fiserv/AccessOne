@@ -89,8 +89,8 @@ paths:
       summary: Health check probes.
       operationId: healthCheckId
       externalDocs:
-        description: This is external link to documentation
-        url: https://developer.fiserv.com 
+        description: Setup Tenant
+        url: '../docs?path=docs/getting-started/setup-tenant/setup-tenant.md'
       responses:
         200:
           description: Health check.
