@@ -17,6 +17,7 @@
       ]
     }
   ],
+  
   "apiVersions": [
       {
         "version": "1.0.0",
@@ -56,7 +57,7 @@
       },
       {
         "name": "editParameterAPIExplorer",
-        "value": true
+        "value": false
       }
   ]
   }
