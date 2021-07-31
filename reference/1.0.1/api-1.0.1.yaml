@@ -113,10 +113,12 @@ paths:
               schema:
                 $ref: '#/components/schemas/PageLayoutResponse'
   /live:
+    x-model-version: 1.0.1
     get:
-      tags:
-        - HealthCheck
-      summary: Health check probes.
+      tags: [HealthCheck]
+      x-group-name: HealthCheck
+      x-proxy-name: Live
+      summary: Liveness probe.
       operationId: healthCheckId
       x-links: 
         link1: 
@@ -132,21 +134,32 @@ paths:
           flag: external
           url:  'https://fiserv.com'
       responses:
-        200:
-          description: Health check.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/LiveProbeResponse'
-  
+        200: {$ref: '#/components/responses/HealthCheckOK'}
+  /ready:
+    x-model-version: 1.0.1
+    get:
+      tags: [HealthCheck]
+      x-group-name: HealthCheck
+      x-proxy-name: Ready
+      summary: Readiness probe.
+      operationId: healthCheckId
+      responses:
+        200: {$ref: '#/components/responses/HealthCheckOK'}
+   /startup:
+    x-model-version: 1.0.1
+    get:
+      tags: [HealthCheck]
+      x-group-name: HealthCheck
+      x-proxy-name: Startup
+      summary: Startup probe.
+      operationId: healthCheckId
+      responses:
+        200: {$ref: '#/components/responses/HealthCheckOK'}
 components:
   schemas:
-    LiveProbeResponse:
-      type: object
-      properties:
-        message:
-          type: string
-          description: Message
+    HealthCheckResponse:
+      x-model-version: 1.0.1
+      description: Health check.
     PageLayoutResponse:
       type: array
       items:
@@ -319,18 +332,19 @@ components:
     docsResponseWrapper:
       description: Markdown files.
       content: {}
-    liveResponse:
-      description: Health check.
+    HealthCheckOK:
+      x-model-version: 1.0.1
+      description: Health check OK.
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/LiveProbeResponse'
+            $ref: '#/components/schemas/HealthCheckResponse'
         text/yaml:
           schema:
-            $ref: '#/components/schemas/LiveProbeResponse'
+            $ref: '#/components/schemas/HealthCheckResponse'
         text/plain:
           schema:
-            $ref: '#/components/schemas/LiveProbeResponse'
+            $ref: '#/components/schemas/HealthCheckResponse'
     productPage:
       description: This text will appear as description of your response body. 
       content:
