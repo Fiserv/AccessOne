@@ -145,7 +145,7 @@ paths:
       operationId: healthCheckId
       responses:
         200: {$ref: '#/components/responses/HealthCheckOK'}
-   /startup:
+  /startup:
     x-model-version: 1.0.1
     get:
       tags: [HealthCheck]
