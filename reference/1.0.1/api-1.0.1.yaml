@@ -112,54 +112,8 @@ paths:
             text/plain:
               schema:
                 $ref: '#/components/schemas/PageLayoutResponse'
-  /live:
-    x-model-version: 1.0.1
-    get:
-      tags: [HealthCheck]
-      x-group-name: HealthCheck
-      x-proxy-name: Live
-      summary: Liveness probe.
-      operationId: healthCheckId
-      x-links: 
-        link1: 
-          description: Developer Studio
-          flag: external
-          url:  'https://dev-developerstudio.fiserv.com/'
-        link2: 
-          description: Setup tenant
-          flag: internal
-          url:  '../docs?path=docs/getting-started/setup-tenant/setup-tenant.md'
-        link3: 
-          description: Fiserv Portal
-          flag: external
-          url:  'https://fiserv.com'
-      responses:
-        200: {$ref: '#/components/responses/HealthCheckOK'}
-  /ready:
-    x-model-version: 1.0.1
-    get:
-      tags: [HealthCheck]
-      x-group-name: HealthCheck
-      x-proxy-name: Ready
-      summary: Readiness probe.
-      operationId: healthCheckId
-      responses:
-        200: {$ref: '#/components/responses/HealthCheckOK'}
-  /startup:
-    x-model-version: 1.0.1
-    get:
-      tags: [HealthCheck]
-      x-group-name: HealthCheck
-      x-proxy-name: Startup
-      summary: Startup probe.
-      operationId: healthCheckId
-      responses:
-        200: {$ref: '#/components/responses/HealthCheckOK'}
 components:
   schemas:
-    HealthCheckResponse:
-      x-model-version: 1.0.1
-      description: Health check.
     PageLayoutResponse:
       type: array
       items:
@@ -332,19 +286,6 @@ components:
     docsResponseWrapper:
       description: Markdown files.
       content: {}
-    HealthCheckOK:
-      x-model-version: 1.0.1
-      description: Health check OK.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/HealthCheckResponse'
-        text/yaml:
-          schema:
-            $ref: '#/components/schemas/HealthCheckResponse'
-        text/plain:
-          schema:
-            $ref: '#/components/schemas/HealthCheckResponse'
     productPage:
       description: This text will appear as description of your response body. 
       content:
