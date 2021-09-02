@@ -34,7 +34,5 @@ Need Help ?
 
 ___
 
-##  TESTING GITHUB HOOKS - Testing 2
-
 
  
