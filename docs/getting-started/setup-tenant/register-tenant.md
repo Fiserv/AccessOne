@@ -10,7 +10,7 @@ After you fill in the requested information your tenant will now show in the `Fi
 
 Head to [Fiserv Developer Studio]
 
-You will find your tenant under the `Solution` area you designated in the `tenant.json` configuration file.
+You will find your tenant under the `Merchants` or `Financial Instutions` area based on how you have configured `solution` tag in `tenant.json` file.
 
 Congratulations, you've got a working tenant in the `staging` system.
 
