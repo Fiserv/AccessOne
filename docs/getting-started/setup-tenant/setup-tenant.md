@@ -20,7 +20,7 @@ You've not got a tenant repoistory.
 
 Now that you've got your repository we need edit the configuration files.
 
-Two main files will need to be edited for the Fiserv Developer Studio to load the tenant data properly.
+There are few main files need to be edited for the Fiserv Developer Studio to load the tenant data properly.
 
 Your edits will be made in the `develop` branch.
 
@@ -30,12 +30,17 @@ The `tenant.json` contains metadata information about your product.
 
 The file is located, from the repoistiory root, `/config/tenant.json`.
 
+### Edit the product-layout.yaml
 
-### Edit the layout.yaml
-
-The `layout.yaml` determines what you want to display on your `product overview page`.
+The `product-layout.yaml` determines what you want to display on your `product overview page`. The file is located, from the repoistiory root, `/config/product-layout.yaml`.
 
 The file has several sections for each card that shows on the product overview page.
+
+### Edit the document-explorer-definition.yaml
+
+The `document-explorer-definition.yaml` controls what you want to display on left-side navigation bar for document explorer on tenant page. 
+
+The file is located, from the repoistiory root, `/config/document-explorer-definition.yaml`.
 
 
 ## Connect Stoplight
@@ -51,14 +56,6 @@ Then head into the settings to connect your github.
 ## Create your content
 
 You can go into `Stoplight Studio` to create your API specification or markdown files.
-
-### API Specification
-
-Your API specification will need to be stored in the `/reference` folder.
-
-The file name should follow your API version, i.e. `api-1.0.3.yaml`
-
-This folder should hold multiple API version files.
 
 ### Markdown documentation
 

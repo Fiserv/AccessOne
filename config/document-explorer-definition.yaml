@@ -61,8 +61,8 @@
       link: docs/resources/guides/how-it-works.md
     - title: How to use Stoplight
       link: docs/resources/guides/how-to-use-stoplight.md
-    - title: How to use GitLab
-      link: docs/resources/guides/using-gitlab.md
+    - title: How to use Docignore
+      link: docs/resources/guides/how-to-use-docignore.md
     - title: Markdown Support
       link: docs/resources/markdown-support.md
     - title: Tutorials
