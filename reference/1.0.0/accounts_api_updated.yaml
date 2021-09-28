@@ -331,7 +331,7 @@ paths:
       tags:
         - accounts
       x-group-name: Board Accounts
-      x-proxy-name: Create Accounts
+      x-proxy-name: Account Details
       summary: Account Details - Account Base Segment
       description: Account Details
       operationId: ''
