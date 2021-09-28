@@ -8,6 +8,8 @@ paths:
     delete:
       tags:
         - Accounts
+      x-group-name: Accounts
+      x-proxy-name: Delete Accounts
       summary: Account Details
       description: DeleteAccounts
       operationId: /actionCode/monetary
@@ -114,6 +116,8 @@ paths:
     put:
       tags:
         - Accounts
+      x-group-name: Accounts
+      x-proxy-name: Update Accounts
       summary: Account Details
       description: Update Accounts
       operationId: accounts
@@ -219,6 +223,8 @@ paths:
     post:
       tags:
         - boardAccount
+      x-group-name: Board Accounts
+      x-proxy-name: Create Accounts
       summary: Board Accounts
       description: Create Accounts
       operationId: boardAccounts
@@ -324,6 +330,8 @@ paths:
     get:
       tags:
         - accounts
+      x-group-name: Board Accounts
+      x-proxy-name: Create Accounts
       summary: Account Details - Account Base Segment
       description: Account Details
       operationId: ''
