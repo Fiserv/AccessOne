@@ -2,4 +2,5 @@
 
 ## Documentation Guide to work with StopLight
 
-    Comming Soon...
+    We will start working on this document soon.
+    
