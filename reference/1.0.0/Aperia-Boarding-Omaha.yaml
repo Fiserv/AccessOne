@@ -1,0 +1,1621 @@
+openapi: 3.0.1
+info:
+  title: AccessOne Api
+  description: This is description for AccessOne Api.
+  termsOfService: http://AccessOne-api.local/terms
+  contact:
+    name: the developer
+    email: accesson-api@aperia.com
+  license:
+    name: Private license
+    url: http://AccessOne-api.local/license
+  version: v1
+paths:
+  /v1/api/boarding/omaha/GetStatusByTimeSpan:
+    post:
+      tags:
+        - Boarding Omaha
+      requestBody:
+        content:
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/GetStatusByTimeSpan'
+      responses:
+        '200':
+          description: Success
+  /v1/api/boarding/omaha/RetrieveMpaXml:
+    post:
+      tags:
+        - Boarding Omaha
+      requestBody:
+        content:
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/RetrieveMpaXml'
+      responses:
+        '200':
+          description: Success
+  /v1/api/boarding/omaha/SearchByExtRefID:
+    post:
+      tags:
+        - Boarding Omaha
+      requestBody:
+        content:
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/SearchByExtRefID'
+      responses:
+        '200':
+          description: Success
+  /v1/api/boarding/omaha/SubmitMPA:
+    post:
+      tags:
+        - Boarding Omaha
+      requestBody:
+        content:
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/SubmitMPA'
+      responses:
+        '200':
+          description: Success
+components:
+  schemas:
+    AggregateRouteConfig:
+      title: AggregateRouteConfig
+      type: object
+      properties:
+        routeKey:
+          title: String
+          type: string
+          nullable: true
+        parameter:
+          title: String
+          type: string
+          nullable: true
+        jsonPath:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    BatchDetailFilter:
+      title: BatchDetailFilter
+      type: object
+      properties:
+        merchantNumber:
+          title: String
+          type: string
+          nullable: true
+        reportDate:
+          title: DateTime
+          type: string
+          format: date-time
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+        batchNumber:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    CardSummaryFilter:
+      title: CardSummaryFilter
+      type: object
+      properties:
+        fromDate:
+          title: DateTime
+          type: string
+          format: date-time
+        toDate:
+          title: DateTime
+          type: string
+          format: date-time
+        hierarchyFilterMode:
+          title: HierarchyFilterMode
+          enum:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+            - 6
+            - 7
+            - 8
+            - 9
+            - 10
+            - 11
+            - 12
+            - 13
+            - 14
+            - 15
+            - 16
+            - 17
+            - 18
+            - 19
+            - 20
+            - 21
+            - 22
+            - 23
+            - 24
+          type: integer
+          format: int32
+        hierarchyFilterValue:
+          title: String
+          type: string
+          nullable: true
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+        batchNumber:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    EMVMerchantReportFilter:
+      title: EMVMerchantReportFilter
+      type: object
+      properties:
+        merchantNumber:
+          title: String
+          type: string
+          nullable: true
+        fromDate:
+          title: DateTime
+          type: string
+          format: date-time
+        toDate:
+          title: DateTime
+          type: string
+          format: date-time
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+        emvIndicator:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    EMVReportFilter:
+      title: EMVReportFilter
+      type: object
+      properties:
+        fromDate:
+          title: DateTime
+          type: string
+          format: date-time
+        toDate:
+          title: DateTime
+          type: string
+          format: date-time
+        hierarchyFilterMode:
+          title: HierarchyFilterMode
+          enum:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+            - 6
+            - 7
+            - 8
+            - 9
+            - 10
+            - 11
+            - 12
+            - 13
+            - 14
+            - 15
+            - 16
+            - 17
+            - 18
+            - 19
+            - 20
+            - 21
+            - 22
+            - 23
+            - 24
+          type: integer
+          format: int32
+        hierarchyFilterValue:
+          title: String
+          type: string
+          nullable: true
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+        viewLevel:
+          title: DataViewLevel
+          enum:
+            - 0
+            - 1
+            - 2
+          type: integer
+          format: int32
+        emvIndicator:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    FileAggregateRoute:
+      title: FileAggregateRoute
+      type: object
+      properties:
+        routeKeys:
+          title: List`1
+          type: array
+          items:
+            title: String
+            type: string
+          nullable: true
+        routeKeysConfig:
+          title: List`1
+          type: array
+          items:
+            $ref: '#/components/schemas/AggregateRouteConfig'
+          nullable: true
+        upstreamPathTemplate:
+          title: String
+          type: string
+          nullable: true
+        upstreamHost:
+          title: String
+          type: string
+          nullable: true
+        routeIsCaseSensitive:
+          title: Boolean
+          type: boolean
+        aggregator:
+          title: String
+          type: string
+          nullable: true
+        upstreamHttpMethod:
+          title: List`1
+          type: array
+          items:
+            title: String
+            type: string
+          nullable: true
+          readOnly: true
+        priority:
+          title: Int32
+          type: integer
+          format: int32
+      additionalProperties: false
+    FileAuthenticationOptions:
+      title: FileAuthenticationOptions
+      type: object
+      properties:
+        authenticationProviderKey:
+          title: String
+          type: string
+          nullable: true
+        allowedScopes:
+          title: List`1
+          type: array
+          items:
+            title: String
+            type: string
+          nullable: true
+      additionalProperties: false
+    FileCacheOptions:
+      title: FileCacheOptions
+      type: object
+      properties:
+        ttlSeconds:
+          title: Int32
+          type: integer
+          format: int32
+        region:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    FileConfiguration:
+      title: FileConfiguration
+      type: object
+      properties:
+        routes:
+          title: List`1
+          type: array
+          items:
+            $ref: '#/components/schemas/FileRoute'
+          nullable: true
+        dynamicRoutes:
+          title: List`1
+          type: array
+          items:
+            $ref: '#/components/schemas/FileDynamicRoute'
+          nullable: true
+        aggregates:
+          title: List`1
+          type: array
+          items:
+            $ref: '#/components/schemas/FileAggregateRoute'
+          nullable: true
+        globalConfiguration:
+          $ref: '#/components/schemas/FileGlobalConfiguration'
+      additionalProperties: false
+    FileDynamicRoute:
+      title: FileDynamicRoute
+      type: object
+      properties:
+        serviceName:
+          title: String
+          type: string
+          nullable: true
+        rateLimitRule:
+          $ref: '#/components/schemas/FileRateLimitRule'
+        downstreamHttpVersion:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    FileGlobalConfiguration:
+      title: FileGlobalConfiguration
+      type: object
+      properties:
+        requestIdKey:
+          title: String
+          type: string
+          nullable: true
+        serviceDiscoveryProvider:
+          $ref: '#/components/schemas/FileServiceDiscoveryProvider'
+        rateLimitOptions:
+          $ref: '#/components/schemas/FileRateLimitOptions'
+        qoSOptions:
+          $ref: '#/components/schemas/FileQoSOptions'
+        baseUrl:
+          title: String
+          type: string
+          nullable: true
+        loadBalancerOptions:
+          $ref: '#/components/schemas/FileLoadBalancerOptions'
+        downstreamScheme:
+          title: String
+          type: string
+          nullable: true
+        httpHandlerOptions:
+          $ref: '#/components/schemas/FileHttpHandlerOptions'
+        downstreamHttpVersion:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    FileHostAndPort:
+      title: FileHostAndPort
+      type: object
+      properties:
+        host:
+          title: String
+          type: string
+          nullable: true
+        port:
+          title: Int32
+          type: integer
+          format: int32
+      additionalProperties: false
+    FileHttpHandlerOptions:
+      title: FileHttpHandlerOptions
+      type: object
+      properties:
+        allowAutoRedirect:
+          title: Boolean
+          type: boolean
+        useCookieContainer:
+          title: Boolean
+          type: boolean
+        useTracing:
+          title: Boolean
+          type: boolean
+        useProxy:
+          title: Boolean
+          type: boolean
+        maxConnectionsPerServer:
+          title: Int32
+          type: integer
+          format: int32
+      additionalProperties: false
+    FileLoadBalancerOptions:
+      title: FileLoadBalancerOptions
+      type: object
+      properties:
+        type:
+          title: String
+          type: string
+          nullable: true
+        key:
+          title: String
+          type: string
+          nullable: true
+        expiry:
+          title: Int32
+          type: integer
+          format: int32
+      additionalProperties: false
+    FileQoSOptions:
+      title: FileQoSOptions
+      type: object
+      properties:
+        exceptionsAllowedBeforeBreaking:
+          title: Int32
+          type: integer
+          format: int32
+        durationOfBreak:
+          title: Int32
+          type: integer
+          format: int32
+        timeoutValue:
+          title: Int32
+          type: integer
+          format: int32
+      additionalProperties: false
+    FileRateLimitOptions:
+      title: FileRateLimitOptions
+      type: object
+      properties:
+        clientIdHeader:
+          title: String
+          type: string
+          nullable: true
+        quotaExceededMessage:
+          title: String
+          type: string
+          nullable: true
+        rateLimitCounterPrefix:
+          title: String
+          type: string
+          nullable: true
+        disableRateLimitHeaders:
+          title: Boolean
+          type: boolean
+        httpStatusCode:
+          title: Int32
+          type: integer
+          format: int32
+      additionalProperties: false
+    FileRateLimitRule:
+      title: FileRateLimitRule
+      type: object
+      properties:
+        clientWhitelist:
+          title: List`1
+          type: array
+          items:
+            title: String
+            type: string
+          nullable: true
+        enableRateLimiting:
+          title: Boolean
+          type: boolean
+        period:
+          title: String
+          type: string
+          nullable: true
+        periodTimespan:
+          title: Double
+          type: number
+          format: double
+        limit:
+          title: Int64
+          type: integer
+          format: int64
+      additionalProperties: false
+    FileRoute:
+      title: FileRoute
+      type: object
+      properties:
+        downstreamPathTemplate:
+          title: String
+          type: string
+          nullable: true
+        upstreamPathTemplate:
+          title: String
+          type: string
+          nullable: true
+        upstreamHttpMethod:
+          title: List`1
+          type: array
+          items:
+            title: String
+            type: string
+          nullable: true
+        downstreamHttpMethod:
+          title: String
+          type: string
+          nullable: true
+        addHeadersToRequest:
+          title: Dictionary`2
+          type: object
+          additionalProperties:
+            title: String
+            type: string
+          nullable: true
+        upstreamHeaderTransform:
+          title: Dictionary`2
+          type: object
+          additionalProperties:
+            title: String
+            type: string
+          nullable: true
+        downstreamHeaderTransform:
+          title: Dictionary`2
+          type: object
+          additionalProperties:
+            title: String
+            type: string
+          nullable: true
+        addClaimsToRequest:
+          title: Dictionary`2
+          type: object
+          additionalProperties:
+            title: String
+            type: string
+          nullable: true
+        routeClaimsRequirement:
+          title: Dictionary`2
+          type: object
+          additionalProperties:
+            title: String
+            type: string
+          nullable: true
+        addQueriesToRequest:
+          title: Dictionary`2
+          type: object
+          additionalProperties:
+            title: String
+            type: string
+          nullable: true
+        changeDownstreamPathTemplate:
+          title: Dictionary`2
+          type: object
+          additionalProperties:
+            title: String
+            type: string
+          nullable: true
+        requestIdKey:
+          title: String
+          type: string
+          nullable: true
+        fileCacheOptions:
+          $ref: '#/components/schemas/FileCacheOptions'
+        routeIsCaseSensitive:
+          title: Boolean
+          type: boolean
+        serviceName:
+          title: String
+          type: string
+          nullable: true
+        serviceNamespace:
+          title: String
+          type: string
+          nullable: true
+        downstreamScheme:
+          title: String
+          type: string
+          nullable: true
+        qoSOptions:
+          $ref: '#/components/schemas/FileQoSOptions'
+        loadBalancerOptions:
+          $ref: '#/components/schemas/FileLoadBalancerOptions'
+        rateLimitOptions:
+          $ref: '#/components/schemas/FileRateLimitRule'
+        authenticationOptions:
+          $ref: '#/components/schemas/FileAuthenticationOptions'
+        httpHandlerOptions:
+          $ref: '#/components/schemas/FileHttpHandlerOptions'
+        downstreamHostAndPorts:
+          title: List`1
+          type: array
+          items:
+            $ref: '#/components/schemas/FileHostAndPort'
+          nullable: true
+        upstreamHost:
+          title: String
+          type: string
+          nullable: true
+        key:
+          title: String
+          type: string
+          nullable: true
+        delegatingHandlers:
+          title: List`1
+          type: array
+          items:
+            title: String
+            type: string
+          nullable: true
+        priority:
+          title: Int32
+          type: integer
+          format: int32
+        timeout:
+          title: Int32
+          type: integer
+          format: int32
+        dangerousAcceptAnyServerCertificateValidator:
+          title: Boolean
+          type: boolean
+        securityOptions:
+          $ref: '#/components/schemas/FileSecurityOptions'
+        downstreamHttpVersion:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    FileSecurityOptions:
+      title: FileSecurityOptions
+      type: object
+      properties:
+        ipAllowedList:
+          title: List`1
+          type: array
+          items:
+            title: String
+            type: string
+          nullable: true
+        ipBlockedList:
+          title: List`1
+          type: array
+          items:
+            title: String
+            type: string
+          nullable: true
+      additionalProperties: false
+    FileServiceDiscoveryProvider:
+      title: FileServiceDiscoveryProvider
+      type: object
+      properties:
+        scheme:
+          title: String
+          type: string
+          nullable: true
+        host:
+          title: String
+          type: string
+          nullable: true
+        port:
+          title: Int32
+          type: integer
+          format: int32
+        type:
+          title: String
+          type: string
+          nullable: true
+        token:
+          title: String
+          type: string
+          nullable: true
+        configurationKey:
+          title: String
+          type: string
+          nullable: true
+        pollingInterval:
+          title: Int32
+          type: integer
+          format: int32
+        namespace:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    GenericReportFilter:
+      title: GenericReportFilter
+      type: object
+      properties:
+        fromDate:
+          title: DateTime
+          type: string
+          format: date-time
+        toDate:
+          title: DateTime
+          type: string
+          format: date-time
+        hierarchyFilterMode:
+          title: HierarchyFilterMode
+          enum:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+            - 6
+            - 7
+            - 8
+            - 9
+            - 10
+            - 11
+            - 12
+            - 13
+            - 14
+            - 15
+            - 16
+            - 17
+            - 18
+            - 19
+            - 20
+            - 21
+            - 22
+            - 23
+            - 24
+          type: integer
+          format: int32
+        hierarchyFilterValue:
+          title: String
+          type: string
+          nullable: true
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+        viewLevel:
+          title: DataViewLevel
+          enum:
+            - 0
+            - 1
+            - 2
+          type: integer
+          format: int32
+      additionalProperties: false
+    GenericReportMonthlyFilter:
+      title: GenericReportMonthlyFilter
+      type: object
+      properties:
+        viewLevel:
+          title: DataViewLevel
+          enum:
+            - 0
+            - 1
+            - 2
+          type: integer
+          format: int32
+        yearMonth:
+          title: String
+          type: string
+          nullable: true
+        hierarchyFilterMode:
+          title: HierarchyFilterMode
+          enum:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+            - 6
+            - 7
+            - 8
+            - 9
+            - 10
+            - 11
+            - 12
+            - 13
+            - 14
+            - 15
+            - 16
+            - 17
+            - 18
+            - 19
+            - 20
+            - 21
+            - 22
+            - 23
+            - 24
+          type: integer
+          format: int32
+        hierarchyFilterValue:
+          title: String
+          type: string
+          nullable: true
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+      additionalProperties: false
+    GetStatusByTimeSpan:
+      title: GetStatusByTimeSpan
+      type: object
+      properties:
+        fromTimeStamp:
+          title: DateTime
+          type: string
+          format: date-time
+        toTimeStamp:
+          title: DateTime
+          type: string
+          format: date-time
+      additionalProperties: false
+      xml:
+        name: GetStatusByTimeSpan
+        namespace: http://tempuri.org/
+    GGe4MerchantEnrollmentFilter:
+      title: GGe4MerchantEnrollmentFilter
+      type: object
+      properties:
+        fromDate:
+          title: DateTime
+          type: string
+          format: date-time
+        toDate:
+          title: DateTime
+          type: string
+          format: date-time
+        hierarchyFilterMode:
+          title: HierarchyFilterMode
+          enum:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+            - 6
+            - 7
+            - 8
+            - 9
+            - 10
+            - 11
+            - 12
+            - 13
+            - 14
+            - 15
+            - 16
+            - 17
+            - 18
+            - 19
+            - 20
+            - 21
+            - 22
+            - 23
+            - 24
+          type: integer
+          format: int32
+        hierarchyFilterValue:
+          title: String
+          type: string
+          nullable: true
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+        viewLevel:
+          title: DataViewLevel
+          enum:
+            - 0
+            - 1
+            - 2
+          type: integer
+          format: int32
+        activityMode:
+          title: Int32
+          type: integer
+          format: int32
+        workingMode:
+          title: Int32
+          type: integer
+          format: int32
+      additionalProperties: false
+    GGe4MerchantEnrollmentMerchantFilter:
+      title: GGe4MerchantEnrollmentMerchantFilter
+      type: object
+      properties:
+        merchantNumber:
+          title: String
+          type: string
+          nullable: true
+        fromDate:
+          title: DateTime
+          type: string
+          format: date-time
+        toDate:
+          title: DateTime
+          type: string
+          format: date-time
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+        activityMode:
+          title: Int32
+          type: integer
+          format: int32
+        workingMode:
+          title: Int32
+          type: integer
+          format: int32
+      additionalProperties: false
+    HierarchyPagingFilter:
+      title: HierarchyPagingFilter
+      type: object
+      properties:
+        hierarchyFilterMode:
+          title: HierarchyFilterMode
+          enum:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+            - 6
+            - 7
+            - 8
+            - 9
+            - 10
+            - 11
+            - 12
+            - 13
+            - 14
+            - 15
+            - 16
+            - 17
+            - 18
+            - 19
+            - 20
+            - 21
+            - 22
+            - 23
+            - 24
+          type: integer
+          format: int32
+        hierarchyFilterValue:
+          title: String
+          type: string
+          nullable: true
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+      additionalProperties: false
+    MemphisMerchantCardInformationDetailFilter:
+      title: MemphisMerchantCardInformationDetailFilter
+      type: object
+      properties:
+        merchantNumber:
+          title: String
+          type: string
+          nullable: true
+        cmsId:
+          title: String
+          type: string
+          nullable: true
+        servicesMerchantId:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    MemphisMerchantEquipmentDetailFilter:
+      title: MemphisMerchantEquipmentDetailFilter
+      type: object
+      properties:
+        merchantNumber:
+          title: String
+          type: string
+          nullable: true
+        equipId:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    MerchantAdjustmentFilter:
+      title: MerchantAdjustmentFilter
+      type: object
+      properties:
+        merchantNumber:
+          title: String
+          type: string
+          nullable: true
+        fromDate:
+          title: DateTime
+          type: string
+          format: date-time
+        toDate:
+          title: DateTime
+          type: string
+          format: date-time
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+        batchNumber:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    MerchantInformationFilter:
+      title: MerchantInformationFilter
+      type: object
+      properties:
+        merchantNumber:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    MerchantInformationPagingFilter:
+      title: MerchantInformationPagingFilter
+      type: object
+      properties:
+        merchantNumber:
+          title: String
+          type: string
+          nullable: true
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+      additionalProperties: false
+    MerchantMonetaryRejectsFilter:
+      title: MerchantMonetaryRejectsFilter
+      type: object
+      properties:
+        merchantNumber:
+          title: String
+          type: string
+          nullable: true
+        fromDate:
+          title: DateTime
+          type: string
+          format: date-time
+        toDate:
+          title: DateTime
+          type: string
+          format: date-time
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+        sessionId:
+          title: String
+          type: string
+          nullable: true
+        reasonFilterValue:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    MerchantReportMonthlyFilter:
+      title: MerchantReportMonthlyFilter
+      type: object
+      properties:
+        yearMonth:
+          title: String
+          type: string
+          nullable: true
+        merchantNumber:
+          title: String
+          type: string
+          nullable: true
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+      additionalProperties: false
+    MerchantStatementFilter:
+      title: MerchantStatementFilter
+      type: object
+      properties:
+        merchantNumber:
+          title: String
+          type: string
+          nullable: true
+        statementId:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    MerchantSummaryFilter:
+      title: MerchantSummaryFilter
+      type: object
+      properties:
+        merchantNumber:
+          title: String
+          type: string
+          nullable: true
+        fromDate:
+          title: DateTime
+          type: string
+          format: date-time
+        toDate:
+          title: DateTime
+          type: string
+          format: date-time
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+      additionalProperties: false
+    MonetaryRejectsFilter:
+      title: MonetaryRejectsFilter
+      type: object
+      properties:
+        fromDate:
+          title: DateTime
+          type: string
+          format: date-time
+        toDate:
+          title: DateTime
+          type: string
+          format: date-time
+        hierarchyFilterMode:
+          title: HierarchyFilterMode
+          enum:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+            - 6
+            - 7
+            - 8
+            - 9
+            - 10
+            - 11
+            - 12
+            - 13
+            - 14
+            - 15
+            - 16
+            - 17
+            - 18
+            - 19
+            - 20
+            - 21
+            - 22
+            - 23
+            - 24
+          type: integer
+          format: int32
+        hierarchyFilterValue:
+          title: String
+          type: string
+          nullable: true
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+        viewLevel:
+          title: DataViewLevel
+          enum:
+            - 0
+            - 1
+            - 2
+          type: integer
+          format: int32
+        sessionId:
+          title: String
+          type: string
+          nullable: true
+        reasonFilterValue:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    NorthMerchantEntitlementDetailFilter:
+      title: NorthMerchantEntitlementDetailFilter
+      type: object
+      properties:
+        merchantNumber:
+          title: String
+          type: string
+          nullable: true
+        productCode:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    PingResponse:
+      title: PingResponse
+      type: object
+      properties:
+        message:
+          title: String
+          type: string
+          nullable: true
+        timestamp:
+          title: DateTime
+          type: string
+          format: date-time
+          readOnly: true
+      additionalProperties: false
+    RetrieveMpaXml:
+      title: RetrieveMpaXml
+      type: object
+      properties:
+        mpaId:
+          title: Int64
+          type: integer
+          format: int64
+        extRefID:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+      xml:
+        name: RetrieveMpaXml
+        namespace: http://tempuri.org/
+    SearchByExtRefID:
+      title: SearchByExtRefID
+      type: object
+      properties:
+        extRefID:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+      xml:
+        name: SearchByExtRefID
+        namespace: http://tempuri.org/
+    SubmitMPA:
+      title: SubmitMPA
+      type: object
+      properties:
+        xmlContent:
+          title: String
+          type: string
+          nullable: true
+        extRefID:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+      xml:
+        name: SubmitMPA
+        namespace: http://tempuri.org/
+    TaxReportAdhocFilter:
+      title: TaxReportAdhocFilter
+      type: object
+      properties:
+        fromDate:
+          title: DateTime
+          type: string
+          format: date-time
+        toDate:
+          title: DateTime
+          type: string
+          format: date-time
+        hierarchyFilterMode:
+          title: HierarchyFilterMode
+          enum:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+            - 6
+            - 7
+            - 8
+            - 9
+            - 10
+            - 11
+            - 12
+            - 13
+            - 14
+            - 15
+            - 16
+            - 17
+            - 18
+            - 19
+            - 20
+            - 21
+            - 22
+            - 23
+            - 24
+          type: integer
+          format: int32
+        hierarchyFilterValue:
+          title: String
+          type: string
+          nullable: true
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+        viewLevel:
+          title: DataViewLevel
+          enum:
+            - 0
+            - 1
+            - 2
+          type: integer
+          format: int32
+        validValidationCode:
+          title: String
+          type: string
+          nullable: true
+        invalidValidationCode:
+          title: String
+          type: string
+          nullable: true
+        otherValidationCode:
+          title: String
+          type: string
+          nullable: true
+        matchAllFilters:
+          title: Boolean
+          type: boolean
+        selectedDate:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    TransactionSearchFilter:
+      title: TransactionSearchFilter
+      type: object
+      properties:
+        fromDate:
+          title: DateTime
+          type: string
+          format: date-time
+        toDate:
+          title: DateTime
+          type: string
+          format: date-time
+        hierarchyFilterMode:
+          title: HierarchyFilterMode
+          enum:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+            - 6
+            - 7
+            - 8
+            - 9
+            - 10
+            - 11
+            - 12
+            - 13
+            - 14
+            - 15
+            - 16
+            - 17
+            - 18
+            - 19
+            - 20
+            - 21
+            - 22
+            - 23
+            - 24
+          type: integer
+          format: int32
+        hierarchyFilterValue:
+          title: String
+          type: string
+          nullable: true
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+        first6CardNumber:
+          title: String
+          type: string
+          nullable: true
+        last4CardNumber:
+          title: String
+          type: string
+          nullable: true
+        authorizationNumber:
+          title: String
+          type: string
+          nullable: true
+        transactionOperator:
+          title: TransactionOperator
+          enum:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+          type: integer
+          format: int32
+        transactionAmountFrom:
+          title: Nullable`1
+          type: number
+          format: double
+          nullable: true
+        transactionAmountTo:
+          title: Nullable`1
+          type: number
+          format: double
+          nullable: true
+      additionalProperties: false
+    VendorAuthorizationDetailFilter:
+      title: VendorAuthorizationDetailFilter
+      type: object
+      properties:
+        merchantNumber:
+          title: String
+          type: string
+          nullable: true
+        fromDate:
+          title: DateTime
+          type: string
+          format: date-time
+        toDate:
+          title: DateTime
+          type: string
+          format: date-time
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+        vendorId:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    VendorAuthorizationFilter:
+      title: VendorAuthorizationFilter
+      type: object
+      properties:
+        fromDate:
+          title: DateTime
+          type: string
+          format: date-time
+        toDate:
+          title: DateTime
+          type: string
+          format: date-time
+        hierarchyFilterMode:
+          title: HierarchyFilterMode
+          enum:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 4
+            - 5
+            - 6
+            - 7
+            - 8
+            - 9
+            - 10
+            - 11
+            - 12
+            - 13
+            - 14
+            - 15
+            - 16
+            - 17
+            - 18
+            - 19
+            - 20
+            - 21
+            - 22
+            - 23
+            - 24
+          type: integer
+          format: int32
+        hierarchyFilterValue:
+          title: String
+          type: string
+          nullable: true
+        pageSize:
+          title: Int32
+          type: integer
+          format: int32
+        currentPageIndex:
+          title: Int32
+          type: integer
+          format: int32
+        viewLevel:
+          title: DataViewLevel
+          enum:
+            - 0
+            - 1
+            - 2
+          type: integer
+          format: int32
+        vendorId:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    VoucherFilter:
+      title: VoucherFilter
+      type: object
+      properties:
+        merchantNumber:
+          title: String
+          type: string
+          nullable: true
+        reportDate:
+          title: DateTime
+          type: string
+          format: date-time
+        transactionId:
+          title: Guid
+          type: string
+          format: uuid
+      additionalProperties: false
+  securitySchemes:
+    Bearer:
+      type: apiKey
+      description: "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"<br />\r\n                                    Please enter into field the word 'Bearer' following by space and your JWT security token.<br /><br />"
+      name: Authorization
+      in: header
+security:
+  - Bearer: []

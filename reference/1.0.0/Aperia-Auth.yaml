@@ -1,0 +1,184 @@
+openapi: 3.0.1
+info:
+  title: Security Service v1
+  description: This is description for Security Service.
+  termsOfService: http://security-api.local/terms
+  contact:
+    name: the developer
+    email: security-api@aperia.com
+  license:
+    name: Private license
+    url: http://security-api.local/license
+  version: v1
+servers:
+  - url: /security
+paths:
+  /v1/api/auth/token:
+    get:
+      tags:
+        - Auth
+      parameters:
+        - name: user
+          in: query
+          description: Gets or sets the identifier.
+          schema:
+            title: String
+            type: string
+            example: fdtstapi01
+          example: fdtstapi01
+        - name: password
+          in: query
+          description: The password was encrypted with algorithm SHA256
+          schema:
+            title: String
+            type: string
+            example: dee30bfb3fa87efb97237539fa9fb994e411234bb760abe987b9b6912ee70d67
+          example: dee30bfb3fa87efb97237539fa9fb994e411234bb760abe987b9b6912ee70d67
+      responses:
+        '200':
+          description: Success
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/IApiResponse.GetTokenRs'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IApiResponse.GetTokenRs'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/IApiResponse.GetTokenRs'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/IApiResponse.GetTokenRs'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/IApiResponse.GetTokenRs'
+        '500':
+          description: Server Error
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/ApiErrorResponse'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorResponse'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/ApiErrorResponse'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/ApiErrorResponse'
+            text/xml:
+              schema:
+                $ref: '#/components/schemas/ApiErrorResponse'
+components:
+  schemas:
+    ApiErrorResponse:
+      title: ApiErrorResponse
+      type: object
+      properties:
+        traceId:
+          title: String
+          type: string
+          nullable: true
+        status:
+          title: String
+          type: string
+          nullable: true
+        timestamp:
+          title: DateTime
+          type: string
+          format: date-time
+        messages:
+          title: List`1
+          type: array
+          items:
+            $ref: '#/components/schemas/ErrorMessage'
+          nullable: true
+        meta:
+          $ref: '#/components/schemas/ApiMetaInfo'
+      additionalProperties: false
+    ApiMetaInfo:
+      title: ApiMetaInfo
+      required:
+        - clientId
+      type: object
+      properties:
+        clientId:
+          title: String
+          type: string
+        language:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    ErrorMessage:
+      title: ErrorMessage
+      type: object
+      properties:
+        code:
+          title: String
+          type: string
+          nullable: true
+        content:
+          title: String
+          type: string
+          nullable: true
+      additionalProperties: false
+    GetTokenRs:
+      title: GetTokenRs
+      type: object
+      properties:
+        access_token:
+          title: String
+          type: string
+          nullable: true
+        expires_in:
+          title: Int32
+          type: integer
+          format: int32
+      additionalProperties: false
+      description: The Get User Rs.
+    IApiResponse.GetTokenRs:
+      title: IApiResponse`1
+      type: object
+      properties:
+        meta:
+          $ref: '#/components/schemas/ApiMetaInfo'
+        traceId:
+          title: String
+          type: string
+          nullable: true
+        status:
+          title: String
+          type: string
+          nullable: true
+        timestamp:
+          title: DateTime
+          type: string
+          format: date-time
+        data:
+          $ref: '#/components/schemas/GetTokenRs'
+      additionalProperties: false
+    PingResponse:
+      title: PingResponse
+      type: object
+      properties:
+        message:
+          title: String
+          type: string
+          nullable: true
+        timestamp:
+          title: DateTime
+          type: string
+          format: date-time
+          readOnly: true
+      additionalProperties: false
+  securitySchemes:
+    Bearer:
+      type: apiKey
+      description: "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"<br />\r\n                                    Please enter into field the word 'Bearer' following by space and your JWT security token.<br /><br />"
+      name: Authorization
+      in: header
+security:
+  - Bearer: []
