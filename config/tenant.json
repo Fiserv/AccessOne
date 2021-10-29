@@ -23,7 +23,7 @@
         "version": "1.0.0",
         "versionType": "major",
         "releaseNotesPath": "/release-notes/release-notes-1.0.0.md",
-        "apiSpecFileNames": ["Aperia-Auth", "Aperia-AM-Inq", "Aperia-Boarding-North", "Aperia-Boarding-Omaha", "Aperia-Reporting", ]
+        "apiSpecFileNames": ["Aperia-API-Spec-v1"]
       }
   ],
   "product": {
