@@ -7,12 +7,12 @@ Fiserv's Full Service Processing ISO clients are welcome to integrate these APIs
 
 ## North Merchant Boarding
 
-North backend platform boarding via AccessOne API currently uses a SOAP/XML implementation.  For more information please refer to [North Boarding](?path=docs/north-boarding-api-specifications.md)
+North backend platform boarding via AccessOne API supports a REST or XML implementation.  For more information please refer to [North Boarding](?path=docs/north-boarding-api-specifications.md)
 
 
 ## Optis Merchant Boarding
 
-Optis (formally Omaha) backend platform boarding via AccessOne API currently uses a SOAP/XML implementation.  For more information please refer to [Optis Boarding](?path=docs/optis-boarding-api-specifications.md)
+Optis (formally Omaha) backend platform boarding via AccessOne API supports a REST or XML implementation.  For more information please refer to [Optis Boarding](?path=docs/optis-boarding-api-specifications.md)
 
 
 ## Merchant Reporting
