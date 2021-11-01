@@ -21,7 +21,7 @@ Various reporting APIs are available to retrieve authorization/settlement/fundin
 
 
 ## Merchant Inquiry
-Real-time inquiry APIs will retrieve merchant attribute information directly against the backend systems of record.  The APIs use a full REST/JSON implementation and all of the associated documentation is included directly in the API specifications (including a full data dictionary).  An API is available to retrieve all merchant attributes.  There are also APIs to retrieve smaller subset of information (e.g. Location Chaining, Merchant Profile, Programs, Entitlements, Billing Attributes).
+Real-time inquiry APIs will retrieve merchant attribute information directly against the backend systems of record.  The APIs use a full REST/JSON implementation and all of the associated documentation is included directly in the API specifications.  An API is available to retrieve all merchant attributes.  There are also APIs to retrieve smaller subset of information (e.g. Location Chaining, Merchant Profile, Programs, Entitlements, Billing Attributes).
 
 ## Merchant Update
-A real-time update API will allow for maintenance directly against the backend systems of record.  The API use a full REST/JSON implementation and all of the associated documentation is included directly in the API specifications (including a full data dictionary).  You can leverage this API in your workflow in order to keep your systems syncronized with the Fiserv processing platforms.
+A real-time update API will allow for maintenance directly against the backend systems of record.  The API uses a full REST/JSON implementation and all of the associated documentation is included directly in the API specifications.  You can leverage this API in your workflow in order to keep your systems syncronized with the Fiserv processing platforms.
