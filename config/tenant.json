@@ -27,10 +27,10 @@
       }
   ],
   "product": {
-    "featured": true,
-    "logoURL": "https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/Portal_Logo.png",
-    "description": "To onboard properly into the Developer Studio as a tenant each product must support these APIs so that we can retrieve product specific API specifications and documentation.",
-    "longDescription":"To onboard properly into the Developer Studi as a tenant each product must support these APIs so that we can retrieve product specific API specifications and documentation.",
+    "featured": false,
+    "logoURL": "https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/AccessOne.png",
+    "description": "AccessOne APIs provide real-time access to our backend systems of record for boarding, inquiry, maintenance, and reporting.",
+    "longDescription":"AccessOne APIs provide real-time access to our backend systems of record for boarding, inquiry, maintenance, and reporting.",
     "apiSpecification": "/v1/apis",
     "layout": "/v1/layouts",
     "documentation": "/v1/docs",
