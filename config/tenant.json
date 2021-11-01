@@ -11,8 +11,8 @@
       "value": "Business Types",
       "subcategories": [
         {
-          "name": "valueAddedServices",
-          "value": "Value Added Services"
+          "name": "enterprise",
+          "value": "Enterprise"
         }
       ]
     }
