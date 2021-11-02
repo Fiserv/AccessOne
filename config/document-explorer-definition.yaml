@@ -29,13 +29,12 @@
 ################################################################################
 
 - sections:
-  - title: Resources
-    link:
-    open: true
-    sections:
-    - title: North Boarding
-      link: docs/north-boarding-api-specifications.md
-    - title: Optis Boarding
-      link: docs/optis-boarding-api-specifications.md
-    - title: Reporting
-      link: docs/reporting-api-specifications.md
+  - title: North Boarding
+    link: docs/north-boarding-api-specifications.md
+    open: false
+  - title: Optis Boarding
+    link: docs/optis-boarding-api-specifications.md
+    open: false
+  - title: Reporting
+    link: docs/reporting-api-specifications.md
+    open: false
