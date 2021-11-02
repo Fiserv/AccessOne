@@ -28,6 +28,304 @@
 # the delivery of this work
 ################################################################################
 
+header:
+  productName: AccessOne API Suite
+  productionDescription: AccessOne APIs provide real-time access to our backend systems of record for boarding, inquiry, maintenance, and reporting.  These APIs are available for use by our full service processing ISO clients.
+  whoIsItFor: Testing...
+  image: 
+    link: "/assets/images/clx_image.png"
+    altText: Reporting
+steps:  
+  learnSteps:
+    - title: Learn
+      description: >
+        Follow our documentation and easy to use examples to build your own mobile or web integrated online applications. 
+      link:
+  buildSteps:
+    - title: Build
+      description: >
+        Get your application up and running with our proprietary integration tools and developer keys. 
+      link:
+  validateSteps:
+    - title: API Explorer
+      description: >
+        Interact with our live api interface for real time responses to the developed application. 
+      link:
+  deploySteps:
+    - title: Deploy
+      description: >
+        Deploy your applications in our testing environment for quality assurance testing.  Once ready promote your application to our production environment. 
+      link:
+benefits:
+  - title: API Integration
+    description: Leverage easy to use tools to pull in data for real time insight into customer behavior. Get up and running quickly and easily with our sample processes. 
+  - title: Real Time Data
+    description: Create your own tracking applications utilizing relevant real time data for your business. Obtain actual metrics to create your own site design dashboards and brands for a catered customer experience.
+  - title: Checklist
+    description: Leverage our checklist to assure you have what you need for a complete integration into reporting APIs.
+featuredFeatures:
+  - title: Generate Reports
+    description: Integrate your systems with our easy-to-use APIs to query status of transactions, funding, chargebacks, or summaries through elaborate API summary options.
+    tags: ["Enterprise"]
+    bullets:
+      bullet1: Browse working sample of our integrations. 
+      bullet2: Leverage our easy to use tools for real time insight into customer behavior.
+      bullet3: Get up and running quickly an easily with our step by step instructions. 
+    relatedDocs:
+      - relatedDoc:
+        title: Getting Started
+        description: Reporting information is available across the value chain. Our APIs provide you with the ability to pull information across these various stages.
+        link: "/docs/getting-started.md"
+      - relatedDoc: 
+        title: Generate Reports 
+        description: Our robust reporting API provides you with the ability to integrate your systems directly with the financial and non-financial reporting APIs
+        link: "/docs/Examples/allapis.md"
+    relatedAPIs:
+      - relatedAPI: 
+        title: Auth Search 
+        description: Search for Authorizations
+        type: "post"        
+        path: "/v1/authorization/search"
+      - relatedAPI: 
+        title: Auth Summary 
+        description: Summary for Authorizations
+        type: "post"        
+        path: "/v1/authorization/summary"
+  - title: Build Your Merchant Portal
+    description: Utilize the set of easy-to-use APIs to build your own online experience for your merchants, your intranet portal or banking/merchant integrated suites.
+    tags: ["Enterprise"]
+    bullets:
+      bullet1: Learn more about our API objects, methods, requests and responses.
+    relatedDocs:
+      - relatedDoc:
+        title: Getting Started
+        description: Reporting information is available across the value chain. Our APIs provide you with the ability to pull information across these various stages.
+        link: "/docs/getting-started.md"
+      - relatedDoc: 
+        title: Build Your Merchant Portal
+        description: You can build your own integrated merchant portal experience utilizing the APIs available here
+        link: "/docs/APIs/api-model.md"
+    relatedAPIs:
+      - relatedAPI: 
+        title: Auth Search
+        description: Search for Authorizations
+        type: "post"        
+        path: "/v1/authorization/search"
+      - relatedAPI: 
+        title: Auth Summary
+        description: Summary for Authorizations
+        type: "post"        
+        path: "/v1/authorization/search"
+  - title: Data Feeds
+    description: Setup native integrations with AWS, Azure or GCP to receive your data as soon as they are available and query feed status. Get near real-time data shares natively within Snowflake.
+    tags: ["Enterprise"]
+    bullets:
+      bullet1: Create, manage and utilize developer api tokens in order to protect customer data.
+      bullet2: Uniquely identify and track developer access.
+      bullet3: Grant accessibilty to only those groups who it is required. 
+    relatedDocs:
+      - relatedDoc:
+        title: Getting Started
+        description: Reporting information is available across the value chain. Our APIs provide you with the ability to pull information across these various stages.
+        link: "/docs/getting-started.md"
+      - relatedDoc1: 
+        title: Data Feeds
+        description: If traditional restful APIs do not satisfy your requirements and you would rather get data feeds, we have multiple ways to get your data to you easily and in a timely manner.
+        link: "/docs/APIs/feedsdata.md"
+    relatedAPIs:
+      - relatedAPI: 
+        title: Auth Search
+        description: Search for Authorizations
+        type: "post"        
+        path: "/v1/authorization/search"
+      - relatedAPI: 
+        title: Auth Summary
+        description: Summary for Authorizations
+        type: "post"        
+        path: "/v1/authorization/search"
+featuredAPIs:
+  - name: Authorization Transactions
+    description: Provides a list of transactions and their attributes.
+    type: post
+    path: /v1/authorization/details/byDate
+    codeSample: '[json
+      {
+        "date": 20210217,
+        "fields": [
+            "a_approvalCode",
+            "a_type",
+            "a_transactionDateTime",
+            "a_accountNumber",
+            "a_cardExpiryDate",
+            "a_amount",
+            "a_currency",
+            "a_network",
+            "a_paymentMethod",
+            "a_declineReason",
+            "a_authCode",
+            "a_siteID",
+            "a_merchantCategory",
+            "a_customerName",
+            "a_giftCardNumber",
+            "a_partnerOrderID",
+            "a_source",
+            "a_sendMode",
+            "a_mobileWallet",
+            "a_ECIIndicator",
+            "a_terminalID",
+            "a_CAVVResponse",
+            "a_AVSResponse",
+            "a_CVVResult",
+            "a_banknetRef",
+            "a_subType",
+            "a_tokenId",
+            "a_tokenResponseInd",
+            "a_ordNo",
+            "a_nativeRejectCode",
+            "a_externalMid",
+            "a_rtAction",
+            "a_rtStatus",
+            "a_merchandiseCode",
+            "a_pumpRegisterNumber",
+            "a_quantity",
+            "a_lcldt",
+            "a_transactionTime",
+            "a_GUID"
+        ],
+        "filters": [
+            {
+                "field": "o_timeZone",
+                "values": [
+                    "2"
+                ]
+            },
+            {
+                "field": "a_currency",
+                "values": [
+                    "1"
+                ]
+            }
+        ]
+    }]'
+    language: Curl
+    link: link to API Explorer
+  - name: Authorization Summary
+    description: Returns an aggregated view of the entity utilizing various pivots across a specified date range. For instance total count and amount total by card type for the previous week of transactions.
+    type: post
+    path: /v1/authorization/summary/byDateRange
+    codeSample: '[json
+      {
+        "filters": [
+            {
+                "field": "o_timeZone",
+                "values": [
+                    "2"
+                ]
+            },
+            {
+                "field": "a_currency",
+                "values": [
+                    "1"
+                ]
+            }
+        ],
+        "from": 20210217,
+        "groupBy1": "a_network",
+        "groupBy2": "a_mobileWallet",
+        "groupBy3": "a_type",
+        "to": 20210218
+    }]'
+    language: Curl
+    link: link to API Explorer
+  - name: Chargeback Transactions
+    description: Provides a list of transactions and their attributes.
+    type: post
+    path: /v1/chargeback/details/byDate
+    codeSample: '[json
+      {
+        "date": 20210217,
+        "fields": [
+            "cb_backendMID",
+            "cb_authNetwork",
+            "cb_receivedDate",
+            "cb_statusDate",
+            "cb_transactionDate",
+            "cb_status",
+            "cb_category",
+            "cb_workType",
+            "cb_winLoss",
+            "cb_Reason",
+            "cb_reasonCode",
+            "cb_currency",
+            "cb_chargebackAmount",
+            "cb_dueDate",
+            "cb_transactionType",
+            "cb_dispositionDate",
+            "cb_Disposition",
+            "cb_ECIndicator",
+            "cb_transactionAmount",
+            "cb_accountNumber",
+            "cb_first6",
+            "cb_last4",
+            "cb_invoiceNumber",
+            "cb_terminalId",
+            "cb_disputeID",
+            "cb_referenceNumber",
+            "cb_authCode",
+            "cb_trackingNumber",
+            "cb_svcCd",
+            "cb_merchantCategory",
+            "cb_orderNumber",
+            "cb_responseReceived",
+            "cb_respondedDate",
+            "cb_externalMid",
+            "cb_paymentMethod",
+            "cb_sendMode",
+            "cb_recurring",
+            "cb_mobileWallet",
+            "cb_tokenResponseInd",
+            "cb_adjDate",
+            "cb_captureMethod"
+        ],
+        "filters": [
+            {
+                "field": "o_chargebackDateType",
+                "values": [
+                    "1"
+                ]
+            }
+        ]
+    }]'
+    language: Curl
+    link: link to API Explorer
+  - name: Chargeback Summary
+    description: Returns an aggregated view of the entity utilizing various pivots across a specified date range. For instance total count and amount total by card type for the previous week of transactions.
+    type: post
+    path: /v1/chargeback/summary/byDateRange
+    codeSample: '[json
+      {
+        "filters": [
+            {
+                "field": "o_chargebackDateType",
+                "values": [
+                    "1"
+                ]
+            },
+            {
+                "field": "cb_currency",
+                "values": [
+                    "1"
+                ]
+            }
+        ],
+        "from": 20210201,
+        "groupBy1": "bi_cardBrand",
+        "to": 20210227
+    }]'
+    language: Curl
+    link: link to API Explorer
+
+
 productPage:
   - hero:
     - image: /assests/image/hero.png #???
