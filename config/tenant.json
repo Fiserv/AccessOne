@@ -29,8 +29,8 @@
   "product": {
     "featured": false,
     "logoURL": "https://raw.githubusercontent.com/Fiserv/Developer-Portal-Tenant-API/develop/assets/images/AccessOne.png",
-    "description": "AccessOne APIs provide real-time access to our backend systems of record for boarding, inquiry, maintenance, and reporting.",
-    "longDescription":"AccessOne APIs provide real-time access to our backend systems of record for boarding, inquiry, maintenance, and reporting.",
+    "description": "AccessOne APIs provide real-time access to our backend systems of record for boarding, inquiry, maintenance, and reporting.  These APIs are available for use by our full service processing ISO clients.",
+    "longDescription":"AccessOne APIs provide real-time access to our backend systems of record for boarding, inquiry, maintenance, and reporting.  These APIs are available for use by our full service processing ISO clients.",
     "apiSpecification": "/v1/apis",
     "layout": "/v1/layouts",
     "documentation": "/v1/docs",
