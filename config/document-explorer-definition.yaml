@@ -29,12 +29,16 @@
 ################################################################################
 
 - sections:
-  - title: North Boarding
-    link: docs/north-boarding-api-specifications.md
-    open: false
-  - title: Optis Boarding
-    link: docs/optis-boarding-api-specifications.md
-    open: false
-  - title: Reporting
-    link: docs/reporting-api-specifications.md
-    open: false
+  - title: Getting Started
+    link: docs/getting-started.md
+    articles:
+      - title: Welcome to AccessOne API Suite
+        link: docs/getting-started.md
+   - title: Usage Guides for Boarding and Reporting
+     sections:
+      - title: North Boarding
+        link: docs/north-boarding-api-specifications.md
+      - title: Optis Boarding
+        link: docs/optis-boarding-api-specifications.md
+      - title: Reporting
+        link: docs/reporting-api-specifications.md
