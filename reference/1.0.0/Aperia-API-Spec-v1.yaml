@@ -3,7 +3,7 @@ info:
   title: API Suite for our Full Service Processing ISO Clients
   description: Boarding, Reporting, Inquiry, and Maintenance APIs are available.  Access One boarding services will invoke full scale boarding workflow.  Access One client reporting data is  included in our reporting API services.  Inquiry services provide both a full view or granular level view of merchant master information.  A single update API can be used to change any pertinent merchant master attributes.
   contact:
-    email: account-maintenance-api@aperia.com
+    email: TBD@fiserv.com
   version: v1
 servers:
   - url: /ao
@@ -2934,9 +2934,6 @@ components:
         feeDescription:
           allOf:
           - $ref: '#/components/schemas/feeDescription'
-        feeRetailBillingMethodCode:
-          allOf:
-          - $ref: '#/components/schemas/feeBillingMethodCode'
         feeRetailAmount:
           allOf:
           - $ref: '#/components/schemas/feeRetailAmount'
@@ -2946,15 +2943,15 @@ components:
         feeRetailEndDate:
           allOf:
           - $ref: '#/components/schemas/feeRetailEndDate'
-        feeWholesaleBillingMethodCode:
-          allOf:
-          - $ref: '#/components/schemas/feeBillingMethodCode'
         feeWholesaleAmount:
           allOf:
           - $ref: '#/components/schemas/feeWholesaleAmount'
         feeWholesaleEffectiveDate:
           allOf:
           - $ref: '#/components/schemas/feeWholesaleEffectiveDate'
+        feeBillingMethodCode:
+          allOf:
+          - $ref: '#/components/schemas/feeBillingMethodCode'
         feeBillingMonthNumber:
           allOf:
           - $ref: '#/components/schemas/feeBillingMonthNumber'
@@ -2983,9 +2980,6 @@ components:
         feeDescription:
           allOf:
           - $ref: '#/components/schemas/feeDescription'
-        feeRetailBillingMethodCode:
-          allOf:
-           - $ref: '#/components/schemas/feeBillingMethodCode'
         feeRetailAmount:
           allOf:
            - $ref: '#/components/schemas/feeRetailAmount'
@@ -2995,15 +2989,15 @@ components:
         feeRetailEndDate:
           allOf:
            - $ref: '#/components/schemas/feeRetailEndDate'
-        feeWholesaleBillingMethodCode:
-          allOf:
-           - $ref: '#/components/schemas/feeBillingMethodCode'
         feeWholesaleAmount:
           allOf:
            - $ref: '#/components/schemas/feeWholesaleAmount'
         feeWholesaleEffectiveDate:
           allOf:
            - $ref: '#/components/schemas/feeWholesaleEffectiveDate'
+        feeBillingMethodCode:
+          allOf:
+           - $ref: '#/components/schemas/feeBillingMethodCode'
         feeBillingMonthNumber:
           allOf:
            - $ref: '#/components/schemas/feeBillingMonthNumber'
