@@ -12,6 +12,8 @@ paths:
     get:
       tags:
         - Authorization
+      x-group-name: Authorization
+      x-proxy-name: <NAME THAT SHOWS UP HERE PLEASE CHANGE TO WHAT MAKES SENSE>
       summary: Generate an sectoken token for user authentication.
       parameters:
         - name: user
