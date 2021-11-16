@@ -31,11 +31,11 @@
     "logoURL": "https://raw.githubusercontent.com/Fiserv/AccessOne/develop/assets/images/AccessOne.png",
     "description": "AccessOne APIs provide real-time access to our backend systems of record for boarding, inquiry, maintenance, and reporting.  These APIs are available for use by our full service processing ISO clients.",
     "longDescription":"AccessOne APIs provide real-time access to our backend systems of record for boarding, inquiry, maintenance, and reporting.  These APIs are available for use by our full service processing ISO clients.",
-    "apiSpecification": "/v1/apis",
-    "layout": "/v1/layouts",
-    "documentation": "/v1/docs",
-    "documenttree": "/v1/docs",
-    "documenttreeV2": "/v2/docs",
+    "apiSpecification": "/v1/apis/AccessOne",
+    "layout": "/v1/layouts/AccessOne",
+    "documentation": "/v1/docs/AccessOne",
+    "documenttree": "/v1/docs/AccessOne",
+    "documenttreeV2": "/v2/docs/AccessOne",
     "feature":[
       {
         "name": "sandBox",
