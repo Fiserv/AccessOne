@@ -36,6 +36,7 @@
     "documentation": "/v1/docs/AccessOne",
     "documenttree": "/v1/docs/AccessOne",
     "documenttreeV2": "/v2/docs/AccessOne",
+    "sandbox": "/v1/sandboxrun/AccessOne",
     "feature":[
       {
         "name": "sandBox",
