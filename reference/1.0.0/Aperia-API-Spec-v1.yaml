@@ -12,8 +12,8 @@ paths:
     get:
       tags:
         - Authorization
-      x-group-name: 'Authorization'
-      x-proxy-name: 'token'
+      x-group-name: Authorization
+      x-proxy-name: token
       summary: Generate an sectoken token for user authentication.
       parameters:
         - name: user
@@ -73,8 +73,8 @@ paths:
     post:
       tags:
         - Boarding North
-      x-group-name: 'Boarding North'
-      x-proxy-name: 'GetStatusByTimeSpan'
+      x-group-name: Boarding North
+      x-proxy-name: GetStatusByTimeSpan
       summary: Get North Boarding Status by Time Span.
       requestBody:
         content:
@@ -88,8 +88,8 @@ paths:
     post:
       tags:
         - Boarding North
-      x-group-name: 'Boarding North'
-      x-proxy-name: 'SearchByExtRefID'
+      x-group-name: Boarding North
+      x-proxy-name: SearchByExtRefID
       summary: Search North Boarding by External Reference ID
       requestBody:
         content:
@@ -103,8 +103,8 @@ paths:
     post:
       tags:
         - Boarding North
-      x-group-name: 'Boarding North'
-      x-proxy-name: 'SubmitMPA'
+      x-group-name: Boarding North
+      x-proxy-name: SubmitMPA
       summary: Submit North Boarding Request Data.
       requestBody:
         content:
@@ -118,8 +118,8 @@ paths:
     post:
       tags:
         - Boarding Optis
-      x-group-name: 'Boarding Optis'
-      x-proxy-name: 'GetStatusByTimeSpan'
+      x-group-name: Boarding Optis
+      x-proxy-name: GetStatusByTimeSpan
       summary: Get Optis Boarding Status by Time Span.
       requestBody:
         content:
@@ -133,8 +133,8 @@ paths:
     post:
       tags:
         - Boarding Optis
-      x-group-name: 'Boarding Optis'
-      x-proxy-name: 'RetrieveMpaXml'
+      x-group-name: Boarding Optis
+      x-proxy-name: RetrieveMpaXml
       summary: Get Optis Boarding Request Data.
       requestBody:
         content:
@@ -148,8 +148,8 @@ paths:
     post:
       tags:
         - Boarding Optis
-      x-group-name: 'Boarding Optis'
-      x-proxy-name: 'SearchByExtRefID'
+      x-group-name: Boarding Optis
+      x-proxy-name: SearchByExtRefID
       summary: Search Optis Boarding by External Reference ID
       requestBody:
         content:
@@ -163,8 +163,8 @@ paths:
     post:
       tags:
         - Boarding Optis
-      x-group-name: 'Boarding Optis'
-      x-proxy-name: 'SubmitMPA'
+      x-group-name: Boarding Optis
+      x-proxy-name: SubmitMPA
       summary: Submit Optis Boarding Request Data.
       requestBody:
         content:
@@ -178,8 +178,8 @@ paths:
     get:
       tags:
         - MM Inquiry All Fields
-      x-group-name: 'MM Inquiry All Fields'
-      x-proxy-name: 'mm-all-fields'
+      x-group-name: MM Inquiry All Fields
+      x-proxy-name: mm-all-fields
       summary: Merchant Master Inquiry Service for All Fields.
       description: This service can be used by clients to retrieve all merchant master fields across backend platforms.  The merchant demographic information is retrieved.  This can be used when a granular level request does not work.  For efficiency purposes, a granular level request should be the first thing to try.
       parameters:
@@ -206,8 +206,8 @@ paths:
     get:
       tags:
         - MM Inquiry Billing Fields
-      x-group-name: 'MM Inquiry Billing Fields'
-      x-proxy-name: 'mm-billing-fields'
+      x-group-name: MM Inquiry Billing Fields
+      x-proxy-name: mm-billing-fields
       summary: Merchant Master Inquiry for Blling Fields.
       description: This service can be used as a granular level request by clients to retrieve billing related merchant master fields across backend platforms.
       parameters:
@@ -236,8 +236,8 @@ paths:
     get:
       tags:
         - MM Inquiry Entitlements
-      x-group-name: 'MM Inquiry Entitlements'
-      x-proxy-name: 'mm-entitlements'
+      x-group-name: MM Inquiry Entitlements
+      x-proxy-name: mm-entitlements
       summary: Merchant Master Inquiry for Entitlement Fields
       description: This service can be used by clients as a granular level request to retrieve entitlement/card brand fields across backend platforms. 
       parameters:
@@ -265,8 +265,8 @@ paths:
     get:
       tags:
         - MM Inquiry Funding Fields
-      x-group-name: 'MM Inquiry Funding Fields'
-      x-proxy-name: 'mm-funding-fields'
+      x-group-name: MM Inquiry Funding Fields
+      x-proxy-name: mm-funding-fields
       summary: Merchant Master Inquiry for Funding Fields.
       description: This service can be used by clients as a granular level request to retrieve entitlement/card brand fields across backend platforms. 
       parameters:
@@ -293,8 +293,8 @@ paths:
     get:
       tags:
         - MM Inquiry Location Chaining
-      x-group-name: 'MM Inquiry Location Chaining'
-      x-proxy-name: 'mm-location-chaining'
+      x-group-name: MM Inquiry Location Chaining
+      x-proxy-name: mm-location-chaining
       summary: Merchant Master Inquiry for Location Chaining Fields.
       description: This service can be used as a granular level request by clients to retrieve all location chaining merchant master fields across backend platforms.
       parameters:
@@ -321,8 +321,8 @@ paths:
     get:
       tags:
         - MM Inquiry Merchant Profile
-      x-group-name: 'MM Inquiry Merchant Profile'
-      x-proxy-name: 'mm-merchant-profile'
+      x-group-name: MM Inquiry Merchant Profile
+      x-proxy-name: mm-merchant-profile
       summary: Merchant Master Inquiry for Merchant Profile Fields.
       description: This service can be used as a granular level request by clients to retrieve all merchant profile merchant master fields across backend platforms.
       parameters:
@@ -349,8 +349,8 @@ paths:
     get:
       tags:
         - MM Inquiry Program Fields
-      x-group-name: 'MM Inquiry Program Fields'
-      x-proxy-name: 'mm-program-fields'
+      x-group-name: MM Inquiry Program Fields
+      x-proxy-name: mm-program-fields
       summary: Merchant Master Inquiry for Program Fields.
       description: This service can be used by clients as a granular level request to retrieve merchant program fields across backend platforms. 
       parameters:
@@ -376,8 +376,8 @@ paths:
     get:
       tags:
         - MM Inquiry Self Service Fields
-      x-group-name: 'MM Inquiry Self Service Fields'
-      x-proxy-name: 'mm-self-service-fields'
+      x-group-name: MM Inquiry Self Service Fields
+      x-proxy-name: mm-self-service-fields
       summary: Merchant Master Inquiry for Self Service Fields
       description: This service can be used by clients to retrieve self service fields for merchant master data spanning across backend platforms. 
       parameters:
@@ -403,8 +403,8 @@ paths:
     post:
       tags:
         - MM Update
-      x-group-name: 'MM Update'
-      x-proxy-name: 'mm-update'
+      x-group-name: MM Update
+      x-proxy-name: mm-update
       summary: Merchant Master Update Service
       description: This service can be used by clients to update merchant master data spanning across backend platforms. 
       parameters:
@@ -433,8 +433,8 @@ paths:
     get:
       tags:
         - MM Unmask
-      x-group-name: 'MM Unmask'
-      x-proxy-name: 'unmask'
+      x-group-name: MM Unmask
+      x-proxy-name: unmask
       summary: Merchant Master Field Unmask Service
       description: This service is used to allow users with appropriate privilieges to unmask encrypted fields to get returned data in the clear.
       parameters:
@@ -461,8 +461,8 @@ paths:
     post:
       tags:
         - Reporting Customer Present
-      x-group-name: 'Reporting Customer Present'
-      x-proxy-name: 'GetAllOtherMCCMerchantsCustomerPresentByEntity'
+      x-group-name: Reporting Customer Present
+      x-proxy-name: GetAllOtherMCCMerchantsCustomerPresentByEntity
       summary: Get All Other MCC Merchants Customer Present By Entity.
       requestBody:
         content:
@@ -479,8 +479,8 @@ paths:
     post:
       tags:
         - Reporting Customer Present
-      x-group-name: 'Reporting Customer Present'
-      x-proxy-name: 'GetAllOtherMCCMerchantsCustomerPresentByMerchant'
+      x-group-name: Reporting Customer Present
+      x-proxy-name: GetAllOtherMCCMerchantsCustomerPresentByMerchant
       summary: Get All Other MCC Merchants Customer Present By Merchant.
       requestBody:
         content:
@@ -497,8 +497,8 @@ paths:
     post:
       tags:
         - Reporting Authorizations
-      x-group-name: 'Reporting Authorizations'
-      x-proxy-name: 'GetAuthorizationLogBuyPassDetail'
+      x-group-name: Reporting Authorizations
+      x-proxy-name: GetAuthorizationLogBuyPassDetail
       summary: Get Authorization Log BuyPass Detail.
       requestBody:
         content:
@@ -515,8 +515,8 @@ paths:
     post:
       tags:
         - Reporting Authorizations
-      x-group-name: 'Reporting Authorizations'
-      x-proxy-name: 'GetAuthorizationLogBuyPassSummary'
+      x-group-name: Reporting Authorizations
+      x-proxy-name: GetAuthorizationLogBuyPassSummary
       summary: Get Authorization Log BuyPass Summary.
       requestBody:
         content:
@@ -533,8 +533,8 @@ paths:
     post:
       tags:
         - Reporting Authorizations
-      x-group-name: 'Reporting Authorizations'
-      x-proxy-name: 'GetAuthorizationLogDetail'
+      x-group-name: Reporting Authorizations
+      x-proxy-name: GetAuthorizationLogDetail
       summary: Get Authorization Log Detail.
       requestBody:
         content:
@@ -551,8 +551,8 @@ paths:
     post:
       tags:
         - Reporting Authorizations
-      x-group-name: 'Reporting Authorizations'
-      x-proxy-name: 'GetAuthorizationLogGGe4Detail'
+      x-group-name: Reporting Authorizations
+      x-proxy-name: GetAuthorizationLogGGe4Detail
       summary: Get Authorization Log Gateway Detail.
       requestBody:
         content:
@@ -569,8 +569,8 @@ paths:
     post:
       tags:
         - Reporting Authorizations
-      x-group-name: 'Reporting Authorizations'
-      x-proxy-name: 'GetAuthorizationLogGGe4Summary'
+      x-group-name: Reporting Authorizations
+      x-proxy-name: GetAuthorizationLogGGe4Summary
       summary: Get Authorization Log Gateway Summary.
       requestBody:
         content:
@@ -587,8 +587,8 @@ paths:
     post:
       tags:
         - Reporting Authorizations
-      x-group-name: 'Reporting Authorizations'
-      x-proxy-name: 'GetAuthorizationLogNashvilleDetail'
+      x-group-name: Reporting Authorizations
+      x-proxy-name: GetAuthorizationLogNashvilleDetail
       summary: Get Authorization Log Nashville Detail.
       requestBody:
         content:
@@ -605,8 +605,8 @@ paths:
     post:
       tags:
         - Reporting Authorizations
-      x-group-name: 'Reporting Authorizations'
-      x-proxy-name: 'GetAuthorizationLogNashvilleSummary'
+      x-group-name: Reporting Authorizations
+      x-proxy-name: GetAuthorizationLogNashvilleSummary
       summary: Get Authorization Log Nashville Summary.
       requestBody:
         content:
@@ -623,8 +623,8 @@ paths:
     post:
       tags:
         - Reporting Authorizations
-      x-group-name: 'Reporting Authorizations'
-      x-proxy-name: 'GetAuthorizationLogNorthDetail'
+      x-group-name: Reporting Authorizations
+      x-proxy-name: GetAuthorizationLogNorthDetail
       summary: Get Authorization Log North Detail.
       requestBody:
         content:
@@ -641,8 +641,8 @@ paths:
     post:
       tags:
         - Reporting Authorizations
-      x-group-name: 'Reporting Authorizations'
-      x-proxy-name: 'GetAuthorizationLogNorthSummary'
+      x-group-name: Reporting Authorizations
+      x-proxy-name: GetAuthorizationLogNorthSummary
       summary: Get Authorization Log North Summary.
       requestBody:
         content:
@@ -659,8 +659,8 @@ paths:
     post:
       tags:
         - Reporting Authorizations
-      x-group-name: 'Reporting Authorizations'
-      x-proxy-name: 'GetAuthorizationLogOmahaDetail'
+      x-group-name: Reporting Authorizations
+      x-proxy-name: GetAuthorizationLogOmahaDetail
       summary: Get Authorization Log Omaha Detail.
       requestBody:
         content:
@@ -677,8 +677,8 @@ paths:
     post:
       tags:
         - Reporting Authorizations
-      x-group-name: 'Reporting Authorizations'
-      x-proxy-name: 'GetAuthorizationLogOmahaSummary'
+      x-group-name: Reporting Authorizations
+      x-proxy-name: GetAuthorizationLogOmahaSummary
       summary: Get Authorization Log Omaha Summary.
       requestBody:
         content:
@@ -695,8 +695,8 @@ paths:
     post:
       tags:
         - Reporting Authorizations
-      x-group-name: 'Reporting Authorizations'
-      x-proxy-name: 'GetAuthorizationLogSummary'
+      x-group-name: Reporting Authorizations
+      x-proxy-name: GetAuthorizationLogSummary
       summary: Get Authorization Log Summary.
       requestBody:
         content:
@@ -713,8 +713,8 @@ paths:
     post:
       tags:
         - Reporting Authorizations
-      x-group-name: 'Reporting Authorizations'
-      x-proxy-name: 'GetAuthorizationVendorDetail'
+      x-group-name: Reporting Authorizations
+      x-proxy-name: GetAuthorizationVendorDetail
       summary: Get Authorization Vendor Detail.
       requestBody:
         content:
@@ -731,8 +731,8 @@ paths:
     post:
       tags:
         - Reporting Authorizations
-      x-group-name: 'Reporting Authorizations'
-      x-proxy-name: 'GetAuthorizationVendorSummary'
+      x-group-name: Reporting Authorizations
+      x-proxy-name: GetAuthorizationVendorSummary
       summary: Get Authorization Vendor Summary.
       requestBody:
         content:
@@ -749,8 +749,8 @@ paths:
     post:
       tags:
         - Reporting Batch
-      x-group-name: 'Reporting Batch'
-      x-proxy-name: 'GetBatchDetail'
+      x-group-name: Reporting Batch
+      x-proxy-name: GetBatchDetail
       summary: Get Batch Detail.
       requestBody:
         content:
@@ -767,8 +767,8 @@ paths:
     post:
       tags:
         - Reporting Batch
-      x-group-name: 'Reporting Batch'
-      x-proxy-name: 'GetBatchSummaryByEntity'
+      x-group-name: Reporting Batch
+      x-proxy-name: GetBatchSummaryByEntity
       summary: Get Batch Summary by Entity.
       requestBody:
         content:
@@ -785,8 +785,8 @@ paths:
     post:
       tags:
         - Reporting Batch
-      x-group-name: 'Reporting Batch'
-      x-proxy-name: 'GetBatchSummaryByMerchant'
+      x-group-name: Reporting Batch
+      x-proxy-name: GetBatchSummaryByMerchant
       summary: Get Batch Summary by Merchant.
       requestBody:
         content:
@@ -803,8 +803,8 @@ paths:
     post:
       tags:
         - Reporting Batch
-      x-group-name: 'Reporting Batch'
-      x-proxy-name: 'GetCardSummary'
+      x-group-name: Reporting Batch
+      x-proxy-name: GetCardSummary
       summary: Get Card Summary.
       requestBody:
         content:
@@ -821,8 +821,8 @@ paths:
     post:
       tags:
         - Reporting ChargeBack
-      x-group-name: 'Reporting Chargeback'
-      x-proxy-name: 'GetChargebacksDetail'
+      x-group-name: Reporting Chargeback
+      x-proxy-name: GetChargebacksDetail
       summary: Get Chargebacks Detail.
       requestBody:
         content:
@@ -839,8 +839,8 @@ paths:
     post:
       tags:
         - Reporting ChargeBack
-      x-group-name: 'Reporting Chargeback'
-      x-proxy-name: 'GetChargebacksSummary'
+      x-group-name: Reporting Chargeback
+      x-proxy-name: GetChargebacksSummary
       summary: Get Chargebacks Summary.
       requestBody:
         content:
@@ -857,8 +857,8 @@ paths:
     post:
       tags:
         - Reporting Chat Historys
-      x-group-name: 'Reporting Chat Historys'
-      x-proxy-name: 'GetChatHistoryByMerchant'
+      x-group-name: Reporting Chat Historys
+      x-proxy-name: GetChatHistoryByMerchant
       summary: Get Chat History by Merchant.
       requestBody:
         content:
@@ -875,8 +875,8 @@ paths:
     post:
       tags:
         - Reporting Chat Historys
-      x-group-name: 'Reporting Chat Historys'
-      x-proxy-name: 'GetChatHistorySummaryByEntity'
+      x-group-name: Reporting Chat Historys
+      x-proxy-name: GetChatHistorySummaryByEntity
       summary: Get Chat History by Entity.
       requestBody:
         content:
@@ -893,8 +893,8 @@ paths:
     post:
       tags:
         - Reporting Customer Present
-      x-group-name: 'Reporting Customer Present'
-      x-proxy-name: 'GetCustomerNotPresentByEntity'
+      x-group-name: Reporting Customer Present
+      x-proxy-name: GetCustomerNotPresentByEntity
       summary: Get Customer Not Present by Entity.
       requestBody:
         content:
@@ -911,8 +911,8 @@ paths:
     post:
       tags:
         - Reporting Customer Present
-      x-group-name: 'Reporting Customer Present'
-      x-proxy-name: 'GetCustomerNotPresentByMerchant'
+      x-group-name: Reporting Customer Present
+      x-proxy-name: GetCustomerNotPresentByMerchant
       summary: Get Customer Not Present by Merchant.
       requestBody:
         content:
@@ -929,8 +929,8 @@ paths:
     post:
       tags:
         - Reporting EMV Indicator
-      x-group-name: 'Reporting EMV Indicator'
-      x-proxy-name: 'GetEMVIndicatorReportByEntity'
+      x-group-name: Reporting EMV Indicator
+      x-proxy-name: GetEMVIndicatorReportByEntity
       summary: Get EMV Indicator Report by Entity.
       requestBody:
         content:
@@ -947,8 +947,8 @@ paths:
     post:
       tags:
         - Reporting EMV Indicator
-      x-group-name: 'Reporting EMV Indicator'
-      x-proxy-name: 'GetEMVIndicatorReportByMerchant'
+      x-group-name: Reporting EMV Indicator
+      x-proxy-name: GetEMVIndicatorReportByMerchant
       summary: Get EMV Indicator Report by Merchant.
       requestBody:
         content:
@@ -965,8 +965,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Enrollments
-      x-group-name: 'Reporting Merchant Enrollments'
-      x-proxy-name: 'GetGGe4MerchantEnrollment'
+      x-group-name: Reporting Merchant Enrollments
+      x-proxy-name: GetGGe4MerchantEnrollment
       summary: Get Gateway Merchant Enrollment.
       requestBody:
         content:
@@ -983,8 +983,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Enrollments
-      x-group-name: 'Reporting Merchant Enrollments'
-      x-proxy-name: 'GetGGe4MerchantEnrollmentByMerchant'
+      x-group-name: Reporting Merchant Enrollments
+      x-proxy-name: GetGGe4MerchantEnrollmentByMerchant
       summary: Get Gateway Merchant Enrollment by Merchant.
       requestBody:
         content:
@@ -1001,8 +1001,8 @@ paths:
     post:
       tags:
         - Reporting Customer Present
-      x-group-name: 'Reporting Customer Present'
-      x-proxy-name: 'GetHVMerchantsCustomerPresentByEntity'
+      x-group-name: Reporting Customer Present
+      x-proxy-name: GetHVMerchantsCustomerPresentByEntity
       summary: Get Gateway Merchant Enrollment by Entity.
       requestBody:
         content:
@@ -1019,8 +1019,8 @@ paths:
     post:
       tags:
         - Reporting Customer Present
-      x-group-name: 'Reporting Customer Present'
-      x-proxy-name: 'GetHVMerchantsCustomerPresentByMerchant'
+      x-group-name: Reporting Customer Present
+      x-proxy-name: GetHVMerchantsCustomerPresentByMerchant
       summary: Get HV Merchants Customer Present by Merchant.
       requestBody:
         content:
@@ -1037,8 +1037,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetMemphisMerchantBuypassInformation'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetMemphisMerchantBuypassInformation
       summary: Get Memphis Merchant Buypass Information.
       requestBody:
         content:
@@ -1055,8 +1055,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetMemphisMerchantCardInformation'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetMemphisMerchantCardInformation
       summary: Get Memphis Merchant Card Information.
       requestBody:
         content:
@@ -1073,8 +1073,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetMemphisMerchantCardInformationDetail'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetMemphisMerchantCardInformationDetail
       summary: Get Memphis Merchant Card Information Detail.
       requestBody:
         content:
@@ -1091,8 +1091,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetMemphisMerchantCardServicesInformation'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetMemphisMerchantCardServicesInformation
       summary: Get Memphis Merchant Card Services Information.
       requestBody:
         content:
@@ -1109,8 +1109,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetMemphisMerchantDebitNetworks'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetMemphisMerchantDebitNetworks
       summary: Get Memphis Merchant Debit Networks.
       requestBody:
         content:
@@ -1127,8 +1127,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetMemphisMerchantEquipmentAttributes'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetMemphisMerchantEquipmentAttributes
       summary: Get Memphis Merchant Equipment Attributes.
       requestBody:
         content:
@@ -1145,8 +1145,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetMemphisMerchantEquipments'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetMemphisMerchantEquipments
       summary: Get Memphis Merchant Equipment.
       requestBody:
         content:
@@ -1163,8 +1163,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetMemphisMerchantEquipmentSpecificExtra'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetMemphisMerchantEquipmentSpecificExtra
       summary: Get Memphis Merchant Equipment Specific Extra.
       requestBody:
         content:
@@ -1181,8 +1181,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetMemphisMerchantProfile'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetMemphisMerchantProfile
       summary: Get Memphis Merchant Profile.
       requestBody:
         content:
@@ -1199,8 +1199,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Adjustments
-      x-group-name: 'Reporting Merchant Adjustments'
-      x-proxy-name: 'GetMerchantAdjustmentDetail'
+      x-group-name: Reporting Merchant Adjustments
+      x-proxy-name: GetMerchantAdjustmentDetail
       summary: Get Merchant Adjustment Detail.
       requestBody:
         content:
@@ -1217,8 +1217,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Adjustments
-      x-group-name: 'Reporting Merchant Adjustments'
-      x-proxy-name: 'GetMerchantAdjustmentSummaryByEntity'
+      x-group-name: Reporting Merchant Adjustments
+      x-proxy-name: GetMerchantAdjustmentSummaryByEntity
       summary: Get Merchant Adjustment Summary by Entity.
       requestBody:
         content:
@@ -1235,8 +1235,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Adjustments
-      x-group-name: 'Reporting Merchant Adjustments'
-      x-proxy-name: 'GetMerchantAdjustmentSummaryByMerchant'
+      x-group-name: Reporting Merchant Adjustments
+      x-proxy-name: GetMerchantAdjustmentSummaryByMerchant
       summary: Get Merchant Adjustment Summary by Merchant.
       requestBody:
         content:
@@ -1253,8 +1253,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetMerchantComments'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetMerchantComments
       summary: Get Merchant Comments.
       requestBody:
         content:
@@ -1271,8 +1271,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetMerchantList'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetMerchantList
       summary: Get Merchant List.
       requestBody:
         content:
@@ -1289,8 +1289,8 @@ paths:
     post:
       tags:
         - Reporting Monetary Rejects
-      x-group-name: 'Reporting Monetary Rejects'
-      x-proxy-name: 'GetMonetaryRejectsByEntity'
+      x-group-name: Reporting Monetary Rejects
+      x-proxy-name: GetMonetaryRejectsByEntity
       summary: Get Monetary Rejects by Entity.
       requestBody:
         content:
@@ -1307,8 +1307,8 @@ paths:
     post:
       tags:
         - Reporting Monetary Rejects
-      x-group-name: 'Reporting Monetary Rejects'
-      x-proxy-name: 'GetMonetaryRejectsByMerchant'
+      x-group-name: Reporting Monetary Rejects
+      x-proxy-name: GetMonetaryRejectsByMerchant
       summary: Get Monetary Rejects by Merchant.
       requestBody:
         content:
@@ -1325,8 +1325,8 @@ paths:
     post:
       tags:
         - Reporting Non Qualifying Transactions
-      x-group-name: 'Reporting Non Qualifying Transactions'
-      x-proxy-name: 'GetNonQualifyingTransactionsByMerchant'
+      x-group-name: Reporting Non Qualifying Transactions
+      x-proxy-name: GetNonQualifyingTransactionsByMerchant
       summary: Get Non Qualifying Transactions by Merchant.
       requestBody:
         content:
@@ -1343,8 +1343,8 @@ paths:
     post:
       tags:
         - Reporting Non Qualifying Transactions
-      x-group-name: 'Reporting Non Qualifying Transactions'
-      x-proxy-name: 'GetNonQualifyingTransactionsByEntity'
+      x-group-name: Reporting Non Qualifying Transactions
+      x-proxy-name: GetNonQualifyingTransactionsByEntity
       summary: Get Non Qualifying Transaction Summary by Entity.
       requestBody:
         content:
@@ -1361,8 +1361,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetNorthMerchantEntitlements'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetNorthMerchantEntitlements
       summary: Get North Merchant Entitlements.
       requestBody:
         content:
@@ -1379,8 +1379,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetNorthMerchantEntitlementDetail'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetNorthMerchantEntitlementDetail
       summary: Get North Merchant Entitlement Detail.
       requestBody:
         content:
@@ -1397,8 +1397,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetNorthMerchantEntitlementFull'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetNorthMerchantEntitlementFull
       summary: Get North Merchant Entitlement Full.
       requestBody:
         content:
@@ -1415,8 +1415,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetNorthMerchantPricingInformation'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetNorthMerchantPricingInformation
       summary: Get North Merchant Pricing Information.
       requestBody:
         content:
@@ -1433,8 +1433,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetNorthMerchantProfile'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetNorthMerchantProfile
       summary: Get North Merchant Profile.
       requestBody:
         content:
@@ -1451,8 +1451,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Statements
-      x-group-name: 'Reporting Merchant Statements'
-      x-proxy-name: 'GetNorthMerchantStatement'
+      x-group-name: Reporting Merchant Statements
+      x-proxy-name: GetNorthMerchantStatement
       summary: Get North Merchant Statement.
       requestBody:
         content:
@@ -1469,8 +1469,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Statements
-      x-group-name: 'Reporting Merchant Statements'
-      x-proxy-name: 'GetNorthMerchantStatementList'
+      x-group-name: Reporting Merchant Statements
+      x-proxy-name: GetNorthMerchantStatementList
       summary: Get North Merchant Statement List.
       requestBody:
         content:
@@ -1487,8 +1487,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetOmahaMerchantCardInformationPrivateLabel'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetOmahaMerchantCardInformationPrivateLabel
       summary: Get Optis Merchant Card Information Private Label.
       requestBody:
         content:
@@ -1505,8 +1505,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetOmahaMerchantCardType'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetOmahaMerchantCardType
       summary: Get Optis Merchant Card Type.
       requestBody:
         content:
@@ -1523,8 +1523,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetOmahaMerchantCardTypePinDebit'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetOmahaMerchantCardTypePinDebit
       summary: Get Optis Merchant Card Type Pin Debit.
       requestBody:
         content:
@@ -1541,8 +1541,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetOmahaMerchantMemos'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetOmahaMerchantMemos
       summary: Get Optis Merchant Memos.
       requestBody:
         content:
@@ -1559,8 +1559,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Information
-      x-group-name: 'Reporting Merchant Information'
-      x-proxy-name: 'GetOmahaMerchantProfile'
+      x-group-name: Reporting Merchant Information
+      x-proxy-name: GetOmahaMerchantProfile
       summary: Get Optis Merchant Profile.
       requestBody:
         content:
@@ -1577,8 +1577,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Statements
-      x-group-name: 'Reporting Merchant Statements'
-      x-proxy-name: 'GetOmahaMerchantStatement'
+      x-group-name: Reporting Merchant Statements
+      x-proxy-name: GetOmahaMerchantStatement
       summary: Get Optis Merchant Statement.
       requestBody:
         content:
@@ -1595,8 +1595,8 @@ paths:
     post:
       tags:
         - Reporting Merchant Statements
-      x-group-name: 'Reporting Merchant Statements'
-      x-proxy-name: 'GetOmahaMerchantStatementList'
+      x-group-name: Reporting Merchant Statements
+      x-proxy-name: GetOmahaMerchantStatementList
       summary: Get Optis Merchant Statement List.
       requestBody:
         content:
@@ -1613,8 +1613,8 @@ paths:
     post:
       tags:
         - Reporting Payment
-      x-group-name: 'Reporting Payment'
-      x-proxy-name: 'GetPaymentDetail'
+      x-group-name: Reporting Payment
+      x-proxy-name: GetPaymentDetail
       summary: Get Payment Detail.
       requestBody:
         content:
@@ -1631,8 +1631,8 @@ paths:
     post:
       tags:
         - Reporting Payment
-      x-group-name: 'Reporting Payment'
-      x-proxy-name: 'GetPaymentSummaryByEntity'
+      x-group-name: Reporting Payment
+      x-proxy-name: GetPaymentSummaryByEntity
       summary: Get Payment Summary by Entity.
       requestBody:
         content:
@@ -1649,8 +1649,8 @@ paths:
     post:
       tags:
         - Reporting Payment
-      x-group-name: 'Reporting Payment'
-      x-proxy-name: 'GetPaymentSummaryByMerchant'
+      x-group-name: Reporting Payment
+      x-proxy-name: GetPaymentSummaryByMerchant
       summary: Get Payment Summary by Merchant.
       requestBody:
         content:
@@ -1667,8 +1667,8 @@ paths:
     post:
       tags:
         - Reporting Monetary Rejects
-      x-group-name: 'Reporting Monetary Rejects'
-      x-proxy-name: 'GetRejectETCFrontEndEditExceptionsByEntity'
+      x-group-name: Reporting Monetary Rejects
+      x-proxy-name: GetRejectETCFrontEndEditExceptionsByEntity
       summary: Get Reject ETC Front End Edit Exceptions by Entity.
       requestBody:
         content:
@@ -1685,8 +1685,8 @@ paths:
     post:
       tags:
         - Reporting Monetary Rejects
-      x-group-name: 'Reporting Monetary Rejects'
-      x-proxy-name: 'GetRejectETCFrontEndEditExceptionsByMerchant'
+      x-group-name: Reporting Monetary Rejects
+      x-proxy-name: GetRejectETCFrontEndEditExceptionsByMerchant
       summary: Get Reject ETC Front End Edit Exceptions by Merchant.
       requestBody:
         content:
@@ -1703,8 +1703,8 @@ paths:
     post:
       tags:
         - Reporting Retrievals
-      x-group-name: 'Reporting Retrievals'
-      x-proxy-name: 'GetRetrievalsDetail'
+      x-group-name: Reporting Retrievals
+      x-proxy-name: GetRetrievalsDetail
       summary: Get Retrievals Detail.
       requestBody:
         content:
@@ -1721,8 +1721,8 @@ paths:
     post:
       tags:
         - Reporting Retrievals
-      x-group-name: 'Reporting Retrievals'
-      x-proxy-name: 'GetRetrievalsSummamry'
+      x-group-name: Reporting Retrievals
+      x-proxy-name: GetRetrievalsSummamry
       summary: Get Retrievals Summary.
       requestBody:
         content:
@@ -1739,8 +1739,8 @@ paths:
     post:
       tags:
         - Reporting Returns
-      x-group-name: 'Reporting Returns'
-      x-proxy-name: 'GetReturnsReportByEntity'
+      x-group-name: Reporting Returns
+      x-proxy-name: GetReturnsReportByEntity
       summary: Get Returns Report by Entity.
       requestBody:
         content:
@@ -1757,8 +1757,8 @@ paths:
     post:
       tags:
         - Reporting Returns
-      x-group-name: 'Reporting Returns'
-      x-proxy-name: 'GetReturnsReportByMerchant'
+      x-group-name: Reporting Returns
+      x-proxy-name: GetReturnsReportByMerchant
       summary: Get Returns Report by Merchant.
       requestBody:
         content:
@@ -1775,8 +1775,8 @@ paths:
     post:
       tags:
         - Reporting Returns
-      x-group-name: 'Reporting Returns'
-      x-proxy-name: 'GetReturnsSummaryByEntity'
+      x-group-name: Reporting Returns
+      x-proxy-name: GetReturnsSummaryByEntity
       summary: Get Returns Summary by Entity.
       requestBody:
         content:
@@ -1793,8 +1793,8 @@ paths:
     post:
       tags:
         - Reporting Returns
-      x-group-name: 'Reporting Returns'
-      x-proxy-name: 'GetReturnsSummaryByMerchant'
+      x-group-name: Reporting Returns
+      x-proxy-name: GetReturnsSummaryByMerchant
       summary: Get Returns Summary by Merchant.
       requestBody:
         content:
@@ -1811,8 +1811,8 @@ paths:
     post:
       tags:
         - Reporting Monetary Rejects
-      x-group-name: 'Reporting Monetary Rejects'
-      x-proxy-name: 'GetTapeTransmittalRejectsByEntity'
+      x-group-name: Reporting Monetary Rejects
+      x-proxy-name: GetTapeTransmittalRejectsByEntity
       summary: Get Tape Transmittal Rejects by Entity.
       requestBody:
         content:
@@ -1829,8 +1829,8 @@ paths:
     post:
       tags:
         - Reporting Monetary Rejects
-      x-group-name: 'Reporting Monetary Rejects'
-      x-proxy-name: 'GetTapeTransmittalRejectsByMerchant'
+      x-group-name: Reporting Monetary Rejects
+      x-proxy-name: GetTapeTransmittalRejectsByMerchant
       summary: Get Tape Transmittal Rejects by Merchant.
       requestBody:
         content:
@@ -1847,8 +1847,8 @@ paths:
     post:
       tags:
         - Reporting Tax Report
-      x-group-name: 'Reporting Tax Report'
-      x-proxy-name: 'GetTaxReportAdhoc'
+      x-group-name: Reporting Tax Report
+      x-proxy-name: GetTaxReportAdhoc
       summary: Get Tax Report Adhoc.
       requestBody:
         content:
@@ -1865,8 +1865,8 @@ paths:
     post:
       tags:
         - Reporting Tax Report
-      x-group-name: 'Reporting Tax Report'
-      x-proxy-name: 'GetTaxReportDailySubmittedDetailByEntity'
+      x-group-name: Reporting Tax Report
+      x-proxy-name: GetTaxReportDailySubmittedDetailByEntity
       summary: Get Tax Report Daily Submitted Detail by Entity.
       requestBody:
         content:
@@ -1883,8 +1883,8 @@ paths:
     post:
       tags:
         - Reporting Tax Report
-      x-group-name: 'Reporting Tax Report'
-      x-proxy-name: 'GetTaxReportDailySubmittedDetailByMerchant'
+      x-group-name: Reporting Tax Report
+      x-proxy-name: GetTaxReportDailySubmittedDetailByMerchant
       summary: Get Tax Report Daily Submitted Detail by Merchant.
       requestBody:
         content:
@@ -1901,8 +1901,8 @@ paths:
     post:
       tags:
         - Reporting Tax Report
-      x-group-name: 'Reporting Tax Report'
-      x-proxy-name: 'GetTaxReportDailySubmittedSummaryByEntity'
+      x-group-name: Reporting Tax Report
+      x-proxy-name: GetTaxReportDailySubmittedSummaryByEntity
       summary: Get Tax Report Daily Submitted Summary by Entity.
       requestBody:
         content:
@@ -1919,8 +1919,8 @@ paths:
     post:
       tags:
         - Reporting Tax Report
-      x-group-name: 'Reporting Tax Report'
-      x-proxy-name: 'GetTaxReportDailySubmittedSummaryByMerchant'
+      x-group-name: Reporting Tax Report
+      x-proxy-name: GetTaxReportDailySubmittedSummaryByMerchant
       summary: Get Tax Report Daily Submitted Summary by Merchant.
       requestBody:
         content:
@@ -1937,8 +1937,8 @@ paths:
     post:
       tags:
         - Reporting Tax Report
-      x-group-name: 'Reporting Tax Report'
-      x-proxy-name: 'GetTaxReportMonthlyInvalidDetailByEntity'
+      x-group-name: Reporting Tax Report
+      x-proxy-name: GetTaxReportMonthlyInvalidDetailByEntity
       summary: Get Tax Report Monthly Invalid Detail by Entity.
       requestBody:
         content:
@@ -1955,8 +1955,8 @@ paths:
     post:
       tags:
         - Reporting Tax Report
-      x-group-name: 'Reporting Tax Report'
-      x-proxy-name: 'GetTaxReportMonthlyInvalidDetailByMerchant'
+      x-group-name: Reporting Tax Report
+      x-proxy-name: GetTaxReportMonthlyInvalidDetailByMerchant
       summary: Get Tax Report Monthly Invalid Detail by Merchant. 
       requestBody:
         content:
@@ -1973,8 +1973,8 @@ paths:
     post:
       tags:
         - Reporting Tax Report
-      x-group-name: 'Reporting Tax Report'
-      x-proxy-name: 'GetTaxReportMonthlyInvalidSummaryByEntity'
+      x-group-name: Reporting Tax Report
+      x-proxy-name: GetTaxReportMonthlyInvalidSummaryByEntity
       summary: Get Tax Report Monthly Invalid Summary by Entity. 
       requestBody:
         content:
@@ -1991,8 +1991,8 @@ paths:
     post:
       tags:
         - Reporting Tax Report
-      x-group-name: 'Reporting Tax Report'
-      x-proxy-name: 'GetTaxReportMonthlyInvalidSummaryByMerchant'
+      x-group-name: Reporting Tax Report
+      x-proxy-name: GetTaxReportMonthlyInvalidSummaryByMerchant
       summary: Get Tax Report Monthly Invalid Summary by Merchant. 
       requestBody:
         content:
@@ -2009,8 +2009,8 @@ paths:
     post:
       tags:
         - Reporting Transactions
-      x-group-name: 'Reporting Transactions'
-      x-proxy-name: 'GetTransactions'
+      x-group-name: Reporting Transactions
+      x-proxy-name: GetTransactions
       summary: Get Transactions.
       requestBody:
         content:
@@ -2027,8 +2027,8 @@ paths:
     post:
       tags:
         - Reporting Void Rejects
-      x-group-name: 'Reporting Void Rejects'
-      x-proxy-name: 'GetVoidsRejectsDetail'
+      x-group-name: Reporting Void Rejects
+      x-proxy-name: GetVoidsRejectsDetail
       summary: Get Voids Rejects Detail.
       requestBody:
         content:
@@ -2045,8 +2045,8 @@ paths:
     post:
       tags:
         - Reporting Void Rejects
-      x-group-name: 'Reporting Void Rejects'
-      x-proxy-name: 'GetVoidsRejectsSummary'
+      x-group-name: Reporting Void Rejects
+      x-proxy-name: GetVoidsRejectsSummary
       summary: Get Voids Rejects Summary.
       requestBody:
         content:
@@ -2063,8 +2063,8 @@ paths:
     post:
       tags:
         - Reporting Transactions
-      x-group-name: 'Reporting Transactions'
-      x-proxy-name: 'GetVoucher'
+      x-group-name: Reporting Transactions
+      x-proxy-name: GetVoucher
       summary: Get Voucher.
       requestBody:
         content:
