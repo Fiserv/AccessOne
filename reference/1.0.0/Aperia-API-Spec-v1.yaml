@@ -21661,9 +21661,7 @@ components:
         - 043 - American Express Opt Blue (map 319)
         - 050 - Wright Express (map 008)
         - 051 - Paypal (map 128)
-        - 052 - TeleCheck ECA (map 021 / various sub products)
-        - 053 - TeleCheck CBP (map 021 / various sub products)
-        - 055 - TeleCheck ICA (map 021 / various sub products)
+        - 052 - TeleCheck (map 021 / various sub products)
         - 057 - Voyager (map 070)
         - 060 - Reserved
         - 061 - Discover Full Acquirer Processing (map 111)
