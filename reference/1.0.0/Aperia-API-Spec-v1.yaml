@@ -177,8 +177,8 @@ paths:
   /v1/api/accountmaintenance/mm-all-fields:
     get:
       tags:
-        - MM Inquiry All Fields
-      x-group-name: MM Inquiry All Fields
+        - Merchant Master Attributes
+      x-group-name: Merchant Master Attributes
       x-proxy-name: mm-all-fields
       summary: Merchant Master Inquiry Service for All Fields.
       description: This service can be used by clients to retrieve all merchant master fields across backend platforms.  The merchant demographic information is retrieved.  This can be used when a granular level request does not work.  For efficiency purposes, a granular level request should be the first thing to try.
@@ -205,8 +205,8 @@ paths:
   /v1/api/accountmaintenance/mm-billing-fields:
     get:
       tags:
-        - MM Inquiry Billing Fields
-      x-group-name: MM Inquiry Billing Fields
+        - Merchant Master Attributes
+      x-group-name: Merchant Master Attributes
       x-proxy-name: mm-billing-fields
       summary: Merchant Master Inquiry for Blling Fields.
       description: This service can be used as a granular level request by clients to retrieve billing related merchant master fields across backend platforms.
@@ -235,8 +235,8 @@ paths:
   /v1/api/accountmaintenance/mm-entitlements:
     get:
       tags:
-        - MM Inquiry Entitlements
-      x-group-name: MM Inquiry Entitlements
+        - Merchant Master Attributes
+      x-group-name: Merchant Master Attributes
       x-proxy-name: mm-entitlements
       summary: Merchant Master Inquiry for Entitlement Fields
       description: This service can be used by clients as a granular level request to retrieve entitlement/card brand fields across backend platforms. 
@@ -264,8 +264,8 @@ paths:
   /v1/api/accountmaintenance/mm-funding-fields:
     get:
       tags:
-        - MM Inquiry Funding Fields
-      x-group-name: MM Inquiry Funding Fields
+        - Merchant Master Attributes
+      x-group-name: Merchant Master Attributes
       x-proxy-name: mm-funding-fields
       summary: Merchant Master Inquiry for Funding Fields.
       description: This service can be used by clients as a granular level request to retrieve entitlement/card brand fields across backend platforms. 
@@ -292,8 +292,8 @@ paths:
   /v1/api/accountmaintenance/mm-location-chaining:
     get:
       tags:
-        - MM Inquiry Location Chaining
-      x-group-name: MM Inquiry Location Chaining
+        - Merchant Master Attributes
+      x-group-name: Merchant Master Attributes
       x-proxy-name: mm-location-chaining
       summary: Merchant Master Inquiry for Location Chaining Fields.
       description: This service can be used as a granular level request by clients to retrieve all location chaining merchant master fields across backend platforms.
@@ -320,8 +320,8 @@ paths:
   /v1/api/accountmaintenance/mm-merchant-profile:
     get:
       tags:
-        - MM Inquiry Merchant Profile
-      x-group-name: MM Inquiry Merchant Profile
+        - Merchant Master Attributes
+      x-group-name: Merchant Master Attributes'
       x-proxy-name: mm-merchant-profile
       summary: Merchant Master Inquiry for Merchant Profile Fields.
       description: This service can be used as a granular level request by clients to retrieve all merchant profile merchant master fields across backend platforms.
@@ -348,8 +348,8 @@ paths:
   /v1/api/accountmaintenance/mm-program-fields:
     get:
       tags:
-        - MM Inquiry Program Fields
-      x-group-name: MM Inquiry Program Fields
+        - Merchant Master Attributes
+      x-group-name: Merchant Master Attributes
       x-proxy-name: mm-program-fields
       summary: Merchant Master Inquiry for Program Fields.
       description: This service can be used by clients as a granular level request to retrieve merchant program fields across backend platforms. 
@@ -375,8 +375,8 @@ paths:
   /v1/api/accountmaintenance/mm-self-service-fields:
     get:
       tags:
-        - MM Inquiry Self Service Fields
-      x-group-name: MM Inquiry Self Service Fields
+        - Merchant Master Attributes
+      x-group-name: Merchant Master Attributes
       x-proxy-name: mm-self-service-fields
       summary: Merchant Master Inquiry for Self Service Fields
       description: This service can be used by clients to retrieve self service fields for merchant master data spanning across backend platforms. 
@@ -402,8 +402,8 @@ paths:
   /v1/api/accountmaintenance/mm-update:
     post:
       tags:
-        - MM Update
-      x-group-name: MM Update
+        - Merchant Master Attributes
+      x-group-name: Merchant Master Attributes
       x-proxy-name: mm-update
       summary: Merchant Master Update Service
       description: This service can be used by clients to update merchant master data spanning across backend platforms. 
@@ -432,8 +432,8 @@ paths:
   /v1/api/accountmaintenance/unmask:
     get:
       tags:
-        - MM Unmask
-      x-group-name: MM Unmask
+        - Merchant Master Attributes
+      x-group-name: Merchant Master Attributes
       x-proxy-name: unmask
       summary: Merchant Master Field Unmask Service
       description: This service is used to allow users with appropriate privilieges to unmask encrypted fields to get returned data in the clear.
@@ -911,8 +911,8 @@ paths:
     post:
       tags:
         - Reporting Customer Present
-      x-group-name: Reporting Customer Present
-      x-proxy-name: GetCustomerNotPresentByMerchant
+      x-group-name: 'Reporting Customer Present'
+      x-proxy-name: 'GetCustomerNotPresentByMerchant'
       summary: Get Customer Not Present by Merchant.
       requestBody:
         content:
