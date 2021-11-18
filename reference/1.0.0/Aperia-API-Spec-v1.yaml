@@ -321,7 +321,7 @@ paths:
     get:
       tags:
         - Merchant Master Attributes
-      x-group-name: Merchant Master Attributes'
+      x-group-name: Merchant Master Attributes
       x-proxy-name: mm-merchant-profile
       summary: Merchant Master Inquiry for Merchant Profile Fields.
       description: This service can be used as a granular level request by clients to retrieve all merchant profile merchant master fields across backend platforms.
