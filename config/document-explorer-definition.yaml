@@ -37,7 +37,42 @@
   - title: Usage Guides for Boarding and Reporting
     sections:
       - title: North Boarding
-        link: docs/north-boarding-api-specifications.md
+        sections:
+          - title: introduction
+            link: docs/2.0-introduction.md
+          - title: Technical Specifications
+            link: docs/3.0-Technical-Specifications.md
+            sections:
+              - title: Boarding API Methods
+                link: docs/3.1-Boarding-API-Methods.md
+              - title: XML Format
+                link: docs/3.2-XML-Format.md
+              - title: Validation Handler
+                link: docs/3.3-Validation-Handler.md
+              - title: MPA Status Report
+                link: docs/3.4-MPA-Status-Report.md
+              - title: Boarding Process
+                link: docs/3.5-Boarding-Process.md
+          - title: SOAP Security Guide
+            link: docs/4.0-SOAP-Security-Guide.md
+            sections:
+              - title: Verification via SOAP UI
+                link: docs/4.1-Verification-Via-SOAP-UI.md
+              - title: Connectivity Verification Via Other Platforms
+                link: docs/4.2-Connectivity-Via-Other-Platforms.md
+              - title: Common Connectivity Issues
+                link: docs/4.3-Common-Connectivity-Issues
+          - title: Basic Verification Guide
+            link: docs/5.0-Basic-Verification-Guide.md
+            sections:
+              - title: Preparations
+                link: docs/5.1-Preparations.md
+              - title: Merchant Application Submission
+                link: docs/5.2-Merchant-Application-Submission.md
+              - title: Post Merchant Submission
+                link: docs/5.3-Post-Merchant-Submission.md
+              - title: MPA Status Tracking
+                link: docs/5.4-MPA-Status-Tracking.md
       - title: Optis Boarding
         link: docs/optis-boarding-api-specifications.md
       - title: Reporting
