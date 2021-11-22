@@ -6,7 +6,7 @@ info:
     email: TBD@fiserv.com
   version: v1
 servers:
-  - url: /ao
+  - url: https://api.youraccessone.com
 paths:
   /v1/api/auth/token:
     get:
