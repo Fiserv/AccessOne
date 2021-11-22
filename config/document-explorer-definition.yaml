@@ -150,7 +150,15 @@
             section:
               title: SOAP Body Structure
               link: docs/O-11.1-SOAP-Body-Structure.md
-              title: SOAP Header Example
-              link: docs/O-10.2-SOAP-Body-Example.md
+              title: SOAP Body Example
+              link: docs/O-11.2-SOAP-Body-Example.md
+          - title: Common Issues
+            section:
+              - title: Generic Error
+                link: docs/O-12.1-Generic-Error.md
+              - title: Submission Failure With Specific Errors
+                link: docs/O-12.2-Submission-Failure-With-Specific-Errors.md
+              - title: Submission Failure Without Specific Errors
+                link: docs/O-12.3-Submission-Failure-Without-Specific-Errors.md
       - title: Reporting
         link: docs/reporting-api-specifications.md
