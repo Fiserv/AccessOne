@@ -167,4 +167,34 @@
               - title: Submission Failure Without Specific Errors
                 link: docs/O-12.3-Submission-Failure-Without-Specific-Errors.md
       - title: Reporting
-        link: docs/reporting-api-specifications.md
+        section:
+          title: Basic Service Information
+          link: docs/R-Basic-Service-Information.md
+          title: Revision History
+          link: docs/R-A-Revision-History.md
+          title: Requirements
+          link: docs/R-B-Requirements.md
+          section:
+            title: Enumerations
+            link: docs/R-B-I-Enumerations
+            title: Validations
+            link: docs/R-B-II-Validations.md
+            title: General
+            link: docs/R-B-III-General.md
+          title: REST Guide
+          link: docs/R-C-Rest-Guide.md
+          section:
+            title: Initiate REST Project Workspace
+            link: docs/R-C-1-Initiate-Project-Workspace.md
+            title: Setup Security Authentication Method And Media Type
+            link: docs/R-C-2-Setup-Security-Authentication-Method-And-Media-Type.md
+            title: Generate Token
+            link: docs/R-C-3-Generate-Token.md
+            title: Input REST Request Body
+            link: docs/R-C-4-Input-Rest-Request-Body.md
+          title: Service Operations
+          link: docs/R-D-Service-Operations.md
+          section:
+            title: getBatchSummaryByEntity
+            link: docs/R-D-1-getBatchSummaryByEntity.md
+            
