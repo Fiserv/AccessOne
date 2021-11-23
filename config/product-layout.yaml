@@ -63,7 +63,7 @@ benefits:
     description: Leverage our checklist to assure you have what you need for a complete integration into reporting APIs.
 featuredFeatures:
   - title: Merchant Inquiry
-    description: Real-time inquiry APIs allow you to select all merchant master attributes in one request.  Alternatively, you can select smaller specific views of information (Location/Chaining, Merchant Profile, Programs, Entitlements, Billing attributes).
+    description: Retrieve merchant master attributes from the systems of record.  Data views include Location/Chaining, Merchant Profile, Programs, Entitlements, and Billing attributes.
     tags: ["Enterprise"]
     bullets:
       bullet1: A standard platform agnostic REST API format is used. 
