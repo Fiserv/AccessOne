@@ -109,6 +109,7 @@
               - title: Conditional Data Logic
                 link: docs/O-5.7-Conditional-Data-Logic.md
           - title: High Level Test Cases
+            link: docs/O-6.0-High-Level-Test-Cases.md
             section:
               - title: Starting XML File
                 link: docs/O-6.1-Starting-XML-File.md
@@ -123,12 +124,14 @@
               - title: Exported PDFs
                 link: docs/O-6.6-Exported-PDFs.md
           - title: SOAP Request Guide
+            link: docs/O-7.0-SOAP-Request-Guide.md
             section:
               - title: Prerequisite Checks
                 link: docs/O-7.1-Prerequisite-Checks.md
               - title: Configuring SOAP UI
                 link: docs/O-7.2-Configuring-SOAP-UI.md
           - title: Submitting SOAP Requests
+            link: docs/O-8.0-Submitting-SOAP-Requests.md
             section:
               - title: Web Method Submit MPA
                 link: docs/O-8.1-Web-Method-Submit-MPA.md
@@ -141,18 +144,21 @@
           - title: Connectivity Via An External Tool
             link: docs/O-9.0-Connectivity-Via-An-External-Tool.md
           - title: SOAP Request Header
+            link: docs/O-10.0-SOAP-Request-Header.md
             section:
               title: SOAP Header Structure
               link: docs/O-10.1-SOAP-Header-Structure.md
               title: SOAP Header Example
               link: docs/O-10.2-SOAP-Header-Example.md
           - title: SOAP Request Body
+            link: docs/O-11.0-SOAP-Request-Body.md
             section:
               title: SOAP Body Structure
               link: docs/O-11.1-SOAP-Body-Structure.md
               title: SOAP Body Example
               link: docs/O-11.2-SOAP-Body-Example.md
           - title: Common Issues
+            link: docs/O-12.0-Common-Issues.md
             section:
               - title: Generic Error
                 link: docs/O-12.1-Generic-Error.md
