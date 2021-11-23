@@ -39,7 +39,7 @@
       - title: North Boarding
         sections:
           - title: introduction
-            link: docs/N-2.0-introduction.md
+            link: docs/N-2.0-Introduction.md
           - title: Technical Specifications
             link: docs/N-3.0-Technical-Specifications.md
             sections:
@@ -59,7 +59,7 @@
               - title: Verification via SOAP UI
                 link: docs/N-4.1-Verification-Via-SOAP-UI.md
               - title: Connectivity Verification Via Other Platforms
-                link: docs/N-4.2-Connectivity-Via-Other-Platforms.md
+                link: docs/N-4.2-Connectivity-Verification-Via-Other-Platforms.md
               - title: Common Connectivity Issues
                 link: docs/N-4.3-Common-Connectivity-Issues
           - title: Basic Verification Guide
