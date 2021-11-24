@@ -34,7 +34,7 @@
     articles:
       - title: Welcome to AccessOne API Suite
         link: docs/getting-started.md
-  - title: Usage Guides for Boarding and Reporting
+  - title: Boarding/Reporting Guides
     sections:
       - title: North Boarding
         sections:
