@@ -1,6 +1,4 @@
-﻿
-### # \*\*D.2 GetBatchSummaryByMerchant\*\*
-
+# **D.2 GetBatchSummaryByMerchant**
 
 |**Service** **Operation** **GetBatchSummaryByMerchant** ()|
 | :-: |
