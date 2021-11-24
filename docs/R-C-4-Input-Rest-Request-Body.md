@@ -1,4 +1,5 @@
-﻿### Input Rest Request Body
+# **C.4 Input Rest Request Body**
+
 Input XML Request into the highlighted text box below.
 
 Each APIs in this document provides the Request Body Sample so that the user can copy them to paste to the XML Request.
@@ -8,6 +9,3 @@ This is example to get report for GetGGe4MerchantEnrollment API, so in this text
 Then click   button to run the request.
 
 The REST API Response will be shown in the right panel.
-
-
-
