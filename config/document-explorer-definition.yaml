@@ -149,7 +149,6 @@
               title: 10.2 SOAP Header Example
               link: docs/O-10.2-SOAP-Header-Example.md
           - title: 11.0 SOAP Request Body
-            link: docs/O-11.0-SOAP-Request-Body.md
             sections:
               title: 11.1 SOAP Body Structure
               link: docs/O-11.1-SOAP-Body-Structure.md
@@ -190,8 +189,7 @@
             title: C.4 Input REST Request Body
             link: docs/R-C-4-Input-Rest-Request-Body.md
           title: D - Service Operations
-          link: docs/R-D-Service-Operations.md
           sections:
             title: D.1 getBatchSummaryByEntity
             link: docs/R-D-1-getBatchSummaryByEntity.md
-            
+           
