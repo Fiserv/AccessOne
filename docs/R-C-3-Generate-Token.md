@@ -1,15 +1,10 @@
-﻿**Generate Token** 
+# **C.3 Generate Token** 
 
 Get the **AccessOne API Password** (this is different from your AccessOne login password):
 
 In Notepad++, go to Tools > SHA-256 > Generate:
 
 Enter your API password which will generate the SHA-256 token:
-
-
-
-
-
 
 
 
