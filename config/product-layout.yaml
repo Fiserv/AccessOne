@@ -112,7 +112,7 @@ featuredFeatures:
         type: "post"        
         path: "/v1/api/boarding/omaha/SubmitMPA"
   - title: Merchant Reporting 
-    description: Use our APIs to retrieve merchant statements, processing details, and transaction level information.  This would authorizations, settlement data, billing details and other information.  
+    description: Use our APIs to retrieve merchant statements, processing details, and transaction level information.  This includes authorizations, settlement data, billing details and other information.  
     tags: ["Enterprise"]
     bullets:
       bullet1: All pertinent information you need is provide in our reporting APIs.
