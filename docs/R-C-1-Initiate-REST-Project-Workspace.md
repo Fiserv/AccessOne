@@ -1,4 +1,4 @@
-﻿1. ### Initiate REST Project Workspace
+# **C.1 Initiate REST Project Workspace**
 
 There are three ways to open REST Project workspace:
 
@@ -22,6 +22,4 @@ Click OK
 
 - In a few seconds or less the newly created REST project will be loaded with all the presentable components of the North Boarding API. 
 - A successful load will be indicated by no error and the web service’s components are displayed on the Navigator panel. An example is shown in the following screenshot:
-
-
 
