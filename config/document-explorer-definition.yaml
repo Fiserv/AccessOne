@@ -38,7 +38,7 @@
     sections:
       - title: North Boarding
         sections:
-          - title: introduction
+          - title: Introduction
             link: docs/N-2.0-Introduction.md
           - title: Technical Specifications
             link: docs/N-3.0-Technical-Specifications.md
