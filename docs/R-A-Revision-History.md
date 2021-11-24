@@ -1,5 +1,4 @@
-﻿
-# Revision History
+# **A - Revision History**
 
 |**#**|**Date**|**Reason for Change**|
 | - | - | - |
@@ -10,8 +9,3 @@
 |V4.2|12/12/2018|<p>[TL] Added following API:</p><p>- 58.1 - 	GetGGe4MerchantEnrollmentByMerchant</p>|
 |V5.0|10/17/2019|<p>**[TL] Added following sections:**</p><p>- C – REST Guide</p><p>- Added Rest API sample request, Rest API sample response for 89 APIs.</p>|
 |V5.1|01/20/2020|<p>**[TL] Correct the Endpoint:**</p><p>[**https://lsuat-api.fdportfoliomanager.com/**](https://lsuat-api.fdportfoliomanager.com/)</p>|
-
-AccessOne Reporting API Specifications 		Page  **PAGE 1** of  **NUMPAGES  1**
-
-This document contains confidential, proprietary information and may not be reproduced or copied without the express authorization of Fiserv.
-
