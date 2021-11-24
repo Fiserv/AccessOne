@@ -1,4 +1,4 @@
-﻿1. ### **GetBatchSummaryByEntity**
+# **D.1 GetBatchSummaryByEntity**
 
 exec spa\_64\_ms\_LoneStar\_GetBatchHistory @PlatformID=1,@SiteID=1000,@DDSClient=64,@UserID='Capital',@UserIDMode='Client',@HierarchyFilterMode=N'PLATFORM',@HierarchyFilterValue=N'',@DateFilterMode=3,@BeginDate='2018-09-01 00:00:00',@EndDate='2018-09-07 00:00:00',@SubClientDrilldown=N'',@ClientDrilldown=N'',@IsMerchantList=0,@IsPaging=1,@IsCountPageTotal=0,@PageNo=1,@PageSize=10,@stOrder='ENTITYNAME DESC',@stFilter=''
 
