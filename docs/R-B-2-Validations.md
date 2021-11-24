@@ -1,4 +1,5 @@
-﻿## VALIDATIONS:
+# **B.2 VALIDATIONS**
+
 1. ### FORMAT OF HierarchyFilterValue
 
 ||**Value of HierarchyFilterMode**|**Format of HierarchyFilterValue**|**Min Length**|**Max Length**|
@@ -37,4 +38,3 @@ ISO 8601** (YYYY-MM-DDThh:mm:ssTZD)
 2014-07-16T19:20:30+07:00
 
 2014-07-15T19:10:30
-
