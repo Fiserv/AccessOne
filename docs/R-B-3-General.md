@@ -1,4 +1,5 @@
-﻿## GENERAL
+# **B.3 GENERAL**
+
 1. ### HierarchyFilterMode Values Groups
 
 |**1**|SubClient**,** Platform**,** MasterSaleAgent, CorporateName, MerchantName, MerchantNumber, Sys, SysPrin, SysPrinAgent, SalesAgent, HeadquarterMerchantNumber, Bank, Agent, Corp, NorthChain,  NorthSalesAgent, MasterChain, MemphisChain, SalesmanNo|
