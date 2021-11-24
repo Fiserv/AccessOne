@@ -1,4 +1,5 @@
-﻿## ENUMERATIONS
+# **B.1 ENUMERATIONS**
+
 ### HierarchyFilterMode
 
 ||**Value**|**Description**|
