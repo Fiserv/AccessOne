@@ -1,4 +1,5 @@
-﻿# Requirements
+# **B - Requirements**
+
 This section specifies the detailed requirements for applying WS-Security Authentication using Username Tokens with a Username and Password Digest. The OASIS standard is being utilized with [the profile of Web Services Security Username Token Profile Version 1.1.1](http://docs.oasis-open.org/wss-m/wss/v1.1.1/os/wss-UsernameTokenProfile-v1.1.1-os.html).
 
 The following request sample illustrates how the security information will be sent within SOAP Header. Note that the SOAP body will vary depending on the specifics of the data communicated by Lonestar pillars.
