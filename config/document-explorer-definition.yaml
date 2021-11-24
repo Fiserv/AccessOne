@@ -81,19 +81,19 @@
             link: docs/O-2.0-Requirements.md
           - title: Request Format
             link: docs/O-3.0-Request-Format.md
-            section:
+            sections:
               - title: Soap Envelope
                 link: docs/O-3.1-Soap-Envelope.md
               - title: Using Master Merchant Document
                 link: docs/O-3.2-Using-Master-Mercant-Document.md
           - title: WS Security Authentication
             link: docs/O-4.0-WS-Security-Authentication.md
-            section:
+            sections:
               - title: Soap UI Project
                 link: docs/O-4.1-Soap-UI-Project.md
           - title: Boarding API Methods
             link: docs/O-5.0-Boarding-API-Methods.md
-            section:
+            sections:
               - title: Submit MPA Method
                 link: docs/O-5.1-Submit-MPA-Method.md
               - title: Get Status By Time Span Method
@@ -109,8 +109,7 @@
               - title: Conditional Data Logic
                 link: docs/O-5.7-Conditional-Data-Logic.md
           - title: High Level Test Cases
-            link: docs/O-6.0-High-Level-Test-Cases.md
-            section:
+            sections:
               - title: Starting XML File
                 link: docs/O-6.1-Starting-XML-File.md
               - title: Common Issues
@@ -124,15 +123,13 @@
               - title: Exported PDFs
                 link: docs/O-6.6-Exported-PDFs.md
           - title: SOAP Request Guide
-            link: docs/O-7.0-SOAP-Request-Guide.md
-            section:
+            sections:
               - title: Prerequisite Checks
                 link: docs/O-7.1-Prerequisite-Checks.md
               - title: Configuring SOAP UI
                 link: docs/O-7.2-Configuring-SOAP-UI.md
           - title: Submitting SOAP Requests
-            link: docs/O-8.0-Submitting-SOAP-Requests.md
-            section:
+            sections:
               - title: Web Method Submit MPA
                 link: docs/O-8.1-Web-Method-Submit-MPA.md
               - title: Web Method Retrieve MPA XML
@@ -144,22 +141,21 @@
           - title: Connectivity Via An External Tool
             link: docs/O-9.0-Connectivity-Via-An-External-Tool.md
           - title: SOAP Request Header
-            link: docs/O-10.0-SOAP-Request-Header.md
-            section:
+            sections:
               title: SOAP Header Structure
               link: docs/O-10.1-SOAP-Header-Structure.md
               title: SOAP Header Example
               link: docs/O-10.2-SOAP-Header-Example.md
           - title: SOAP Request Body
             link: docs/O-11.0-SOAP-Request-Body.md
-            section:
+            sections:
               title: SOAP Body Structure
               link: docs/O-11.1-SOAP-Body-Structure.md
               title: SOAP Body Example
               link: docs/O-11.2-SOAP-Body-Example.md
           - title: Common Issues
             link: docs/O-12.0-Common-Issues.md
-            section:
+            sections:
               - title: Generic Error
                 link: docs/O-12.1-Generic-Error.md
               - title: Submission Failure With Specific Errors
@@ -167,14 +163,14 @@
               - title: Submission Failure Without Specific Errors
                 link: docs/O-12.3-Submission-Failure-Without-Specific-Errors.md
       - title: Reporting
-        section:
+        sections:
           title: Basic Service Information
           link: docs/R-Basic-Service-Information.md
           title: Revision History
           link: docs/R-A-Revision-History.md
           title: Requirements
           link: docs/R-B-Requirements.md
-          section:
+          sections:
             title: Enumerations
             link: docs/R-B-I-Enumerations
             title: Validations
@@ -183,7 +179,7 @@
             link: docs/R-B-III-General.md
           title: REST Guide
           link: docs/R-C-Rest-Guide.md
-          section:
+          sections:
             title: Initiate REST Project Workspace
             link: docs/R-C-1-Initiate-Project-Workspace.md
             title: Setup Security Authentication Method And Media Type
@@ -194,7 +190,7 @@
             link: docs/R-C-4-Input-Rest-Request-Body.md
           title: Service Operations
           link: docs/R-D-Service-Operations.md
-          section:
+          sections:
             title: getBatchSummaryByEntity
             link: docs/R-D-1-getBatchSummaryByEntity.md
             
