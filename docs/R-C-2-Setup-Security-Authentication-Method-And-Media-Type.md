@@ -1,4 +1,4 @@
-﻿### Setup Security and Authentication, Method and Media Type 
+# **C.2 Setup Security and Authentication, Method and Media Type**
 
 In the initial new request window, setup following parameters with their corresponding values:
 
