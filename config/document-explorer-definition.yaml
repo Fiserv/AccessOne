@@ -93,8 +93,6 @@
           link: docs/O-4.1-Soap-UI-Project.md
       - title: 5.0 Boarding API Methods
         sections:
-        - title: 5.0 Boarding API Methods
-          link: docs/O-5.0-Boarding-API-Methods.md
         - title: 5.1 Submit MPA Method
           link: docs/O-5.1-Submit-MPA-Method.md
         - title: 5.2 Get Status By Time Span Method
@@ -106,7 +104,7 @@
         - title: 5.5 Merchant Information XML Format
           link: docs/O-5.5-Merchant-Information-XML-Format.md
         - title: 5.6 Merchant Information Validation Handler
-          link: docs/O-5.6-Merchant-Validation-Handler.md
+          link: docs/O-5.6-Merchant-Information-Validation-Handler.md
         - title: 5.7 Conditional Data Logic
           link: docs/O-5.7-Conditional-Data-Logic.md
       - title: 6.0 High Level Test Cases
