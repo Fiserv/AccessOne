@@ -45,8 +45,6 @@
           link: docs/N-2.2-Project-Scope.md
       - title: 3.0 Technical Specifications
         sections:
-        - title: 3.0 Technical Specifications
-          link: docs/N-3.0-Technical-Specifications.md
         - title: 3.1 Boarding API Methods
           link: docs/N-3.1-Boarding-API-Methods.md
         - title: 3.2 XML Format
