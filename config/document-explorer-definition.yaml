@@ -65,8 +65,6 @@
           link: docs/N-4.3-Common-Connectivity-Issues.md
       - title: 5.0 Basic Verification Guide
         sections:
-        - title: 5.0 Basic Verification Guide
-          link: docs/N-5.0-Basic-Verification-Guide.md
         - title: 5.1 Preparations
           link: docs/N-5.1-Preparations.md
         - title: 5.2 Merchant Application Submission
