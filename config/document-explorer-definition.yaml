@@ -57,8 +57,6 @@
           link: docs/N-3.5-Boarding-Process.md
       - title: 4.0 SOAP Security Guide
         sections:
-        - title: 4.0 SOAP Security Guide
-          link: docs/N-4.0-SOAP-Security-Guide.md
         - title: 4.1 Verification via SOAP UI
           link: docs/N-4.1-Verification-Via-SOAP-UI.md
         - title: 4.2 Connectivity Verification Via Other Platforms
