@@ -187,6 +187,6 @@
           link: docs/R-C-4-Input-Rest-Request-Body.md
       - title: D - Service Operations
         sections:
-        - title: D.1 getBatchSummaryByEntity
-          link: docs/R-D-1-getBatchSummaryByEntity.md
+        - title: D.1 GetBatchSummaryByEntity
+          link: docs/R-D-1-GetBatchSummaryByEntity.md
            
