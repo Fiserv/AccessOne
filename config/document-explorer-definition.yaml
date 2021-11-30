@@ -178,7 +178,7 @@
         - title: C - REST Guide
           link: docs/R-C-Rest-Guide.md
         - title: C.1 Initiate REST Project Workspace
-          link: docs/R-C-1-Initiate-Project-Workspace.md
+          link: docs/R-C-1-Initiate-REST-Project-Workspace.md
         - title: C.2 Setup Security Authentication Method And Media Type
           link: docs/R-C-2-Setup-Security-Authentication-Method-And-Media-Type.md
         - title: C.3 Generate Token
