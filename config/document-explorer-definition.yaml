@@ -30,7 +30,6 @@
 
 - sections:
   - title: Getting Started
-    link: docs/getting-started.md
     sections:
     - title: Welcome to AccessOne API Suite
       link: docs/getting-started.md
@@ -45,8 +44,9 @@
         - title: 2.2 Project Scope
           link: docs/N-2.2-Project-Scope.md
       - title: 3.0 Technical Specifications
-        link: docs/N-3.0-Technical-Specifications.md
         sections:
+        - title: 3.0 Technical Specifications
+          link: docs/N-3.0-Technical-Specifications.md
         - title: 3.1 Boarding API Methods
           link: docs/N-3.1-Boarding-API-Methods.md
         - title: 3.2 XML Format
@@ -58,8 +58,9 @@
         - title: 3.5 Boarding Process
           link: docs/N-3.5-Boarding-Process.md
       - title: 4.0 SOAP Security Guide
-        link: docs/N-4.0-SOAP-Security-Guide.md
         sections:
+        - title: 4.0 SOAP Security Guide
+          link: docs/N-4.0-SOAP-Security-Guide.md
         - title: 4.1 Verification via SOAP UI
           link: docs/N-4.1-Verification-Via-SOAP-UI.md
         - title: 4.2 Connectivity Verification Via Other Platforms
@@ -67,8 +68,9 @@
         - title: 4.3 Common Connectivity Issues
           link: docs/N-4.3-Common-Connectivity-Issues
       - title: 5.0 Basic Verification Guide
-        link: docs/N-5.0-Basic-Verification-Guide.md
         sections:
+        - title: 5.0 Basic Verification Guide
+          link: docs/N-5.0-Basic-Verification-Guide.md
         - title: 5.1 Preparations
           link: docs/N-5.1-Preparations.md
         - title: 5.2 Merchant Application Submission
@@ -84,20 +86,23 @@
       - title: 2.0 Requirements
         link: docs/O-2.0-Requirements.md
       - title: 3.0 Request Format
-        link: docs/O-3.0-Request-Format.md
         sections:
+        - title: 3.0 Request Format
+          link: docs/O-3.0-Request-Format.md
         - title: 3.1 Soap Envelope
           link: docs/O-3.1-Soap-Envelope.md
         - title: 3.2 Using Master Merchant Document
           link: docs/O-3.2-Using-Master-Mercant-Document.md
       - title: 4.0 WS Security Authentication
-        link: docs/O-4.0-WS-Security-Authentication.md
         sections:
+        - title: 4.0 WS Security Authentication
+          link: docs/O-4.0-WS-Security-Authentication.md
         - title: 4.1 Soap UI Project
           link: docs/O-4.1-Soap-UI-Project.md
       - title: 5.0 Boarding API Methods
-        link: docs/O-5.0-Boarding-API-Methods.md
         sections:
+        - title: 5.0 Boarding API Methods
+          link: docs/O-5.0-Boarding-API-Methods.md
         - title: 5.1 Submit MPA Method
           link: docs/O-5.1-Submit-MPA-Method.md
         - title: 5.2 Get Status By Time Span Method
@@ -169,8 +174,9 @@
       - title: A - Revision History
         link: docs/R-A-Revision-History.md
       - title: B - Requirements
-        link: docs/R-B-Requirements.md
         sections:
+        - title: B - Requirements
+          link: docs/R-B-Requirements.md
         - title: B.1 Enumerations
           link: docs/R-B-1-Enumerations
         - title: B.2 Validations
@@ -178,8 +184,9 @@
         - title: B.3 General
           link: docs/R-B-3-General.md
       - title: C - REST Guide
-        link: docs/R-C-Rest-Guide.md
         sections:
+        - title: C - REST Guide
+          link: docs/R-C-Rest-Guide.md
         - title: C.1 Initiate REST Project Workspace
           link: docs/R-C-1-Initiate-Project-Workspace.md
         - title: C.2 Setup Security Authentication Method And Media Type
