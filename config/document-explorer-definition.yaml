@@ -173,8 +173,6 @@
           link: docs/R-B-3-General.md
       - title: C - REST Guide
         sections:
-        - title: C - REST Guide
-          link: docs/R-C-Rest-Guide.md
         - title: C.1 Initiate REST Project Workspace
           link: docs/R-C-1-Initiate-REST-Project-Workspace.md
         - title: C.2 Setup Security Authentication Method And Media Type
