@@ -163,8 +163,6 @@
         link: docs/R-A-Revision-History.md
       - title: B - Requirements
         sections:
-        - title: B - Requirements
-          link: docs/R-B-Requirements.md
         - title: B.1 Enumerations
           link: docs/R-B-1-Enumerations.md
         - title: B.2 Validations
