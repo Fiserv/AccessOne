@@ -87,8 +87,6 @@
           link: docs/O-3.2-Using-Master-Merchant-Document.md
       - title: 4.0 WS Security Authentication
         sections:
-        - title: 4.0 WS Security Authentication
-          link: docs/O-4.0-WS-Security-Authentication.md
         - title: 4.1 Soap UI Project
           link: docs/O-4.1-Soap-UI-Project.md
       - title: 5.0 Boarding API Methods
