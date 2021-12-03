@@ -30,9 +30,7 @@
 
 - sections:
   - title: Getting Started
-    sections:
-    - title: Welcome to AccessOne API Suite
-      link: docs/getting-started.md
+    link: docs/getting-started.md
   - title: Boarding/Reporting Guides
     sections:
     - title: North Boarding
