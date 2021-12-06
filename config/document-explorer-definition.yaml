@@ -181,4 +181,10 @@
         sections:
         - title: D.1 GetBatchSummaryByEntity
           link: docs/R-D-1-GetBatchSummaryByEntity.md
+        - title: D.2 GetBatchSummaryByMerchant
+          link: docs/R-D-2-GetBatchSummaryByMerchant.md
+        - title: D.3 GetBatchDetail
+          link: docs/R-D-3-GetBatchDetail.md
+        - title: D.4 GetCardSummary
+          link: docs/R-D-4-GetCardSummary.md
            
