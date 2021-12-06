@@ -1,5 +1,4 @@
-﻿### **R.D.4 GetCardSummary**
-
+# **R.D.4 GetCardSummary**
 
 |**Service Operation GetCardSummary ()**|
 | :-: |
