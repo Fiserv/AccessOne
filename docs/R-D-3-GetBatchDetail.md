@@ -1,6 +1,4 @@
-﻿
-### **R.D.3 GetBatchDetail**
-
+# **R.D.3 GetBatchDetail*
 
 |**Service Operation GetBatchDetail ()**|
 | :-: |
