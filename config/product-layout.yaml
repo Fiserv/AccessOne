@@ -124,7 +124,7 @@ featuredFeatures:
       - relatedDoc: 
         title: Merchant Reporting
         description: Use our APIs for a full range of merchant reporting information.
-        link: "/docs/R-Basic-Information.md"
+        link: "/docs/R-Basic-Service-Information.md"
     relatedAPIs:
       - relatedAPI: 
         title: Authorization Log Summary
