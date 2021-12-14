@@ -4,7 +4,7 @@
   "brand": "Fiserv",
   "brandLogoURL": "https://raw.githubusercontent.com/Fiserv/AccessOne/develop/assets/images/Fiserv_Logo.jpg",
   "solution": "merchants",
-  "brandDescription": "Fiserv, Inc. is a global provider of payments and financial services technology solutions. The Company provides account processing and digital banking solutions, card issuer processing and network services, payments, e-commerce, merchant acquiring and processing, and the Clover cloud-based point-of-sale solution. The Company operates through three segments: Merchant Acceptance (Acceptance), Financial Technology (Fintech) and Payments and Network (Payments).",
+  "brandDescription": "The AccessOne API Suite provides a modern interface for Fiserv's Full Service Processing ISO clients.  Relevant functions are included for Merchant Inquiry, Maintenance, Boarding, and Reporting.",
   "categories": [
     {
       "name": "businessTypes",
@@ -31,11 +31,12 @@
     "logoURL": "https://raw.githubusercontent.com/Fiserv/AccessOne/develop/assets/images/AccessOne.png",
     "description": "AccessOne APIs provide real-time access to our backend systems of record for boarding, inquiry, maintenance, and reporting.  These APIs are available for use by our full service processing ISO clients.",
     "longDescription":"AccessOne APIs provide real-time access to our backend systems of record for boarding, inquiry, maintenance, and reporting.  These APIs are available for use by our full service processing ISO clients.",
-    "apiSpecification": "/v1/apis",
-    "layout": "/v1/layouts",
-    "documentation": "/v1/docs",
-    "documenttree": "/v1/docs",
-    "documenttreeV2": "/v2/docs",
+    "apiSpecification": "/v1/apis/AccessOne",
+    "layout": "/v1/layouts/AccessOne",
+    "documentation": "/v1/docs/AccessOne",
+    "documenttree": "/v1/docs/AccessOne",
+    "documenttreeV2": "/v2/docs/AccessOne",
+    "sandbox": "/v1/sandboxrun/AccessOne",
     "feature":[
       {
         "name": "sandBox",

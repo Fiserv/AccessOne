@@ -63,7 +63,7 @@ benefits:
     description: Leverage our checklist to assure you have what you need for a complete integration into reporting APIs.
 featuredFeatures:
   - title: Merchant Inquiry
-    description: Real-time inquiry APIs allow you to select all merchant master attributes in one request.  Alternatively, you can select smaller specific views of information (Location/Chaining, Merchant Profile, Programs, Entitlements, Billing attributes).
+    description: Retrieve merchant master attributes from the systems of record.  Data views include Location/Chaining, Merchant Profile, Programs, Entitlements, and Billing attributes.
     tags: ["Enterprise"]
     bullets:
       bullet1: A standard platform agnostic REST API format is used. 
@@ -95,11 +95,11 @@ featuredFeatures:
       - relatedDoc: 
         title: North Boarding
         description: Board to the North Backend via our APIs.
-        link: "/docs/APIs/north-boarding-api-specifications.md"
+        link: "/docs/N-3-1.Boarding-API-Methods.md"
       - relatedDoc: 
         title: Optis Boarding
         description: Board to the Optis Backend via our APIs.
-        link: "/docs/APIs/optis-boarding-api-specifications.md"
+        link: "/docs/O-2.0-Requirements.md"
     relatedAPIs:
       - relatedAPI: 
         title: Boarding North
@@ -112,7 +112,7 @@ featuredFeatures:
         type: "post"        
         path: "/v1/api/boarding/omaha/SubmitMPA"
   - title: Merchant Reporting 
-    description: Use our APIs to retrieve merchant statements, processing details, and transaction level information.  This would authorizations, settlement data, billing details and other information.  
+    description: Use our APIs to retrieve merchant statements, processing details, and transaction level information.  This includes authorizations, settlement data, billing details and other information.  
     tags: ["Enterprise"]
     bullets:
       bullet1: All pertinent information you need is provide in our reporting APIs.
@@ -124,7 +124,7 @@ featuredFeatures:
       - relatedDoc: 
         title: Merchant Reporting
         description: Use our APIs for a full range of merchant reporting information.
-        link: "/docs/APIs/reporting-api-specifications.md"
+        link: "/docs/R-Basic-Service-Information.md"
     relatedAPIs:
       - relatedAPI: 
         title: Authorization Log Summary

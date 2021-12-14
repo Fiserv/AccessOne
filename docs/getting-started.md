@@ -7,17 +7,17 @@ Fiserv's Full Service Processing ISO clients are welcome to integrate these APIs
 
 ## North Merchant Boarding
 
-North backend platform boarding via AccessOne API supports a REST or XML implementation.  For more information please refer to [North Merchant Boarding](?path=docs/north-boarding-api-specifications.md)
+North backend platform boarding via AccessOne API supports a REST or XML implementation.  For more information please refer to Boarding/Reporting Guides - North Boarding.
 
 
 ## Optis Merchant Boarding
 
-Optis (formally Omaha) backend platform boarding via AccessOne API supports a REST or XML implementation.  For more information please refer to [Optis Merchant Boarding](?path=docs/optis-boarding-api-specifications.md)
+Optis (formally Omaha) backend platform boarding via AccessOne API supports a REST or XML implementation.  For more information please refer to Boarding/Reporting Guides - Optis Boarding.
 
 
 ## Merchant Reporting
 
-Various reporting APIs are available to retrieve authorization/settlement/funding related information using a REST/XML implmentation.  For more information please refer to [Merchant Reporting](?path=docs/reporting-api-specifications.md)
+Various reporting APIs are available to retrieve authorization/settlement/funding related information using a REST/XML implmentation.  For more information please refer to Boarding/Reporting Guides - Reporting.
 
 
 ## Merchant Inquiry
