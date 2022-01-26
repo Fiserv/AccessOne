@@ -31,160 +31,159 @@
 - sections:
   - title: Getting Started
     link: docs/getting-started.md
-  - title: Boarding/Reporting Guides
-    sections:
-    - title: North Boarding
-      sections:
-      - title: 2.0 Introduction
-        sections:
-        - title: 2.1 Intended Audience
-          link: docs/N-2.1-Intended-Audience.md
-        - title: 2.2 Project Scope
-          link: docs/N-2.2-Project-Scope.md
-      - title: 3.0 Technical Specifications
-        sections:
-        - title: 3.1 Boarding API Methods
-          link: docs/N-3.1-Boarding-API-Methods.md
-        - title: 3.2 XML Format
-          link: docs/N-3.2-XML-Format.md
-        - title: 3.3 Validation Handler
-          link: docs/N-3.3-Validation-Handler.md
-        - title: 3.4 MPA Status Report
-          link: docs/N-3.4-MPA-Status-Report.md
-        - title: 3.5 Boarding Process
-          link: docs/N-3.5-Boarding-Process.md
-      - title: 4.0 SOAP Security Guide
-        sections:
-        - title: 4.1 Verification via SOAP UI
-          link: docs/N-4.1-Verification-Via-SOAP-UI.md
-        - title: 4.2 Connectivity Verification Via Other Platforms
-          link: docs/N-4.2-Connectivity-Verification-Via-Other-Platforms.md
-        - title: 4.3 Common Connectivity Issues
-          link: docs/N-4.3-Common-Connectivity-Issues.md
-      - title: 5.0 Basic Verification Guide
-        sections:
-        - title: 5.1 Preparations
-          link: docs/N-5.1-Preparations.md
-        - title: 5.2 Merchant Application Submission
-          link: docs/N-5.2-Merchant-Application-Submission.md
-        - title: 5.3 Post Merchant Submission
-          link: docs/N-5.3-Post-Merchant-Submission.md
-        - title: 5.4 MPA Status Tracking
-          link: docs/N-5.4-MPA-Status-Tracking.md
-    - title: Optis Boarding
-      sections:
-      - title: 1.0 Introduction
-        link: docs/O-1.0-Introduction.md
-      - title: 2.0 Requirements
-        link: docs/O-2.0-Requirements.md
-      - title: 3.0 Request Format
-        sections:
-        - title: 3.1 Soap Envelope
-          link: docs/O-3.1-Soap-Envelope.md
-        - title: 3.2 Using Master Merchant Document
-          link: docs/O-3.2-Using-Master-Merchant-Document.md
-      - title: 4.0 WS Security Authentication
-        sections:
-        - title: 4.1 Soap UI Project
-          link: docs/O-4.1-Soap-UI-Project.md
-      - title: 5.0 Boarding API Methods
-        sections:
-        - title: 5.1 Submit MPA Method
-          link: docs/O-5.1-Submit-MPA-Method.md
-        - title: 5.2 Get Status By Time Span Method
-          link: docs/O-5.2-Get-Status-By-Time-Span-Method.md
-        - title: 5.3 Retrieve MPA Testing Support
-          link: docs/O-5.3-Retrieve-MPA-Testing-Support.md
-        - title: 5.4 MPA Status Reporting
-          link: docs/O-5.4-MPA-Status-Reporting.md
-        - title: 5.5 Merchant Information XML Format
-          link: docs/O-5.5-Merchant-Information-XML-Format.md
-        - title: 5.6 Merchant Information Validation Handler
-          link: docs/O-5.6-Merchant-Information-Validation-Handler.md
-        - title: 5.7 Conditional Data Logic
-          link: docs/O-5.7-Conditional-Data-Logic.md
-      - title: 6.0 High Level Test Cases
-        sections:
-        - title: 6.1 Starting XML File
-          link: docs/O-6.1-Starting-XML-File.md
-        - title: 6.2 Common Issues
-          link: docs/O-6.2-Common-Issues.md
-        - title: 6.3 Post MPA Submission Checks
-          link: docs/O-6.3-Post-MPA-Submission-Checks.md
-        - title: 6.4 Front End Data
-          link: docs/O-6.4-Front-End-Data.md
-        - title: 6.5 Stored Data
-          link: docs/O-6.5-Stored-Data.md
-        - title: 6.6 Exported PDFs
-          link: docs/O-6.6-Exported-PDFs.md
-      - title: 7.0 SOAP Request Guide
-        sections:
-        - title: 7.1 Prerequisite Checks
-          link: docs/O-7.1-Prerequisite-Checks.md
-        - title: 7.2 Configuring SOAP UI
-          link: docs/O-7.2-Configuring-SOAP-UI.md
-      - title: 8.0 Submitting SOAP Requests
-        sections:
-        - title: 8.1 Web Method Submit MPA
-          link: docs/O-8.1-Web-Method-Submit-MPA.md
-        - title: 8.2 Web Method Retrieve MPA XML
-          link: docs/O-8.2-Web-Method-Retrieve-MPA-XML.md
-        - title: 8.3 Web Method Get Status By Time Span
-          link: docs/O-8.3-Web-Method-Get-Status-By-Time-Span.md
-      - title: 9.0 Connectivity Via An External Tool
-        link: docs/O-9.0-Connectivity-Via-An-External-Tool.md
-      - title: 10.0 SOAP Request Header
-        sections:
-        - title: 10.1 SOAP Header Structure
-          link: docs/O-10.1-SOAP-Header-Structure.md
-        - title: 10.2 SOAP Header Example
-          link: docs/O-10.2-SOAP-Header-Example.md
-      - title: 11.0 SOAP Request Body
-        sections:
-        - title: 11.1 SOAP Body Structure
-          link: docs/O-11.1-SOAP-Body-Structure.md
-        - title: 11.2 SOAP Body Example
-          link: docs/O-11.2-SOAP-Body-Example.md
-      - title: 12.0 Common Issues
-        sections:
-        - title: 12.1 Generic Error
-          link: docs/O-12.1-Generic-Error.md
-        - title: 12.2 Submission Failure With Specific Errors
-          link: docs/O-12.2-Submission-Failure-With-Specific-Errors.md
-        - title: 12.3 Submission Failure Without Specific Errors
-          link: docs/O-12.3-Submission-Failure-Without-Specific-Errors.md
-    - title: Reporting
-      sections:
-      - title: Basic Service Information
-        link: docs/R-Basic-Service-Information.md
-      - title: A - Revision History
-        link: docs/R-A-Revision-History.md
-      - title: B - Requirements
-        sections:
-        - title: B.1 Enumerations
-          link: docs/R-B-1-Enumerations.md
-        - title: B.2 Validations
-          link: docs/R-B-2-Validations.md
-        - title: B.3 General
-          link: docs/R-B-3-General.md
-      - title: C - REST Guide
-        sections:
-        - title: C.1 Initiate REST Project Workspace
-          link: docs/R-C-1-Initiate-REST-Project-Workspace.md
-        - title: C.2 Setup Security Authentication Method And Media Type
-          link: docs/R-C-2-Setup-Security-Authentication-Method-And-Media-Type.md
-        - title: C.3 Generate Token
-          link: docs/R-C-3-Generate-Token.md
-        - title: C.4 Input REST Request Body
-          link: docs/R-C-4-Input-Rest-Request-Body.md
-      - title: D - Service Operations
-        sections:
-        - title: D.1 GetBatchSummaryByEntity
-          link: docs/R-D-1-GetBatchSummaryByEntity.md
-        - title: D.2 GetBatchSummaryByMerchant
-          link: docs/R-D-2-GetBatchSummaryByMerchant.md
-        - title: D.3 GetBatchDetail
-          link: docs/R-D-3-GetBatchDetail.md
-        - title: D.4 GetCardSummary
-          link: docs/R-D-4-GetCardSummary.md
-           
+#  - title: Boarding/Reporting Guides
+#    sections:
+#    - title: North Boarding
+#      sections:
+#      - title: 2.0 Introduction
+#        sections:
+#        - title: 2.1 Intended Audience
+#          link: docs/N-2.1-Intended-Audience.md
+#        - title: 2.2 Project Scope
+#          link: docs/N-2.2-Project-Scope.md
+#      - title: 3.0 Technical Specifications
+#        sections:
+#        - title: 3.1 Boarding API Methods
+#          link: docs/N-3.1-Boarding-API-Methods.md
+#        - title: 3.2 XML Format
+#          link: docs/N-3.2-XML-Format.md
+#        - title: 3.3 Validation Handler
+#          link: docs/N-3.3-Validation-Handler.md
+#        - title: 3.4 MPA Status Report
+#          link: docs/N-3.4-MPA-Status-Report.md
+#        - title: 3.5 Boarding Process
+#          link: docs/N-3.5-Boarding-Process.md
+#      - title: 4.0 SOAP Security Guide
+#        sections:
+#        - title: 4.1 Verification via SOAP UI
+#          link: docs/N-4.1-Verification-Via-SOAP-UI.md
+#        - title: 4.2 Connectivity Verification Via Other Platforms
+#          link: docs/N-4.2-Connectivity-Verification-Via-Other-Platforms.md
+#        - title: 4.3 Common Connectivity Issues
+#          link: docs/N-4.3-Common-Connectivity-Issues.md
+#      - title: 5.0 Basic Verification Guide
+#        sections:
+#        - title: 5.1 Preparations
+#          link: docs/N-5.1-Preparations.md
+#        - title: 5.2 Merchant Application Submission
+#          link: docs/N-5.2-Merchant-Application-Submission.md
+#        - title: 5.3 Post Merchant Submission
+#          link: docs/N-5.3-Post-Merchant-Submission.md
+#        - title: 5.4 MPA Status Tracking
+#          link: docs/N-5.4-MPA-Status-Tracking.md
+#    - title: Optis Boarding
+#      sections:
+#      - title: 1.0 Introduction
+#        link: docs/O-1.0-Introduction.md
+#      - title: 2.0 Requirements
+#        link: docs/O-2.0-Requirements.md
+#      - title: 3.0 Request Format
+#        sections:
+#        - title: 3.1 Soap Envelope
+#          link: docs/O-3.1-Soap-Envelope.md
+#        - title: 3.2 Using Master Merchant Document
+#          link: docs/O-3.2-Using-Master-Merchant-Document.md
+#      - title: 4.0 WS Security Authentication
+#        sections:
+#        - title: 4.1 Soap UI Project
+#          link: docs/O-4.1-Soap-UI-Project.md
+#      - title: 5.0 Boarding API Methods
+#        sections:
+#        - title: 5.1 Submit MPA Method
+#          link: docs/O-5.1-Submit-MPA-Method.md
+#        - title: 5.2 Get Status By Time Span Method
+#          link: docs/O-5.2-Get-Status-By-Time-Span-Method.md
+#        - title: 5.3 Retrieve MPA Testing Support
+#          link: docs/O-5.3-Retrieve-MPA-Testing-Support.md
+#        - title: 5.4 MPA Status Reporting
+#          link: docs/O-5.4-MPA-Status-Reporting.md
+#        - title: 5.5 Merchant Information XML Format
+#          link: docs/O-5.5-Merchant-Information-XML-Format.md
+#        - title: 5.6 Merchant Information Validation Handler
+#          link: docs/O-5.6-Merchant-Information-Validation-Handler.md
+#        - title: 5.7 Conditional Data Logic
+#          link: docs/O-5.7-Conditional-Data-Logic.md
+#      - title: 6.0 High Level Test Cases
+#        sections:
+#        - title: 6.1 Starting XML File
+#          link: docs/O-6.1-Starting-XML-File.md
+#        - title: 6.2 Common Issues
+#          link: docs/O-6.2-Common-Issues.md
+#        - title: 6.3 Post MPA Submission Checks
+#          link: docs/O-6.3-Post-MPA-Submission-Checks.md
+#        - title: 6.4 Front End Data
+#          link: docs/O-6.4-Front-End-Data.md
+#        - title: 6.5 Stored Data
+#          link: docs/O-6.5-Stored-Data.md
+#        - title: 6.6 Exported PDFs
+#          link: docs/O-6.6-Exported-PDFs.md
+#      - title: 7.0 SOAP Request Guide
+#        sections:
+#        - title: 7.1 Prerequisite Checks
+#          link: docs/O-7.1-Prerequisite-Checks.md
+#        - title: 7.2 Configuring SOAP UI
+#          link: docs/O-7.2-Configuring-SOAP-UI.md
+#      - title: 8.0 Submitting SOAP Requests
+#        sections:
+#        - title: 8.1 Web Method Submit MPA
+#          link: docs/O-8.1-Web-Method-Submit-MPA.md
+#        - title: 8.2 Web Method Retrieve MPA XML
+#          link: docs/O-8.2-Web-Method-Retrieve-MPA-XML.md
+#        - title: 8.3 Web Method Get Status By Time Span
+#          link: docs/O-8.3-Web-Method-Get-Status-By-Time-Span.md
+#      - title: 9.0 Connectivity Via An External Tool
+#        link: docs/O-9.0-Connectivity-Via-An-External-Tool.md
+#      - title: 10.0 SOAP Request Header
+#        sections:
+#        - title: 10.1 SOAP Header Structure
+#          link: docs/O-10.1-SOAP-Header-Structure.md
+#        - title: 10.2 SOAP Header Example
+#          link: docs/O-10.2-SOAP-Header-Example.md
+#      - title: 11.0 SOAP Request Body
+#        sections:
+#        - title: 11.1 SOAP Body Structure
+#          link: docs/O-11.1-SOAP-Body-Structure.md
+#        - title: 11.2 SOAP Body Example
+#          link: docs/O-11.2-SOAP-Body-Example.md
+#      - title: 12.0 Common Issues
+#        sections:
+#        - title: 12.1 Generic Error
+#          link: docs/O-12.1-Generic-Error.md
+#        - title: 12.2 Submission Failure With Specific Errors
+#          link: docs/O-12.2-Submission-Failure-With-Specific-Errors.md
+#        - title: 12.3 Submission Failure Without Specific Errors
+#          link: docs/O-12.3-Submission-Failure-Without-Specific-Errors.md
+#    - title: Reporting
+#      sections:
+#      - title: Basic Service Information
+#        link: docs/R-Basic-Service-Information.md
+#      - title: A - Revision History
+#        link: docs/R-A-Revision-History.md
+#      - title: B - Requirements
+#        sections:
+#        - title: B.1 Enumerations
+#          link: docs/R-B-1-Enumerations.md
+#        - title: B.2 Validations
+#          link: docs/R-B-2-Validations.md
+#        - title: B.3 General
+#          link: docs/R-B-3-General.md
+#      - title: C - REST Guide
+#        sections:
+#        - title: C.1 Initiate REST Project Workspace
+#          link: docs/R-C-1-Initiate-REST-Project-Workspace.md
+#        - title: C.2 Setup Security Authentication Method And Media Type
+#          link: docs/R-C-2-Setup-Security-Authentication-Method-And-Media-Type.md
+#        - title: C.3 Generate Token
+#          link: docs/R-C-3-Generate-Token.md
+#        - title: C.4 Input REST Request Body
+#          link: docs/R-C-4-Input-Rest-Request-Body.md
+#      - title: D - Service Operations
+#        sections:
+#        - title: D.1 GetBatchSummaryByEntity
+#          link: docs/R-D-1-GetBatchSummaryByEntity.md
+#        - title: D.2 GetBatchSummaryByMerchant
+#          link: docs/R-D-2-GetBatchSummaryByMerchant.md
+#        - title: D.3 GetBatchDetail
+#          link: docs/R-D-3-GetBatchDetail.md
+#        - title: D.4 GetCardSummary
+#          link: docs/R-D-4-GetCardSummary.md
