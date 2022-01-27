@@ -92,14 +92,14 @@ featuredFeatures:
         title: Getting Started
         description: Our API Suite enables you to incorporate relevant merchant APIs directly within your own workflow.
         link: "/docs/getting-started.md"
-      - relatedDoc: 
-        title: North Boarding
-        description: Board to the North Backend via our APIs.
-        link: "/docs/N-3-1.Boarding-API-Methods.md"
-      - relatedDoc: 
-        title: Optis Boarding
-        description: Board to the Optis Backend via our APIs.
-        link: "/docs/O-2.0-Requirements.md"
+#      - relatedDoc: 
+#        title: North Boarding
+#        description: Board to the North Backend via our APIs.
+#        link: "/docs/N-3-1.Boarding-API-Methods.md"
+#      - relatedDoc: 
+#        title: Optis Boarding
+#        description: Board to the Optis Backend via our APIs.
+#        link: "/docs/O-2.0-Requirements.md"
     relatedAPIs:
       - relatedAPI: 
         title: Boarding North
@@ -121,10 +121,10 @@ featuredFeatures:
         title: Getting Started
         description: Our API Suite enables you to incorporate relevant merchant APIs directly within your own workflow.
         link: "/docs/getting-started.md"
-      - relatedDoc: 
-        title: Merchant Reporting
-        description: Use our APIs for a full range of merchant reporting information.
-        link: "/docs/R-Basic-Service-Information.md"
+#      - relatedDoc: 
+#        title: Merchant Reporting
+#        description: Use our APIs for a full range of merchant reporting information.
+#        link: "/docs/R-Basic-Service-Information.md"
     relatedAPIs:
       - relatedAPI: 
         title: Authorization Log Summary
