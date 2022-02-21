@@ -4,8 +4,7 @@
 Fiserv's Full Service Processing ISO clients are welcome to integrate these APIs within your own workflow and systems.  APIs are available for merchant boarding, reporting, inquiry, and maintenance.
 
 ## Support Information
-email: accessonesupport@Fiserv.com
-website www.firstdataclients.com
+email: accessonesupport@Fiserv.com / website www.firstdataclients.com
 
 ## North Merchant Boarding
 North backend platform boarding via AccessOne API supports a REST or XML implementation.  For more information please refer to Boarding/Reporting Guides - North Boarding.
