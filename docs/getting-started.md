@@ -24,4 +24,4 @@ Real-time inquiry APIs will retrieve merchant attribute information directly aga
 A real-time update API will allow for maintenance directly against the backend systems of record.  The API uses a full REST/JSON implementation and all of the associated documentation is included directly in the API specifications.  You can leverage this API in your workflow in order to keep your systems syncronized with the Fiserv processing platforms.
 
 ## Equipment Information
-Real-time APIs provide access to our POS system of record for terminals, related accessories, and features.  Equipment Inquiry, Add and Mainteance functions are fully supported.
+Real-time APIs provide access to our POS system of record for terminals, related accessories, and features.  Equipment Inquiry, Add and Maintenance functions are fully supported.
