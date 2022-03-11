@@ -9,16 +9,19 @@ email: accessonesupport@Fiserv.com
 website www.firstdataclients.com
 
 ## North Merchant Boarding
-North backend platform boarding via AccessOne API supports a REST or XML implementation.  For more information please refer to Boarding/Reporting Guides - North Boarding.
+North backend platform boarding via AccessOne API supports a REST or XML implementation.  For more information, please access the support website and refer to Boarding/Reporting Guides - North Boarding.
 
 ## Optis Merchant Boarding
-Optis (formally Omaha) backend platform boarding via AccessOne API supports a REST or XML implementation.  For more information please refer to Boarding/Reporting Guides - Optis Boarding.
+Optis (formally Omaha) backend platform boarding via AccessOne API supports a REST or XML implementation.  For more information, please access the access the support website and refer to Boarding/Reporting Guides - Optis Boarding.
 
 ## Merchant Reporting
-Various reporting APIs are available to retrieve authorization/settlement/funding related information using a REST/XML implmentation.  For more information please refer to Boarding/Reporting Guides - Reporting.
+Various reporting APIs are available to retrieve authorization/settlement/funding related information using a REST/XML implmentation.  For more information, please access the support website and refer to Boarding/Reporting Guides - Reporting.
 
 ## Merchant Inquiry
 Real-time inquiry APIs will retrieve merchant attribute information directly against the backend systems of record.  The APIs use a full REST/JSON implementation and all of the associated documentation is included directly in the API specifications.  An API is available to retrieve all merchant attributes.  There are also APIs to retrieve smaller subset of information (e.g. Location Chaining, Merchant Profile, Programs, Entitlements, Billing Attributes).
 
 ## Merchant Update
 A real-time update API will allow for maintenance directly against the backend systems of record.  The API uses a full REST/JSON implementation and all of the associated documentation is included directly in the API specifications.  You can leverage this API in your workflow in order to keep your systems syncronized with the Fiserv processing platforms.
+
+## Equipment Information
+Real-time APIs provide access to our POS system of record for terminals, related accessories, and features.  Equipment Inquiry, Add and Maintenance functions are fully supported.
