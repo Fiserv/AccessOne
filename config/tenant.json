@@ -3,7 +3,7 @@
   "name": "AccessOne",
   "brand": "Fiserv",
   "brandLogoURL": "https://raw.githubusercontent.com/Fiserv/AccessOne/develop/assets/images/Fiserv_Logo.jpg",
-  "solution": ["merchants"],
+  "solution": ["carat","merchants"],
   "brandDescription": "The AccessOne API Suite provides a modern interface for Fiserv's Full Service Processing ISO clients.  Relevant functions are included for Merchant Inquiry, Maintenance, Boarding, and Reporting.",
   "categories": [
     {
