@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: v1.0.08
+  version: v1.0.10
   title: API Suite for our Full Service Processing ISO Clients
   description: Boarding, Reporting, Inquiry, and Maintenance APIs are available.  Access One boarding services will invoke full scale boarding workflow.  Access One client reporting data is  included in our reporting API services.  Inquiry services provide both a full view or granular level view of merchant master information.  A single update API can be used to change any pertinent merchant master attributes.
   contact:
@@ -9868,9 +9868,11 @@ components:
     BoardingServiceRequestAdditionalDataFieldForRequest:
       properties:
         id:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipAdditionalDataId'
         value:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipAdditionalDataValue'
       title: BoardingServiceRequestAdditionalDataFieldForRequest
       type: object
 
@@ -9881,7 +9883,8 @@ components:
             $ref: '#/components/schemas/BoardingServiceRequestAdditionalDataFieldForRequest'
           type: array
         name:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipAdditionalDataName'
       title: BoardingServiceRequestAditionalDataForRequest
       type: object
 
@@ -9891,17 +9894,8 @@ components:
           allOf:
             - $ref: '#/components/schemas/equipApplicationName'
         businessType:
-          description: Business types supported by FDPOS
-          enum:
-            - R
-            - S
-            - L
-            - C
-            - M
-            - O
-            - P
-            - Q
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipBusinessTypeCode'
         network:
           allOf:
             - $ref: '#/components/schemas/equipFrontEndCode'
@@ -9919,11 +9913,8 @@ components:
             $ref: '#/components/schemas/BoardingServiceRequestEquipmentRecord'
           type: array
         equipmentRecordsCount:
-          description: No of equipment to be on-boarded as part of a single EquipmentBoardingService request
-          example: 1
-          maxLength: 2
-          minLength: 0
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipRecordsCount'
         requestData:
           $ref: '#/components/schemas/BoardingServiceRequestEquipmentRequestData'
       required:
@@ -9945,7 +9936,8 @@ components:
     BoardingServiceRequestEquipmentParameter:
       properties:
         name:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipParameterHeaderName'
         param:
           items:
             $ref: '#/components/schemas/BoardingServiceRequestEquipmentParam'
@@ -9958,17 +9950,8 @@ components:
         application:
           $ref: '#/components/schemas/BoardingServiceRequestApplication'
         billMethod:
-          description: Bill method with which the equipment will be created
-          enum:
-            - CO
-            - IP
-            - L
-            - LR
-            - M
-            - R
-            - RS
-            - SR
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipBillMethodCode'
         bundleInd:
           allOf:
             - $ref: '#/components/schemas/equipBundleCode'
@@ -9976,13 +9959,11 @@ components:
           allOf:
             - $ref: '#/components/schemas/equipFeeCharge'
         commerceHubTid:
-          description: If the Terminal exists in Commerce Hub then FDPOS need to receive the Commerce Hub TID here
-          example: L356225315001
-          maxLength: 30
-          minLength: 0
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipCommerceHubTid'
         duration:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipDuration'
         equipCode:
           allOf:
             - $ref: '#/components/schemas/equipCode'
@@ -10013,10 +9994,11 @@ components:
             - $ref: '#/components/schemas/equipPurchaseDuration'
           type: string
         quantity:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipQuantity'
         salesRepId:
           allOf:
-            - $ref: '#/components/schemas/equipSalesmanCode'
+            - $ref: '#/components/schemas/salesmanCode'
         securityServiceLevel:
           allOf:
             - $ref: '#/components/schemas/equipSecurityServiceLevel'
@@ -10044,54 +10026,37 @@ components:
     BoardingServiceRequestEquipmentRequestData:
       properties:
         accountType:
-          description: Account types supported by FDPOS for boarding fresh equipment
-          enum:
-            - NEW ACCOUNT
-            - ADDITIONAL EQUIPMENT
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipAccountType'
         additionalData:
           $ref: '#/components/schemas/BoardingServiceRequestAditionalDataForRequest'
         altPhoneNumber:
           allOf:
             - $ref: '#/components/schemas/equipAlternatePhoneNum'
         amexSettle:
-          description: Where Amex transaction for terminals to be settled
-          enum:
-            - A - Amex Settle Auth Only Through EDC
-            - B - Amex Settle EDC Capture and Auth
-            - C - Amex Settle Split Dial Amex Auth
-            - D - Amex Settle Single Settle Amex Set
-            - F - Amex Settle Amex Pip
-          example: 'A' 
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipAmexSettle'
         bestContactStartTime:
-          description: Holds information that tells the best time to contact the merchant
-          example: '14:40'
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipBestContactStartTime'
         bestContactStopTime:
-          description: Holds information that tells the time after which the merchant won’t take any helpdesk call
-          example: '17:00'
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipBestContactStopTime'
         blockAutoRouting:
-          description: Identifier whether auto routing request to TASQ to be blocked or not. Auto-routing means where deployment group intervention does not require transferring the order to TASQ
-          example: PC CHARGE
-          type: string
-        blockDeployentReason:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipBlockAutoRouting'
+        blockDeploymentReason:
+          allOf:
+            - $ref: '#/components/schemas/equipBlockDeploymentReason'
         blockDeployment:
-          maxLength: 10
-          minLength: 0
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipBlockDeployment'
         deployable:
-          maxLength: 10
-          minLength: 0
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipDeployable'
         deploymentInd:
-          description: Deployment parameter for deployable/Log request to be created at POS
-          enum:
-            - L
-            - D
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipDeploymentInd'
         externalOrderId:
           allOf:
             - $ref: '#/components/schemas/equipExternalOrderId'
@@ -10112,7 +10077,7 @@ components:
             - $ref: '#/components/schemas/equipSalesRegion'
         salesRepId:
           allOf:
-            - $ref: '#/components/schemas/equipSalesmanCode'
+            - $ref: '#/components/schemas/salesmanCode'
         shipAttention:
           allOf:
             - $ref: '#/components/schemas/equipShipAddressAttnText'
@@ -10138,9 +10103,8 @@ components:
           allOf:
             - $ref: '#/components/schemas/equipShipPostalCode'
         trainingBestTime:
-          description: Holds information that tells the best time to start training
-          example: '08:00'
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipTrainingBestTime'
         trainingInd:
           allOf:
             - $ref: '#/components/schemas/equipTrainingInd'
@@ -10153,24 +10117,14 @@ components:
     BoardingServiceRequestHeader:
       properties:
         requestAction:
-          description: action name for BoardingService
-          enum:
-            - Create
-            - Modify
-          example: Create
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipRequestAction'
         requestUserId:
-          description: Type of request user
-          example: FDXXXXXX
-          maxLength: 15
-          minLength: 0
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipRequestUserId'
         systemId:
-          description: to identify from which system request flown to FDPOS
-          example: APPLICATION-XXXX
-          maxLength: 15
-          minLength: 0
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipRequestSystemId'
       title: BoardingServiceRequestHeader
       type: object
 
@@ -10179,15 +10133,20 @@ components:
         equipmentOrderResponse:
           $ref: '#/components/schemas/EquipmentOrderResponse'
         requestId:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipRequestId'
         responseMessage:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipResponseMessage'
         responseStatusCode:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipResponseStatusCode'
         responseStatusFlag:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipResponseStatusFlag'
         success:
-          type: boolean
+          allOf:
+            - $ref: '#/components/schemas/equipSuccess'
       title: BoardingServiceResponse
       type: object
 
@@ -10400,7 +10359,6 @@ components:
         requestHeader:
           $ref: '#/components/schemas/BoardingServiceRequestHeader'
       required:
-        - posAuthentication
         - requestBody
         - requestHeader
       title: EquipmentBoardingServiceRequest
@@ -10409,18 +10367,19 @@ components:
     EquipmentDetailPageRequest:
       properties:
         pageNumber:
-          format: int32
-          type: integer
+          allOf:
+            - $ref: '#/components/schemas/equipPageNumber'
         pageSize:
-          format: int32
-          type: integer
+          allOf:
+            - $ref: '#/components/schemas/equipPageSize'
       title: EquipmentDetailPageRequest
       type: object
 
     EquipmentDetailRequest:
       properties:
         equipContext:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipContext'
         equipmentNumber:
           allOf:
             - $ref: '#/components/schemas/equipNum'
@@ -10428,20 +10387,19 @@ components:
           allOf:
             - $ref: '#/components/schemas/equipKeyedBy'
         merchantContext:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipMerchantContext'
         merchantNumber:
           allOf:
             - $ref: '#/components/schemas/merchantId'
         network:
-          description: The network of the merchant
-          example: CARDNET
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipNetwork'
         pageRequest:
           $ref: '#/components/schemas/EquipmentDetailPageRequest'
         platform:
-          description: The boarding platform of the merchant
-          example: 'OMAHA , OMNIPAY'
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipPlatform'
         terminalId:
           allOf:
             - $ref: '#/components/schemas/equipTerminalId'
@@ -10454,8 +10412,8 @@ components:
     EquipmentDetailResponse:
       properties:
         equipmentCount:
-          format: int32
-          type: integer
+          allOf:
+            - $ref: '#/components/schemas/equipEquipmentCount'
         equipmentList:
           items:
             $ref: '#/components/schemas/EquipmentDetailResponseEquipmentRecord'
@@ -10466,15 +10424,17 @@ components:
         merchantParameters:
           $ref: '#/components/schemas/EquipmentDetailResponseMerchantParameters'
         pageNumber:
-          format: int32
-          type: integer
+          allOf:
+            - $ref: '#/components/schemas/equipPageNumber'
         pageSize:
-          format: int32
-          type: integer
+          allOf:
+            - $ref: '#/components/schemas/equipPageSize'
         responseMessage:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipResponseMessage'
         responseStatusCode:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipResponseStatusCode'
       title: EquipmentDetailResponse
       type: object
 
@@ -10494,13 +10454,17 @@ components:
     EquipmentDetailResponseDownload:
       properties:
         downloadDate:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipDownloadDate'
         downloadStatus:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipDownloadStatus'
         downloadType:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipDownloadType'
         trackDownload:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipTrackDownload'
       title: EquipmentDetailResponseDownload
       type: object
 
@@ -10511,15 +10475,20 @@ components:
         application:
           $ref: '#/components/schemas/EquipmentDetailResponseApplication'
         autoCloseHour:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipAutoCloseHour'
         autoCloseMin:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipAutoCloseMin'
         batchMethod:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipBatchMethod'
         batchTime:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipBatchTime'
         billMethod:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipBillMethod'
         bundleInd:
           allOf:
             - $ref: '#/components/schemas/equipBundleCode'
@@ -10527,16 +10496,20 @@ components:
           allOf:
             - $ref: '#/components/schemas/equipFeeCharge'
         closeMethod:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipCloseMethod'
         cloverId:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipCloverId'
         datawireId:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipDatawireId'
         dbaName:
           allOf:
             - $ref: '#/components/schemas/merchantName'
         downloadId:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipDownloadId'
         downloadParameters:
           items:
             $ref: '#/components/schemas/EquipmentDetailResponseDownload'
@@ -10545,7 +10518,8 @@ components:
           allOf:
             - $ref: '#/components/schemas/equipCode'
         equipContext:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipContext'
         equipFullName:
           allOf:
             - $ref: '#/components/schemas/equipName'
@@ -10557,12 +10531,14 @@ components:
           allOf:
             - $ref: '#/components/schemas/equipNum'
         equipmentStatus:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipStatus'
         externalTerminalId:
           allOf:
             - $ref: '#/components/schemas/equipExternalTerminalId'
         groupId:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipGroupId'
         groupingInd:
           allOf:
             - $ref: '#/components/schemas/equipGroupingInd'
@@ -10570,7 +10546,8 @@ components:
           allOf:
             - $ref: '#/components/schemas/equipInstallDate'
         ipCommEnabled:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipIpCommEnabled'
         leaseTerm:
           allOf:
             - $ref: '#/components/schemas/equipLeaseTerm'
@@ -10593,7 +10570,7 @@ components:
           $ref: '#/components/schemas/EquipmentDetailResponseRequestData'
         salesRepId:
           allOf:
-            - $ref: '#/components/schemas/equipSalesmanCode'
+            - $ref: '#/components/schemas/salesmanCode'
         securityServiceLevel:
           allOf:
             - $ref: '#/components/schemas/equipSecurityServiceLevel'
@@ -10632,12 +10609,14 @@ components:
     EquipmentDetailResponseMerchantParameters:
       properties:
         cloverId:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipCloverId'
         dbaName:
           allOf:
             - $ref: '#/components/schemas/merchantName'
         merchantContext:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipMerchantContext'
       title: EquipmentDetailResponseMerchantParameters
       type: object
 
@@ -10651,9 +10630,11 @@ components:
           allOf:
             - $ref: '#/components/schemas/equipAlternatePhoneNum'
         bestContactStartTime:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipBestContactStartTime'
         bestContactStopTime:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipBestContactStopTime'
         externalOrderId:
           allOf:
             - $ref: '#/components/schemas/equipExternalOrderId'
@@ -10675,14 +10656,15 @@ components:
         priority:
           allOf:
             - $ref: '#/components/schemas/equipShipPriority'
-          type: string
         requestId:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipRequestId'
         requestType:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipRequestType'
         salesRepId:
           allOf:
-            - $ref: '#/components/schemas/equipSalesmanCode'
+            - $ref: '#/components/schemas/salesmanCode'
         shipAttention:
           allOf:
             - $ref: '#/components/schemas/equipShipAddressAttnText'
@@ -10719,9 +10701,11 @@ components:
     EquipmentDetailResponseRequestDataField:
       properties:
         id:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipDataFieldId'
         value:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipDataFieldValue'
       title: EquipmentDetailResponseRequestDataField
       type: object
 
@@ -10732,9 +10716,11 @@ components:
             $ref: '#/components/schemas/Field'
           type: array
         requestId:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipRequestId'
         responseReasonCode:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipResponseReasonCode'
       title: EquipmentOrderResponse
       type: object
 
@@ -10785,9 +10771,11 @@ components:
     Field:
       properties:
         name:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipFieldName' 
         reason:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipFieldReason' 
       title: Field
       type: object
 
@@ -15853,18 +15841,6 @@ components:
             unmaskFieldName: DDA 1
             unmaskFieldValue: '1234567890'
 
-    UpdateRequestApplicationDetail:
-      properties:
-        applicationName:
-          allOf:
-            - $ref: '#/components/schemas/equipApplicationName'
-        version:
-          description: Application version corrosponding to the mentoined application name mentioned above
-          example: 761UN130
-          type: string
-      title: UpdateRequestApplicationDetail
-      type: object
-
     UpdateRequestEquipmentFeature:
       properties:
         featureName:
@@ -15879,9 +15855,8 @@ components:
     UpdateRequestHeader:
       properties:
         systemId:
-          description: Application ID of the system using this service
-          example: APERIA1
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipSystemId'
         version:
           type: integer
       title: UpdateRequestHeader
@@ -15890,124 +15865,76 @@ components:
     UpdateRequestProgrammingDetail:
       properties:
         applicationStatus:
-          description: Application status to be updated
-          enum:
-            - B
-            - P
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipApplicationStatus'
         autoCloseHour:
-          description: Auto Close hour to be updated
-          example: 24
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipAutoCloseHour'
         autoParameterUpdate:
-          description: Auto parameter update to be updated
-          enum:
-            - 'true'
-            - 'false'
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipAutoParameterUpdate'
         betaFlag:
-          description: Beta flag to be updated
-          enum:
-            - 'Y'
-            - 'N'
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipBetaFlag'
         businessType:
-          description: Business Type to be updated
-          enum:
-            - S
-            - A
-            - C
-            - F
-            - H
-            - O
-            - P
-            - Q
-            - R
-            - T
-            - U
-            - X
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipBusinessTypeCode'
         closeMethod:
-          description: Auto close method / close method to be updated
-          example: M
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipCloseMethod'
         commercialCard:
-          description: Commercial card to be updated
-          enum:
-            - 'Y'
-            - 'N'
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipCommercialCard'
         debitKeyCode:
-          description: Debit Key code to be updated
-          example: 500
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipDebitKeyCode'
         disableEMVFlag:
-          description: Disable EMV flag to be updated
-          enum:
-            - 'Y'
-            - 'N'
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipDisableEMVFlag'
         forceCloseTime:
-          description: Force close time to be updated
-          example: 24
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipForceCloseTime'
         ipComVendor:
-          description: IP Com Vendor to be updated ( Refered to IP Comm Enabled in FDPOS UI
-            )
-          enum:
-            - V
-            - E
-            - D
-            - N
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipIpComVendor'
         logonPasswordFlag:
-          description: Logon password flag to be updated
-          enum:
-            - Y
-            - N
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipLogonPasswordFlag'
         maximumBaud:
-          description: Maximum Baud to be updated
-          example: 1200
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipMaximumBaud'
         purchaseCard:
-          description: Purchase Card to be updated
-          enum:
-            - Y
-            - N
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipPurchaseCard'
         timeZoneId:
-          description: Time ZONE ID to be updated
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipTimeZoneId'
         valueLinkAutoSettle:
-          description: Value link auto settle to be updated
-          enum:
-            - Y
-            - N
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipValueLinkAutoSettle'
         valueLinkAutoSettleTime:
-          description: Value Link Auto Settle Time to be updated
-          example: '12:00'
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipValueLinkAutoSettleTime'
         valueLinkPrepaidFlag:
-          description: Value link prepaid flag to be updated
-          enum:
-            - Y
-            - N
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipValueLinkPrepaidFlag'
       title: UpdateRequestProgrammingDetail
       type: object
 
     UpdateResponse:
       properties:
         referenceNumber:
-          type: integer
+          allOf:
+            - $ref: '#/components/schemas/equipReferenceNumber'
         requestNumber:
-          type: integer
+          allOf:
+            - $ref: '#/components/schemas/equipRequestNumber'
         responseMessage:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipResponseMessage'
         responseStatusCode:
-          type: string
+          allOf:
+            - $ref: '#/components/schemas/equipResponseStatusCode'
       title: UpdateResponse
       type: object
 
@@ -16389,16 +16316,6 @@ components:
       type: string
       maxLength: 6
       example: ''
-    americanExpressXrefTypeCode: 
-      description: Addendum field - Indicates which cross reference number is submitted to Amex for settlement.  Also used to document information on the Chargeback or retrieval request to the merchant (applicable to South).
-      enum:
-        - 00 - (South) NaBanco Ref number transmitted 
-        - 01 - (South) NaBanco Ref number transmitted
-        - 02 - (South) Merchant Ref number transmitted
-        - Blank - (South) No ref number transmitted 
-      type: string
-      maxLength: 2
-      example: '02'
     analyticsOptOutCode: 
       description: Addendum field - Analytics Opt Out Code(applicable to Optis).
       enum:
@@ -18350,6 +18267,16 @@ components:
       type: string
       maxLength: 1
       example: '2'
+    equipAccountType:
+      description: Account types supported by FDPOS for boarding fresh equipment
+      enum:
+        - NEW ACCOUNT
+        - ADDITIONAL EQUIPMENT
+      type: string
+      maxLength: 20
+      example: 'ADDITIONAL EQUIPMENT'
+    equipActiveTerminal:
+      type: string
     equipActiveTerminalInd:
       description: Equipment active terminal indicator (applicable to North and Optis).
       enum:
@@ -18358,16 +18285,98 @@ components:
       type: string
       maxLength: 1
       example: 'Y'
+    equipAdditionalDataId:
+      type: string
+    equipAdditionalDataName:
+      type: string
+    equipAdditionalDataValue:
+      type: string
     equipAlternatePhoneNum:
       description: Equipment alternate phone number - Alternate phone number in which the FD helpdesk/deployment group will talk to the merchant (applicable to North and Optis).
       type: string
       maxLength: 10
       example: '1234567890'
+    equipAmexSettle:
+      description: Where Amex transaction for terminals to be settled
+      enum:
+        - A - Amex Settle Auth Only Through EDC
+        - B - Amex Settle EDC Capture and Auth
+        - C - Amex Settle Split Dial Amex Auth
+        - D - Amex Settle Single Settle Amex Set
+        - F - Amex Settle Amex Pip
+      type: string
+      maxLength: 1
+      example: 'A' 
     equipApplicationName:
       description: Equipment application name (applicable to North and Optis).  Valid Values - Can be provided upon request
       type: string
       maxLength: 100
       example: '750FD100'
+    equipApplicationStatus:
+      description: Application status to be updated
+      enum:
+        - B
+        - P
+      type: string
+    equipAutoCloseHour:
+      description: Auto Close hour to be updated
+      type: string
+      maxLength: 24
+      example: '24'
+    equipAutoCloseMin:
+      type: string
+    equipAutoParameterUpdate:
+      description: Auto parameter update to be updated
+      enum:
+        - 'true'
+        - 'false'
+      type: string
+    equipBackendNetwork:
+      type: string
+    equipBatchMethod:
+      type: string
+    equipBatchTime:
+      type: string
+    equipBestContactStartTime:
+      description: Holds information that tells the best time to contact the merchant
+      type: string
+      example: '14:40'
+    equipBestContactStopTime:
+      description: Holds information that tells the time after which the merchant won’t take any helpdesk call
+      type: string
+      example: '17:00'
+    equipBetaFlag:
+      description: Beta flag to be updated
+      enum:
+        - 'Y'
+        - 'N'
+      type: string
+    equipBillMethod:
+      type: string
+    equipBillMethodCode:
+      description: Bill method with which the equipment will be created
+      enum:
+        - CO - Customer Owned
+        - IP - Installment Payment
+        - L - Lease
+        - LR
+        - M - 
+        - R - Rent
+        - RS - 
+        - SR - 
+      type: string
+      maxLength: 2
+      example: 'R'
+    equipBlockAutoRouting:
+      description: Identifier whether auto routing request to TASQ to be blocked or not. Auto-routing means where deployment group intervention does not require transferring the order to TASQ
+      type: string
+      example: 'PC CHARGE'
+    equipBlockDeploymentReason:
+      type: string
+    equipBlockDeployment:
+      maxLength: 10
+      minLength: 0
+      type: string
     equipBundleCode:
       description: To indicate whether multiple equipment will be bundled together through TASQ for delivery or not. If specified bundle Indicator is same for more than one equipment and if previous equipment is not shipped yet in that case all those equipment will be delivered     altogether
       enum:
@@ -18390,11 +18399,97 @@ components:
       type: string
       maxLength: 100
       example: 'Retail'
+    equipBusinessTypeCode:
+      description: Equipment business types supported by FDPOS (applicable to North and Optis).
+      enum:
+        - R - Retail
+        - S - Supermarket
+        - L - Lodging
+        - C - Auto Rental
+        - M - MOTO
+        - O - Restaurant
+        - P - Petroleum
+        - Q - QSR
+      type: string
+      maxLength: 1
+      example: 'R'
+    equipCloseMethod:
+      description: Auto close method / close method to be updated
+      type: string
+      example: 'M'
+    equipCloverId:
+      description: 'Clover ID '
+      type: string
+      example: 'IJHS23'
+    equipCloverVersion:
+      description: 'Clover Version '
+      type: string
+      example: 'IJHS23'
     equipCode:
       description: Equipment code (applicable to North and Optis).  Valid Values - Can be provided upon request.
       maxLength: 6
       type: string
       example: 'T7E'
+    equipCommerceHubTid:
+      description: If the Terminal exists in Commerce Hub then a Commerce Hub TID is used.
+      type: string
+      maxLength: 30
+      example: 'L356225315001'
+    equipCommercialCard:
+      description: Commercial card to be updated
+      enum:
+        - 'Y'
+        - 'N'
+      type: string
+    equipContext:
+      type: string
+    equipCustomerId:
+      type: string
+    equipCustomerSupportPhoneNumber:
+      type: string
+    equipDataFieldId:
+      type: string
+    equipDataFieldValue:
+      type: string
+    equipDatawireId:
+      type: string
+    equipDebitKeyCode:
+      description: Debit Key code to be updated
+      type: string
+      example: '500'
+    equipDeliverySource:
+      type: string
+    equipDeployable:
+      maxLength: 10
+      minLength: 0
+      type: string
+    equipDeploymentInd:
+      description: Deployment parameter for deployable/Log request to be created at POS
+      enum:
+        - L
+        - D
+      type: string
+    equipDeploymentCondition:
+      type: string
+    equipDisableEMVFlag:
+      description: Disable EMV flag to be updated
+      enum:
+        - 'Y'
+        - 'N'
+      type: string
+    equipDownloadDate:
+      type: string
+    equipDownloadId:
+      type: string
+    equipDownloadStatus:
+      type: string
+    equipDownloadType:
+      type: string
+    equipDuration:
+      type: string
+    equipEquipmentCount:
+      format: int32
+      type: integer
     equipExternalOrderId:
       description: Equipment external order ID - If any reference id sent by external system during Equipment boarding, will be returned (applicable to North and Optis).
       type: string
@@ -18469,6 +18564,14 @@ components:
       minimum: 0
       maximum: 9999.99
       example: 356.25
+    equipFieldName:
+      type: string
+    equipFieldReason:
+      type: string
+    equipForceCloseTime:
+      description: Force close time to be updated
+      type: string
+      example: '24'
     equipFrontEndCode:
       description: Equipment Frontend network where terminal is mapped.  (applicable to North and Optis).
       enum:
@@ -18518,10 +18621,27 @@ components:
       type: string 
       maxLength: 4
       example: 'AMEX'
+    equipFrontendNetwork:
+      type: string
+    equipGroupId:
+      type: string
     equipGroupingInd:
       description: Equipment grouping indicator (applicable to North and Optis).
       type: integer
       example: 1000
+    equipGroupSeqId:
+      type: string
+    equipIpCommEnabled:
+      type: string 
+    equipIpComVendor:
+      description: IP Com Vendor to be updated ( Refered to IP Comm Enabled in FDPOS UI
+        )
+      enum:
+        - V
+        - E
+        - D
+        - N
+      type: string
     equipInstallationComments:
       description: Equipment intallation comments (applicable to North and Optis).
       type: string
@@ -18567,7 +18687,17 @@ components:
       type: integer
       minimum: 0
       maximum: 9999
-      example: 48'
+      example: 48
+    equipLinkedToEquipment:
+      type: string
+    equipLinkedToTerminal:
+      type: string
+    equipLogonPasswordFlag:
+      description: Logon password flag to be updated
+      enum:
+        - Y
+        - N
+      type: string
     equipMaintenanceBy:
       description: Equipment maintenance by - used to differentiate customer owned equipment (applicable to North and Optis).
       enum:
@@ -18576,17 +18706,43 @@ components:
       type: string
       maxLength: 6
       example: 'CES'
+    equipMaximumBaud:
+      description: Maximum Baud to be updated
+      type: string
+      example: '1200'
+    equipMDescription:
+      type: string
+    equipMerchantContext:
+      type: string
+    equipMerchantData:
+      type: string
+    equipMerchantId:
+      type: string
+    equipMerchantUpdateType:
+      type: string
     equipName:
       description: Equipment full name (applicable to North and Optis).
       type: string
       maxLength: 100
       example: 'Hypercom T7E Terminal'
+    equipNetwork:
+      description: The network of the merchant
+      type: string
+      example: 'CARDNET'
     equipNum:
       description: Equipment number - Auto-generated unique number assigned to each and every terminal in FDPOS (applicable to North and Optis).
       type: integer
       minimum: 99999999999999
       maximum: 99999999999999
       example: '10450541240006'
+    equipPageNumber:
+      type: integer
+      format: int32
+    equipPageSize:
+      type: integer
+      format: int32
+    equipParameterHeaderName:
+      type: string
     equipParameterName:
       description: Equipment parameter name (applicable to North and Optis).
       type: string
@@ -18597,27 +18753,78 @@ components:
       type: string
       maxLength: 256
       example: '00032478532435505569'
+    equipPlatform:
+      description: The boarding platform of the merchant
+      type: string
+      example: 'OMAHA, OMNIPAY'
+    equipPosPassword:
+      description: FDPOS provided password to validate authorization within FDPOS
+      type: string
+      maxLength: 20
+    equipPosUserName:
+      description: FDPOS provided username to validate authorization within FDPOS
+      type: string
+      maxLength: 20
     equipPriorLeaseNum:
       description: Equipment prior lease number - Will be included if external system already sent via EquipmentBoardingService  (applicable to North and Optis).
       type: string
       maxLength: 15
       example: ''
+    equipPurchaseCard:
+      description: Purchase Card to be updated
+      enum:
+        - Y
+        - N
+      type: string
     equipPurchaseDuration:
       description: Equipment purchase duration for an installment purchase - number of months (applicable to North and Optis).
       type: integer
       minimum: 0
       maximum: 999
       example: 60
+    equipQuantity:
+      type: string
+    equipRecordsCount:
+      description: No of equipment to be on-boarded as part of a single EquipmentBoardingService request
+      type: string
+      maxLength: 2
+      example: '1'
+    equipReferenceNumber:
+      type: integer
+    equipRequestAction:
+      description: action name for BoardingService
+      enum:
+        - Create
+        - Modify
+      type: string
+      example: 'Create'
+    equipRequestId:
+      type: string
+    equipRequestSystemId:
+      description: to identify from which system request flown to FDPOS
+      example: APPLICATION-XXXX
+      maxLength: 15
+      type: string
+    equipRequestNumber:
+      type: integer
     equipRequestType:
       description: Equipment request type (applicable to North and Optis).
       type: string
       maxLength: 40
       example: 'Account Maintenance'
-    equipSalesmanCode:
-      description: Equipment salesman code (applicable to North and Optis).  Valid Values - Available upon request
+    equipRequestUserId:
+      description: Type of request user
       type: string
-      maxLength: 4
-      example: 'ABCD'
+      maxLength: 15
+      example: 'FDXXXXXX'
+    equipResponseMessage:
+      type: string
+    equipResponseReasonCode:
+      type: string
+    equipResponseStatusCode:
+      type: string
+    equipResponseStatusFlag:
+      type: string
     equipSalesRegion:
       description: Equipment sales region - Holds the salesman region from which the equipment data is keyed into FDPOS  (applicable to North and Optis).
       type: string
@@ -18638,6 +18845,8 @@ components:
       type: string
       maxLength: 20
       example: '6418-3066-3430-48FF'
+    equipServiceProfile:
+      type: string
     equipShipAddressAttnText:
       description: Equipment shipping address attention text (applicable to North and Optis).
       type: string
@@ -18697,7 +18906,7 @@ components:
       maxLength: 3
       example: 'FL'
     equipShipTo:
-      description: Equipment express ship to (applicable to North and Optis).
+      description: Equipment ship to (applicable to North and Optis).
       enum:
         - OTHER
         - NOSHIP
@@ -18707,11 +18916,37 @@ components:
       type: string
       maxLength: 6
       example: 'OUTLET'
+    equipStatus:
+      description: Status of the terminal
+      enum:
+        - ACTIVE
+        - INACTIVE
+        - OUTOFBALANCE
+        - DEACTIVATED
+        - VIOLATED
+      type: string
+      maxLength: 13 
+      example: 'ACTIVE'
+    equipSuccess:
+      type: boolean
+    equipSystemId:
+      description: Application ID of the system using this service
+      type: string
+      example: 'APERIAX'
     equipTerminalId:
       description: Equipment assigned terminal ID (applicable to North and Optis).
       type: string
       maxLength: 30
       example: '0064GV'
+    equipTimeZoneId:
+      description: Time ZONE ID to be updated
+      type: string
+    equipTrackDownload:
+      type: string
+    equipTrainingBestTime:
+      description: Holds information that tells the best time to start training
+      type: string
+      example: '08:00'
     equipTrainingInd:
       description: Equipment training indicator  - Indicates whether or not the merchant needs training (applicable to North and Optis).
       enum:
@@ -18722,6 +18957,39 @@ components:
       type: string
       maxLength: 1
       example: 'X'
+    equipType:
+      enum:
+        - MERCHANTUPDATE
+        - EQUIPMENTUPDATE
+        - CLOVERUPDATE
+        - EQUIPMENTDELETE
+        - EQUIPTYPECHANGE
+        - EQUIPMENTFEATUREUPDATE
+        - CHANGEAPPLICATION
+        - EQUIPMENTSTATUS
+        - PROGRAMMING
+      type: string
+    equipValueLinkAutoSettle:
+      description: Value link auto settle to be updated
+      enum:
+        - Y
+        - N
+      type: string
+    equipValueLinkAutoSettleTime:
+      description: Value Link Auto Settle Time to be updated
+      type: string
+      maxLength: 5
+      example: '12:00'
+    equipValueLinkPrepaidFlag:
+      description: Value link prepaid flag to be updated
+      enum:
+        - Y
+        - N
+      type: string
+    equipVersion:
+      description: Equipment application versiobove
+      type: string
+      example: '761UN130'
     equipWorkInProgressStatus:
       description: Equipment work in progress status (applicable to North and Optis).
       enum:
@@ -19769,7 +20037,6 @@ components:
         - 1 - (North) Yes
       type: string
       maxLength: 1
-      example: '1'
     fundingNotifyMethodCode:
       description: Addendum field - Funding notification method code (applicable to North).
       enum:
@@ -19786,14 +20053,6 @@ components:
       type: string
       maxLength: 18
       example: '9991234567'
-    fundingPaymentConsolidationIndicator:
-      description: Addendum field - Funding payment consolidation indicator (applicable to South).
-      enum:
-        - Y - (South) Yes
-        - N - (South) No
-      type: string
-      maxLength: 1
-      example: 'Y'
     fundingRollupCode:
       description: Transaction funding rollup code, North specific usage - Indicates how the merchant’s funding transactions will be combined on their DDA statement.  Optis specific usage - Code indicating how the system presents daily Automated Clearinghouse (ACH) details (North length 1, Optis length 1, South N/A). 
       enum:
@@ -20156,7 +20415,7 @@ components:
       maxLength: 5
       example: '11735'
     includeAddendumFields:
-      description: Indicates how to handle platform-specific addendum fields (logical program field format) within the inquiry request.  If selected, then the merchantProgram section will be included in the response.
+      description: Indicates how to handle platform-specific addendum fields within the inquiry request.  If selected, then the merchantAddendumFields section will be included in the response.
       enum:
         - Y
         - A
@@ -21023,7 +21282,7 @@ components:
       description: Outlet or hierarchy Merchant Number (North 12 digits, Optis 13 to 16 digits, South 11 digits for outlet and 7 digits for root/corp, External cross reference merchant numbers can be 20 digits).
       type: string
       maxLength: 20
-      example: '123456789012345'
+      example: '518564990102790'
     merchantLiteAuthLimitAmount:
       description: Addendum field - Merchant lite authorization limit amount (applicable to North).
       type: number
@@ -21967,6 +22226,14 @@ components:
       type: string
       maxLength: 8
       example: '11.30.20'
+    paymentConsolidationIndicator:
+      description: Addendum field - Funding payment consolidation indicator (applicable to South).
+      enum:
+        - Y - (South) Yes
+        - N - (South) No
+      type: string
+      maxLength: 1
+      example: 'Y'
     paymentEssentialsCode:
       description: Addendum field - Payment essentials bundle code (applicable to North).
       enum:
@@ -22029,38 +22296,6 @@ components:
       type: string
       maxLength: 1
       example: '1'
-    portfolioTypeCode:
-      description: Addendum field - Indicates which portfolio merchant is associated with for reporting purposes and customer support.  OLD FIELD.  Marker is more accurate (applicable to South).
-      enum:
-        - A - (South) Domestic Agent Bank
-        - B - (South) Eastern Regional 
-        - C - (South) SPNB (Bank of America)
-        - D - (South) Discover
-        - E - (South) Hospitality
-        - F - (South) Direct Response
-        - G - (South) Regional
-        - H - (South) UMS (Unified Merchant Services)
-        - I - (South) American Express PIP merchants
-        - J - (South) UMS (Unified Merchant Services)
-        - K - (South) UMS (Unified Merchant Services)
-        - L - (South) Asset Sale
-        - M - (South) EDC Conversion (No outlets)
-        - N - (South) Purchasing Card Merchants
-        - O - (South) Luxury Hotels
-        - P - (South) Department Store Services
-        - Q - (South) Oil Companies, Supermarkets, Debit
-        - R - (South) Catelog Showroom Services
-        - S - (South) International Agent Banks
-        - T - (South) Accessories and Home Products
-        - U - (South) Speciality Apparel Services
-        - V - (South) Consumer Products and Services
-        - W - (South) Corporate Accounts
-        - X - (South) UMS National Retail
-        - Y - (South) UMS National Direct Response and Hospitality
-        - Z - (South) Bridge merchants
-      type: string
-      maxLength: 1
-      example: 'Y'
     postalCode:
       description: US Zip Code or International postal code (North - length 10, Optis length 10, South length 10, MSIP length 8)
       type: string
@@ -23002,7 +23237,7 @@ components:
       description: This field includes the security token for the session that was instantiated as part of the func 0000 logon service call - this would typically be 18 digits.
       type: string
       maxLength: 25
-      example: '102761919658054549'
+      example: '178132387892404750'
     secTokenExpireDate:
       description: Logon security token expiration date in format CCYY-MM-DD.
       type: string
@@ -23117,6 +23352,16 @@ components:
       type: string
       maxLength: 1
       example: 'Y'
+    sharedTokenIndicator:
+      description: Indicates if an assigned security token can be reused within the same application.  This is an optional parameter on an authenticate request.  If (Y)es, processing will not assign a new security token if it finds one that is already being used.
+      enum:
+        - Y
+        - N
+        - Y - Yes (Shared Token)
+        - N - No (Not a Shared Token)
+      type: string
+      maxLength: 1
+      example: 'N'
     sicCode:
       description: MC/VISA Standard Industry Classification Code - Valid values list can be provided upon request (North length 4, Optis length 4, South length 4).
       type: string
