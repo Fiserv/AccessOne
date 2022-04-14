@@ -50,7 +50,7 @@ Real-time APIs provide access to our POS system of record for terminals, related
 ## PROCESS
 
 	- Currently in BETA testing
-    - For UAT access, contact your CSA and provide your IPs to be whitelisted along with your primary ID.
+        - For UAT access, contact your CSA and provide your IPs to be whitelisted along with your primary ID.
 	- We will whitelist the IPs, create a username and provide the credentials to you and build test MIDs if necessary.
 	- When you have completed testing in UAT, we will enable your profile in PROD.
 	- You can create and manage your users and begin using AM APIs.
