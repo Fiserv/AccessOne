@@ -13,6 +13,8 @@
         {
           "name": "enterprise",
           "value": "Enterprise"
+          "name": "SMB",
+          "value": "SMB"
         }
       ]
     }
