@@ -3,40 +3,40 @@
 ## Welcome to the AccessOne API Suite!
 AccessOne APIs provide real-time access to our backend systems of record for inquiry and maintenance. These APIs are available for use by our wholesale and Full Service Processing ISO clients and are welcome to integrate these APIs within your own workflow and systems. APIs are available for merchant/equipment inquiry and maintenance.
  
-<br><br>
+<br>
 
 ## Support Information
 email: accessonesupport@fiserv.com
  
 website www.firstdataclients.com
  
-<br><br>
+<br>
 
 ## Merchant Inquiry
 Real-time inquiry APIs will retrieve merchant attribute information directly against the backend systems of record.  The APIs use a full REST/JSON implementation and all of the associated documentation is included directly in the API specifications.  An API is available to retrieve all merchant attributes.  There are also APIs to retrieve smaller subset of information (e.g. Location Chaining, Merchant Profile, Programs, Entitlements, Billing Attributes).
  
-<br><br>
+<br>
 
 ## Merchant Update
 A real-time update API will allow for maintenance directly against the backend systems of record.  The API uses a full REST/JSON implementation and all of the associated documentation is included directly in the API specifications.  You can leverage this API in your workflow in order to keep your systems syncronized with the Fiserv processing platforms.
  
-<br><br>
+<br>
 
 ## Equipment Search
 Real-time APIs provide access to our POS system of record for terminals, related accessories, and features.  Equipment Inquiry functions are supported.
 
-<br><br>
+<br>
 
 ## Equipment Update
 Real-time APIs provide access to our POS system of record for terminals, related accessories, and features.  Equipment Add and Maintenance functions are fully supported.
 
-<br><br>
+<br>
 
 ## REQUEST URL STRUCTURE
 	
 [Base URL] [API Call]
 
-<br><br>
+<br>
 
 ## REQUEST PARAMETERS
 	
@@ -44,7 +44,7 @@ Base URL (UAT): https://uat-aoapi.youraccessone.com
 Base URL (PROD): coming soon
 API Call: The specific API call you want to make, e.g., /v1/api/auth/token
 
-<br><br>
+<br>
 
 ## PROCESS
 
