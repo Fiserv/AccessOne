@@ -23,7 +23,7 @@
         "version": "1.0.0",
         "versionType": "major",
         "releaseNotesPath": "/release-notes/release-notes-1.0.0.md",
-        "apiSpecFileNames": ["AccessOne-API-Spec-v1-00-02"]
+        "apiSpecFileNames": ["test"]
       }
   ],
   "product": {
