@@ -50,25 +50,25 @@
 - sections:
   - title: Boarding
     link: docs/boarding.md
-      sections:
-      - title: North FACS
-        link: docs/Boarding/FACS.md
-      - title: North FDS
-        link: docs/Boarding/FDS.md
-      - title: Omaha
-        link: docs/Boarding/Omaha.md
+    sections:
+    - title: North FACS
+      link: docs/Boarding/FACS.md
+    - title: North FDS
+      link: docs/Boarding/FDS.md
+    - title: Omaha
+      link: docs/Boarding/Omaha.md
 - sections:
   - title: Reporting
     link: docs/rept.md
-      sections:
-      - title: test 1
-        link: docs/Reporting/start.md
-      - title: test 2
-        link: docs/Reporting/test2.md
-      - title: test 3
-        link: docs/Reporting/test3.md
-      - title: test 4
-        link: docs/Reporting/test4.md
+    sections:
+    - title: test 1
+      link: docs/Reporting/start.md
+    - title: test 2
+      link: docs/Reporting/test2.md
+    - title: test 3
+      link: docs/Reporting/test3.md
+    - title: test 4
+      link: docs/Reporting/test4.md
 
 #  - title: Boarding/Reporting Guides
 #    sections:
