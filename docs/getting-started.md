@@ -41,7 +41,9 @@ Real-time APIs provide access to our POS system of record for terminals, related
 ## Request Parameters
 	
 Base URL (UAT): https://uat-aoapi.youraccessone.com
+
 Base URL (PROD): coming soon
+
 API Call: The specific API call you want to make, e.g., /v1/api/auth/token
 
 <br>
