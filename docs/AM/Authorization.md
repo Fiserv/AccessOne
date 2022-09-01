@@ -1,0 +1,3 @@
+# Authorization
+
+Send AM API password converted to SHAR256 to receive bearer token. This token is valid for 24 hours.
