@@ -6,7 +6,7 @@ AccessOne Reporting APIs provide real-time access to our backend systems of reco
 
     [Base URL] [API Call]
 
-<br>
+\
 
 ## Request Parameters
 
