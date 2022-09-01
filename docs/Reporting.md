@@ -6,8 +6,6 @@ AccessOne Reporting APIs provide access to our system for reporting. These APIs 
 
     [Base URL] [API Call]
 
-\
-
 ## Request Parameters
 
     Base URL (PROD): https://api.fdportfoliomanager.com/pm/ReportService.svc/rest

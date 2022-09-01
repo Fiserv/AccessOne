@@ -4,27 +4,19 @@
 
 AccessOne APIs reporting, boarding, Account Maintenance
 
-&nbsp;
-
 ## Support Information
 
 Please contact your CSA for more information.
 
-&nbsp;
-
 ## Request URL Structure
 
     [Base URL] [API Call]
-
-&nbsp;
 
 ## Request Parameters
 
     Base URL (UAT): <https://uat-aoapi.youraccessone.com>
     Base URL (PROD): coming soon
     API Call: The specific API call you want to make, e.g., /v1/api/auth/token
-
-&nbsp;
 
 ## Process
 
