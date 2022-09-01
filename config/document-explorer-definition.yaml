@@ -33,7 +33,7 @@
     link: docs/getting-started.md
 - sections:
   - title: Account Maintenance
-    link: docs/AM.md
+    link: docs/AM/AM.md
     sections:
     - title: Authorization
       link: docs/AM/Authorization.md
