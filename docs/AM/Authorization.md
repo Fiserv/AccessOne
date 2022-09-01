@@ -1,3 +1,4 @@
 # Authorization
 
-Used to receive the bearer token by send AM API password converted in SHA256 format. This token is valid for 24 hours.
+Generates a bearer token which is valid for 24 hours.
+Receive the bearer token by send AM API password converted in SHA256 format.
