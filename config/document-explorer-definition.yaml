@@ -30,10 +30,10 @@
 
 - sections:
   - title: Getting Started
-    link: docs/getting-started.md
+    link: docs/Getting-Started.md
 - sections:
   - title: Account Maintenance
-    link: docs/AM/AM.md
+    link: docs/AM.md
     sections:
     - title: Authorization
       link: docs/AM/Authorization.md
@@ -59,7 +59,7 @@
       link: docs/Boarding/Omaha.md
 - sections:
   - title: Reporting
-    link: docs/rept.md
+    link: docs/Reporting.md
     sections:
     - title: test 1
       link: docs/Reporting/start.md
