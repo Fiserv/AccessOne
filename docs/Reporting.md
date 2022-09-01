@@ -10,3 +10,5 @@ AccessOne Reporting APIs provide access to our system for reporting. These APIs 
 
     Base URL (PROD): https://api.fdportfoliomanager.com/pm/ReportService.svc/rest
     API Call: The specific API call you want to make
+
+More information, specification document is available on firstdataclients.com by navigating to Acquiring & ISO Solutions > AccessOne > AccessOne API Spec Documents.
