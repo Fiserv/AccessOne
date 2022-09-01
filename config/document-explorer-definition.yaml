@@ -30,7 +30,7 @@
 
 - sections:
   - title: Getting Started
-    link: docs/GettingStarted.md
+    link: docs/getting-started.md
 - sections:
   - title: Account Maintenance
     link: docs/AM.md
