@@ -49,7 +49,7 @@
       link: docs/AM/EquipmentUpdate.md
 - sections:
   - title: Boarding
-    link: docs/boarding.md
+    link: docs/Boarding.md
     sections:
     - title: North FACS
       link: docs/Boarding/FACS.md

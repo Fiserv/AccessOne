@@ -1,6 +1,6 @@
 # Reporting
 
-AccessOne Reporting APIs provide real-time access to our backend systems of record for inquiry and maintenance. These APIs are available for use by our Retail, Wholesale and Full Service Processing ISO clients and are welcome to integrate these APIs within your own workflow and systems.
+AccessOne Reporting APIs provide access to our system for reporting. These APIs are available for use by our Retail, Wholesale and Full Service Processing ISO clients and are welcome to integrate these APIs within your own workflow and systems.
 
 ## Request URL Structure
 
