@@ -64,11 +64,11 @@
     - title: test 1
       link: docs/Reporting/start.md
     - title: test 2
-      link: docs/Reporting/test2.md
+      link: docs/Reporting/start.md
     - title: test 3
-      link: docs/Reporting/test3.md
+      link: docs/Reporting/start.md
     - title: test 4
-      link: docs/Reporting/test4.md
+      link: docs/Reporting/start.md
 
 #  - title: Boarding/Reporting Guides
 #    sections:
