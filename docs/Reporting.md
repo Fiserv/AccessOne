@@ -152,4 +152,4 @@ More information, specification document is available on firstdataclients.com by
 ### GetTapeTransmittalRejectsByEntity    
 ### GetTapeTransmittalRejectsByMerchant    
 ### GetNorthMerchantStatement    
-### GetNorthMerchantStatementList    
+#### GetNorthMerchantStatementList    
