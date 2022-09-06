@@ -14,8 +14,7 @@ paths:
     get:
       tags:
         - Authorization
-      x-group-name: Authorization
-      x-proxy-name: Authorization
+      x-proxy-name: Acct Maint
       operationId: Authorization
       summary: Generate an sectoken token for user authentication.
       parameters:
@@ -93,7 +92,7 @@ paths:
     get:
       tags:
         - Merchant Inquiry
-      x-group-name: Merchant Inquiry
+      x-group-name: Acct Maint
       x-proxy-name: MM Addendum Fields
       operationId: mmGetAddendumFields
       summary: Documentation on Addendum Fields (not an actual API).
