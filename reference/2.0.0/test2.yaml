@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: v1.0.06
+  version: v2.0.0
   title: API Suite for our Full Service Processing ISO Clients
   description: Boarding, Reporting, Inquiry, and Maintenance APIs are available.  Access One boarding services will invoke full scale boarding workflow.  Access One client reporting data is  included in our reporting API services.  Inquiry services provide both a full view or granular level view of merchant master information.  A single update API can be used to change any pertinent merchant master attributes.
   contact:
@@ -25,16 +25,16 @@ paths:
           schema:
             title: String
             type: string
-            example: fdtstapi01
-          example: fdtstapi01
+            example: API_User
+          example: API_User
         - name: password
           in: header
           description: The password was encrypted with algorithm SHA256
           schema:
             title: String
             type: string
-            example: dee30bfb3fa87efb97237539fa9fb994e411234bb760abe987b9b6912ee70d67
-          example: dee30bfb3fa87efb97237539fa9fb994e411234bb760abe987b9b6912ee70d67
+            example: ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
+          example: ca978112ca1bbdcafac231b39a23dc4da786eff8147c4e72b9807785afee48bb
       responses:
         '200':
           description: Success response.
@@ -206,6 +206,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/ApiErrorResponse'
               example: "<ApiErrorResponse xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://schemas.datacontract.org/2004/07/Aperia.AO.Common.Api.Model\">\r\n  <Messages xmlns=\"http://schemas.datacontract.org/2004/07/Aperia.NetCore.Api.Model\" />\r\n  <Status xmlns=\"http://schemas.datacontract.org/2004/07/Aperia.NetCore.Api.Model\">NotImplemented</Status>\r\n  <Timestamp xmlns=\"http://schemas.datacontract.org/2004/07/Aperia.NetCore.Api.Model\">2022-01-26T22:30:13.2101294Z</Timestamp>\r\n  <TraceId xmlns=\"http://schemas.datacontract.org/2004/07/Aperia.NetCore.Api.Model\">11405487-8a0d-4ebe-be15-bed6c4da6327</TraceId>\r\n  <Meta i:nil=\"true\" />\r\n</ApiErrorResponse>"
+  
   /v1/api/boarding/north/GetStatusByTimeSpan:
     post:
       tags:
