@@ -16,6 +16,7 @@ paths:
         - Authorization
       x-group-name: Authorization
       x-proxy-name: Authorization
+      x-child-product-name: Acct Maint
       operationId: Authorization
       summary: Generate an sectoken token for user authentication.
       parameters:
@@ -206,7 +207,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/ApiErrorResponse'
               example: "<ApiErrorResponse xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://schemas.datacontract.org/2004/07/Aperia.AO.Common.Api.Model\">\r\n  <Messages xmlns=\"http://schemas.datacontract.org/2004/07/Aperia.NetCore.Api.Model\" />\r\n  <Status xmlns=\"http://schemas.datacontract.org/2004/07/Aperia.NetCore.Api.Model\">NotImplemented</Status>\r\n  <Timestamp xmlns=\"http://schemas.datacontract.org/2004/07/Aperia.NetCore.Api.Model\">2022-01-26T22:30:13.2101294Z</Timestamp>\r\n  <TraceId xmlns=\"http://schemas.datacontract.org/2004/07/Aperia.NetCore.Api.Model\">11405487-8a0d-4ebe-be15-bed6c4da6327</TraceId>\r\n  <Meta i:nil=\"true\" />\r\n</ApiErrorResponse>"
-  
   /v1/api/boarding/north/GetStatusByTimeSpan:
     post:
       tags:
@@ -573,6 +573,7 @@ paths:
         - Account Maintenance
       x-group-name: Account Maintenance
       x-proxy-name: MM Addendum Fields
+      x-child-product-name: Acct Maint
       operationId: mmGetAddendumFields
       summary: Documentation on Addendum Fields (not an actual API).
       description: Documentation on Addendum Fields.  This is not an actual API.  The information is included here to provide a full listing of all addendum fields.  This included the  field data types, valid values, and field lengths.
@@ -594,6 +595,7 @@ paths:
         - Account Maintenance
       x-group-name: Account Maintenance
       x-proxy-name: Check Request Status
+      x-child-product-name: Acct Maint
       operationId: checkRequestStatus
       summary: Check merchant status.
       description: ''
@@ -664,6 +666,7 @@ paths:
         - Account Maintenance
       x-group-name: Account Maintenance
       x-proxy-name: MM Inquiry All Fields
+      x-child-product-name: Acct Maint
       operationId: mmGetAllFields
       summary: Merchant Master Inquiry Service for All Fields.
       description: This service can be used by clients to retrieve all merchant master fields across backend platforms.  The merchant demographic information is retrieved.  This can be used when a granular level request does not work.  For efficiency purposes, a granular level request should be the first thing to try.
