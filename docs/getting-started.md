@@ -22,7 +22,7 @@ Please contact your CSA for more information.
 
 > - Currently in BETA testing.
 >
-> - For UAT access, contact your CSA and provide your IPs to be whitelisted along with your primary ID.
+> - For UAT access, contact your CSA and you will be provided with an enablement form that includes providing your IPs to be whitelisted and enabling your profile.
 >
 > - We will whitelist the IPs, create a username and provide the credentials to you and build test MIDs if necessary.
 >
