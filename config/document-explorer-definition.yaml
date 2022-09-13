@@ -32,11 +32,12 @@
   - title: Getting Started
     link: docs/getting-started.md
 - sections:
+  - title: Authorization
+    link: docs/Authorization.md
+- sections:
   - title: Account Maintenance
     link: docs/AM.md
     sections:
-    - title: Authorization
-      link: docs/AM/Authorization.md
     - title: Merchant Inquiry
       link: docs/AM/MerchantInquiry.md
     - title: Merchant Update
