@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: v1.0.02
+  version: v2.0.01
   title: API Suite for our Full Service Processing ISO Clients
   description: Boarding, Reporting, Inquiry, and Maintenance APIs are available.  Access One boarding services will invoke full scale boarding workflow.  Access One client reporting data is  included in our reporting API services.  Inquiry services provide both a full view or granular level view of merchant master information.  A single update API can be used to change any pertinent merchant master attributes.
   contact:
