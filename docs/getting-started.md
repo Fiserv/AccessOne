@@ -12,14 +12,17 @@ website www.firstdataclients.com
  
 <br>
 
+## Authorization
+Generates a token for user authentication to be used as bearer token in all subsequent calls.
+
 ## Merchant Inquiry
 Real-time inquiry APIs will retrieve merchant attribute information directly against the backend systems of record.  The APIs use a full REST/JSON implementation and all of the associated documentation is included directly in the API specifications.  An API is available to retrieve all merchant attributes.  There are also APIs to retrieve smaller subset of information (e.g. Location Chaining, Merchant Profile, Programs, Entitlements, Billing Attributes).
- 
+
 <br>
 
 ## Merchant Update
 A real-time update API will allow for maintenance directly against the backend systems of record.  The API uses a full REST/JSON implementation and all of the associated documentation is included directly in the API specifications.  You can leverage this API in your workflow in order to keep your systems syncronized with the Fiserv processing platforms.
- 
+
 <br>
 
 ## Equipment Search
@@ -33,15 +36,17 @@ Real-time APIs provide access to our POS system of record for terminals, related
 <br>
 
 ## Request URL Structure
-	
+
 [Base URL] [API Call]
 
 <br>
 
 ## Request Parameters
-	
+
 Base URL (UAT): https://uat-aoapi.youraccessone.com
+<br>
 Base URL (PROD): coming soon
+<br>
 API Call: The specific API call you want to make, e.g., /v1/api/auth/token
 
 <br>
@@ -53,4 +58,3 @@ For UAT access, contact your CSA and provide your IPs to be whitelisted along wi
 We will whitelist the IPs, create a username and provide the credentials to you and build test MIDs if necessary.
 When you have completed testing in UAT, we will enable your profile in PROD.
 You can create and manage your users and begin using AM APIs.
-
