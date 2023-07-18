@@ -33,6 +33,7 @@ header:
   image: 
     link: "/assets/images/AccessOne.png"
     altText: AccessOne API Suite
+getStarted: /docs/getting-started.md
 steps:  
   learnSteps:
     - title: Learn
